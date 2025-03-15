@@ -3,9 +3,9 @@
 # VisualCapture
 VisualCapture/視覺捕捉/全螢幕截圖(Full-screen screenshot)
 
-    只想使用執行檔案(不含程式碼)，請將以下資料夾下載"VisualCaptureApp/bin/Release/net8.0-windows".
-    
-    If you only want to use the executable files (excluding the source code), please download the following folder:"VisualCaptureApp/bin/Release/net8.0-windows".
+只想使用執行檔案(不含程式碼)，請將以下資料夾下載"VisualCaptureApp/bin/Release/net8.0-windows".
+   
+If you only want to use the executable files (excluding the source code), please download the following folder:"VisualCaptureApp/bin/Release/net8.0-windows".
 
 ## 1. App Main Window
 ![image](https://github.com/user-attachments/assets/1d7a0041-9d96-4d8f-a5ac-86c6663a44f2)
@@ -190,6 +190,56 @@ Hardcodet.NotifyIcon.Wpf 是一個為 WPF (Windows Presentation Foundation) 應�
 
 ------
 
+## 1-2. NLog
+NLog 是一個功能強大的 開源日誌框架，用於 .NET 應用程式的日誌記錄。它提供了一個靈活且高效的方式來記錄應用程式的運行狀況、錯誤訊息、警告、調試資訊等，並支援多種日誌輸出方式（如檔案、資料庫、控制台等）。
+
+*NLog is a powerful open-source logging framework for .NET applications. It provides a flexible and efficient way to log application runtime status, error messages, warnings, debugging information, and more. NLog supports multiple logging output options, such as files, databases, and the console.*
+
+### 主要功能：
+
+- 1.多種輸出目標：
+    - NLog 支援多種 日誌輸出目標，包括：      
+    - 檔案（如 .txt, .log 等）
+    - 資料庫（如 SQL Server）
+    - 控制台（例如命令列視窗）
+    - 事件日誌（Windows Event Log）
+    - 電子郵件（發送日誌作為電子郵件）
+    - 第三方平台（如 Slack、Twitter 等）
+    - 每個日誌條目可以配置不同的目標，並根據日誌的等級（例如 Info, Error, Debug）選擇性地輸出。
+
+- 2.靈活的日誌級別設置：
+
+    - NLog 提供了多種 日誌級別，用來表示不同的日誌重要性：
+    - Trace：最詳細的日誌，通常用於記錄調試信息。
+    - Debug：用於記錄調試和開發過程中的詳細信息。
+    - Info：常規的操作信息，例如應用程式啟動或關閉。
+    - Warn：警告信息，表示系統運行中可能出現的問題。
+    - Error：錯誤信息，通常是應用程式執行過程中發生的錯誤。
+    - Fatal：致命錯誤，表示系統無法繼續運行。
+
+- 3.靈活的配置：
+
+    - NLog 支援通過 XML 或 JSON 配置檔案來設置日誌的格式、輸出目標和過濾規則，這樣你可以非常靈活地配置應用程式的日誌策略。  
+    - 支援動態重新載入配置，可以在應用程式運行中修改配置而不需要重新啟動應用程式。
+
+- 4.異常處理和堆疊追蹤：
+  
+    - NLog 支援將 異常堆疊追蹤（stack trace）和相關錯誤訊息記錄到日誌中，這對於排查問題非常有幫助。
+  
+- 5.條件過濾：
+
+    - 可以根據日誌級別、標籤等條件來過濾日誌輸出，這樣可以更精確地控制哪些日誌信息被記錄。
+  
+- 6.自定義日誌格式：
+
+    - 支援自定義日誌條目的格式，你可以控制日期、時間、日誌級別、訊息等顯示格式，讓日誌更加易讀且符合需求。
+  
+- 7.性能優化：
+
+    - NLog 在記錄大量日誌時表現高效，它使用緩衝區和異步寫入方式來確保日誌記錄不會對應用程式性能造成過多影響。
+
+------
+
 # 2. Self-Developed Component Introduce
 
 | **Item** | **Name** | **Function** |
@@ -199,6 +249,11 @@ Hardcodet.NotifyIcon.Wpf 是一個為 WPF (Windows Presentation Foundation) 應�
 | **3** | **Judgment.dll** | 原因代碼.<br>Reason Code. |
 | **4** | **OLogger.dll** | 紀錄檔案日誌.<br>Save Log File. |
 | **5** | **TCTUtility.dll** | 通用功能.<br>General Functionality |
+
+```diff
+! 上述五的組件專案並未包含在此專案內部，若想在開發工具上使用請自行從 Release 資料夾內更換 dll.
+! The component project mentioned in point five is not included within this project. If you wish to use it in the development tool, please manually replace the DLL from the Release folder.
+```
 
 ## 2-1. Hardcodet.NotifyIcon.Wpf
 定義通用真名，可用於各專案需求.
@@ -211,10 +266,84 @@ Hardcodet.NotifyIcon.Wpf 是一個為 WPF (Windows Presentation Foundation) 應�
 
   *It can be used in places where a fixed name is required.*
 
-![image](https://github.com/user-attachments/assets/d56fe3b5-921e-49b6-a4bd-913ef4b92c25)
-
 ```bash
 HolyGift.Key.System
+```
+![image](https://github.com/user-attachments/assets/d56fe3b5-921e-49b6-a4bd-913ef4b92c25)
+
+------
+
+## 2-2. ILogger.dll
+定義 Log 物件，可用於各專案需求.
+
+*Define a Log object that can be used for various project requirements.*
+
+### 主要功能：
+
+- 1.可在需要紀錄 Log 的地方使用：
+
+  *Can be used wherever log recording is needed.*
+
+```bash
+new LogInfo(HolyGift.Key.System, MethodBase.GetCurrentMethod()!.DeclaringType!.ToString(), MethodBase.GetCurrentMethod()!.Name, $@"Start...", Code.IFO_000);
+```
+![image](https://github.com/user-attachments/assets/1537ab64-1dcf-4418-bd90-eabc4c8af31e)
+
+------
+
+## 2-3. Judgment.dll
+定義原因代碼，可用於錯誤原因及各種情況，便於分析及釐清問題.
+
+*Define a reason code that can be used for error causes and various situations, making it easier to analyze and clarify issues.*
+
+### 主要功能：
+
+- 1.在專案內想要爆錯時始使用：
+
+  *Used when you want to throw an error within the project.*
+
+```bash
+throw new ExpectedInfo($@"Please check BaseScreenshot BaseCaptureFunctionL, List is Null", Code.ODI_004);
+```
+
+![image](https://github.com/user-attachments/assets/bbe83a0a-d82c-4d11-80a9-38fd5d1a853d)
+
+------
+
+## 2-4. OLogger.dll
+將 Log 物件，儲存成檔案.
+
+*Save the Log object as a file.*
+
+### 主要功能：
+
+- 1.在專案內建立專屬的儲存物件及函式：
+
+  *Create dedicated storage objects and functions within the project, and save them as files.*
+
+```bash
+OLogInfo? ologinfo = null;
+ologinfo = new OLogInfo(Assembly.GetExecutingAssembly().GetName().Name, 30, 3, 777);
+ologinfo!.Logger.Info($@"<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}] {li.Info}");
+```
+![image](https://github.com/user-attachments/assets/b1ecd3de-67ee-4aff-b463-a4b5a58beafa)
+
+------
+
+## 2-5. TCTUtility.dll
+通用功能，提供常用到的函示。
+
+*General functions, providing commonly used functions.*
+
+### 主要功能：
+
+- 1.在專案內可不需要自行或重複撰寫，可以直接使用：
+
+  *It is not necessary to write or rewrite it yourself within the project; you can use it directly.*
+
+```bash
+namespace
+TCTUtility.Function
 ```
 
 ------

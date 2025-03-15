@@ -3,16 +3,109 @@
 # VisualCapture
 VisualCapture/視覺捕捉/全螢幕截圖("Full-screen screenshot")
 
-# 1. App Main Window
+## 1. App Main Window
 ![image](https://github.com/user-attachments/assets/1d7a0041-9d96-4d8f-a5ac-86c6663a44f2)
 
-# 2. App Splash screen
+------
+
+## 2. App Splash Window
 ![image](https://github.com/user-attachments/assets/cf39130a-ebe8-4d70-a7d1-2b719c0c3a28)
 
+------
 
-# 3. App Leave the screen
+## 3. App Leave Window
 ![image](https://github.com/user-attachments/assets/088f2dec-0679-4bb9-9a09-c3fd265a80c8)
 
+------
+
+## 4. App useing Guide
+
+### 4-1. Show General settings and detailed settings
+![image](https://github.com/user-attachments/assets/c2b20a7b-b9f1-4ebc-aab3-0957e5a6d8b2)
+
+![image](https://github.com/user-attachments/assets/8a076235-81a5-44d7-bef9-3f86199f75b8)
+
+![image](https://github.com/user-attachments/assets/f43a4f5b-464a-4c2e-a04b-a3f190c07e61)
+
+------
+
+### 4-2. Execute the specified shooting action
+![image](https://github.com/user-attachments/assets/0884ed1e-1dfd-43c8-b0c4-0d153fa9e981)
+
+action refer as Combox Selected.
+
+![image](https://github.com/user-attachments/assets/7e0f481a-e474-466f-9a04-56dd303f1849)
+
+```diff
+! 未來會持續擴充更多功能。
+! More features will be continuously added in the future.
+```
+
+------
+
+### 4-3. General Settings Page
+1.SaveFoler/儲存資料夾
+
+  瀏覽您的電腦資料夾並選擇儲存資料夾。
+  
+  *Browser your computer Folder and Select SaveFolder.*
+  
+  ![image](https://github.com/user-attachments/assets/5e5b3680-406e-4004-8cc9-9aadb3998ceb)
+  
+  ![image](https://github.com/user-attachments/assets/03ac6254-5a51-4d8e-abeb-8761f3c6e5c2)
+
+1-2.顯示您的設定儲存資料夾路徑。
+
+  *Show your Setting SaveFolder Path.*
+  
+  ![image](https://github.com/user-attachments/assets/fbda326e-2585-49d4-907e-28634d8f4a27)
+
+1-3.使用檔案總管，開啟儲存資料夾。
+
+  *Use File Explorer to open the storage folder.*
+  
+  ![image](https://github.com/user-attachments/assets/2d2d80fa-13d0-4f13-b39b-c00f4b3eab9e)
+  
+  ![image](https://github.com/user-attachments/assets/1c5f587d-33d0-438d-a1b6-7578ef271019)
+
+------
+
+2.WindowTopMost/視窗最前景:
+
+  啟用時，會讓此程式主視窗在全螢幕最前景。
+  
+  *When enabled, the main window of this program will stay in the foreground in full-screen mode.*
+  
+  ![image](https://github.com/user-attachments/assets/e942a782-a005-4d05-b3a5-28afa2c5dbbb)
+
+------
+
+3.Keyboard Shortcut/鍵盤快捷鍵:
+
+  啟用時，當依照指定的快捷鍵觸發時，會執行指定拍照動作。
+    
+  *When enabled, the specified capture action will be executed when triggered by the designated shortcut key.*
+  
+  ![image](https://github.com/user-attachments/assets/c157c2b7-c206-435f-a44a-71ae68be4944)
+  
+  ![image](https://github.com/user-attachments/assets/bfb60fa4-8a9d-44b5-9ed8-bbf2a2589535)
+
+------
+
+### 4-4. Settings Page
+這個畫面會依據您所選擇的功能切換專屬的設定.
+
+*This screen will switch to the specific settings based on the feature you select.*
+
+1.ScreenshotFullScreen:
+
+  1-1:AnimationEffects/動畫效果:
+  
+    啟用時，會在執行拍攝時，讓全螢幕有短暫的白色閃爍動畫.
+    
+    *When enabled, a brief white flash animation will appear on the entire screen during the capture process.*
+    
+    ![image](https://github.com/user-attachments/assets/2a196678-7a85-4af5-8633-e3c2fe815ea2)
 
 ------
 

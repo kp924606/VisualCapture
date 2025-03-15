@@ -54,7 +54,7 @@ namespace VisualCaptureApp.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/VisualCaptureApp;V1.0.0.0;component/view/screenshotspecifyrange.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/VisualCaptureApp;component/view/screenshotspecifyrange.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\ScreenshotSpecifyRange.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

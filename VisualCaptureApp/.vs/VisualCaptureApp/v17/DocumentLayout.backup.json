@@ -3,24 +3,30 @@
   "WorkspaceRootPath": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|d:\\\u8521\u627F\u5EF7\\development\\visualcapture\\visualcaptureapp\\view\\messageboxwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|solutionrelative:view\\messageboxwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|d:\\\u8521\u627F\u5EF7\\development\\visualcapture\\visualcaptureapp\\view\\messageboxwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|solutionrelative:view\\messageboxwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|d:\\\u8521\u627F\u5EF7\\development\\visualcapture\\visualcaptureapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|d:\\\u8521\u627F\u5EF7\\development\\visualcapture\\visualcaptureapp\\view\\messageboxwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|solutionrelative:view\\messageboxwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|d:\\\u8521\u627F\u5EF7\\development\\visualcapture\\visualcaptureapp\\base\\basescreenshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|solutionrelative:base\\basescreenshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|d:\\\u8521\u627F\u5EF7\\development\\visualcapture\\visualcaptureapp\\view\\messageboxwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|solutionrelative:view\\messageboxwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|d:\\\u8521\u627F\u5EF7\\development\\visualcapture\\visualcaptureapp\\view\\splashscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|solutionrelative:view\\splashscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42DD1238-7818-4A10-9B80-9CE7DD036C7D}|..\\..\\My\\ILogger\\ILogger.csproj|d:\\\u8521\u627F\u5EF7\\development\\my\\ilogger\\ap\\expectedinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42DD1238-7818-4A10-9B80-9CE7DD036C7D}|..\\..\\My\\ILogger\\ILogger.csproj|d:\\\u8521\u627F\u5EF7\\development\\my\\ilogger\\ap\\loginfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|d:\\\u8521\u627F\u5EF7\\development\\visualcapture\\visualcaptureapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|d:\\\u8521\u627F\u5EF7\\development\\visualcapture\\visualcaptureapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -34,11 +40,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LogInfo.cs",
+              "DocumentMoniker": "D:\\\u8521\u627F\u5EF7\\Development\\My\\ILogger\\AP\\LogInfo.cs",
+              "RelativeDocumentMoniker": "..\\..\\My\\ILogger\\AP\\LogInfo.cs",
+              "ToolTip": "D:\\\u8521\u627F\u5EF7\\Development\\My\\ILogger\\AP\\LogInfo.cs",
+              "RelativeToolTip": "..\\..\\My\\ILogger\\AP\\LogInfo.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAWwBoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T03:49:22.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "ExpectedInfo.cs",
+              "DocumentMoniker": "D:\\\u8521\u627F\u5EF7\\Development\\My\\ILogger\\AP\\ExpectedInfo.cs",
+              "RelativeDocumentMoniker": "..\\..\\My\\ILogger\\AP\\ExpectedInfo.cs",
+              "ToolTip": "D:\\\u8521\u627F\u5EF7\\Development\\My\\ILogger\\AP\\ExpectedInfo.cs",
+              "RelativeToolTip": "..\\..\\My\\ILogger\\AP\\ExpectedInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T03:48:00.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "SplashScreen.xaml.cs",
               "DocumentMoniker": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\View\\SplashScreen.xaml.cs",
               "RelativeDocumentMoniker": "View\\SplashScreen.xaml.cs",
@@ -64,45 +96,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MessageBoxWindow.xaml.cs",
               "DocumentMoniker": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\View\\MessageBoxWindow.xaml.cs",
               "RelativeDocumentMoniker": "View\\MessageBoxWindow.xaml.cs",
               "ToolTip": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\View\\MessageBoxWindow.xaml.cs",
               "RelativeToolTip": "View\\MessageBoxWindow.xaml.cs",
-              "ViewState": "AgIAAHMBAAAAAAAAAAAQwHcBAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAHQBAAAAAAAAAAAIwHcBAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-13T02:17:11.294Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "MessageBoxWindow.xaml",
               "DocumentMoniker": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\View\\MessageBoxWindow.xaml",
               "RelativeDocumentMoniker": "View\\MessageBoxWindow.xaml",
-              "ToolTip": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\View\\MessageBoxWindow.xaml",
-              "RelativeToolTip": "View\\MessageBoxWindow.xaml",
+              "ToolTip": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\View\\MessageBoxWindow.xaml*",
+              "RelativeToolTip": "View\\MessageBoxWindow.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-12T03:15:52.705Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAALgCAAAAAAAAAAAUwMkCAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAB4BAAAAAAAAAAAvwIMBAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T03:24:20.82Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T03:24:20.82Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",

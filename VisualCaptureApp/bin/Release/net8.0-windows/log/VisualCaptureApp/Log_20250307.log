@@ -1,0 +1,1088 @@
+2025-03-07 10:15:23.940 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+        /***********************************************
+                          _ooOoo_
+                         o8888888o
+                         88" . "88
+                         (| -_- |)
+                         O\  =  /O
+                      ____/`---'\____
+                    .'  \\|     |//  `.
+                   /  \\|||  :  |||//  \
+                  /  _||||| -:- |||||-  \
+                  |   | \\\  -  /// |   |
+                  | \_|  ''\---/''  |   |
+                  \  .-\__  `-`  ___/-. /
+                ___`. .'  /--.--\  `. . __
+             ."" '<  `.___\_<|>_/___.'  >'"".
+            | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+            \  \ `-.   \_ __\ /__ _/   .-` /  /
+       ======`-.____`-.___\_____/___.-`____.-'======
+                          `=---='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                佛祖保佑       永無BUG
+       *********************************************/
+
+2025-03-07 10:15:25.348 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+    /**************************************************************
+
+      [       遵從自然規律，讓萬物自行發揮       ]  <-----------
+                            |                                   |
+                            |                                   |
+      [        遵從自然規律，讓萬物自行相剋      ]              |
+                            |                                   |
+                            |                                   |
+      [          精通萬物一切原理熟知於心        ]              |
+                            |                                   |
+                            |                                   |
+      [          運用萬物一切原理強身健體        ]              |
+                            |                                   |
+                            |                                   |
+      [  緣起緣滅，讓萬物一切自動運轉，自生自滅  ]              |
+                            |                                   |
+                            |                                   |
+      [        時有時無，萬物一切可有可無        ]              |
+                            |                                   |
+                            |                                   |
+      [             天人合一，無欲無求           ]              |
+                            |                                   |
+                            |                                   |
+      [              萬物一切歸為無              ]              |
+                            |                                   |
+                            |                                   |
+      [           心有所想，創建美妙世界         ] --------------
+
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              如何成為長官的秘訣            劉彩萍指揮官
+    ***************************************************************/
+            
+2025-03-07 10:15:25.373 [7] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] Start...
+2025-03-07 10:15:25.391 [7] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 10:15:25.395 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[WindowTopMost][IFO_000] Setting:[True]
+2025-03-07 10:15:30.834 [5] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_10-15-30-533-AllScreens.jpeg]
+2025-03-07 10:15:36.848 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[FolderOpenWindow][IFO_000] 開啟儲存的資料夾:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data]
+2025-03-07 10:15:42.314 [5] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Input Description:[F1], Code:[112]
+2025-03-07 10:15:42.650 [5] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_10-15-42-315-AllScreens.jpeg]
+2025-03-07 10:15:42.650 [7] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Input Description:[F1], Code:[112]
+2025-03-07 10:15:42.650 [5] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_10-15-42-515-AllScreens.jpeg]
+2025-03-07 10:15:55.875 [7] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Input Description:[F1], Code:[112]
+2025-03-07 10:15:56.235 [5] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_10-15-55-877-AllScreens.jpeg]
+2025-03-07 10:15:56.237 [7] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Input Description:[F1], Code:[112]
+2025-03-07 10:15:56.237 [5] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_10-15-56-065-AllScreens.jpeg]
+2025-03-07 10:18:29.732 [7] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+        /***********************************************
+                          _ooOoo_
+                         o8888888o
+                         88" . "88
+                         (| -_- |)
+                         O\  =  /O
+                      ____/`---'\____
+                    .'  \\|     |//  `.
+                   /  \\|||  :  |||//  \
+                  /  _||||| -:- |||||-  \
+                  |   | \\\  -  /// |   |
+                  | \_|  ''\---/''  |   |
+                  \  .-\__  `-`  ___/-. /
+                ___`. .'  /--.--\  `. . __
+             ."" '<  `.___\_<|>_/___.'  >'"".
+            | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+            \  \ `-.   \_ __\ /__ _/   .-` /  /
+       ======`-.____`-.___\_____/___.-`____.-'======
+                          `=---='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                佛祖保佑       永無BUG
+       *********************************************/
+
+2025-03-07 10:18:30.998 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+    /**************************************************************
+
+      [       遵從自然規律，讓萬物自行發揮       ]  <-----------
+                            |                                   |
+                            |                                   |
+      [        遵從自然規律，讓萬物自行相剋      ]              |
+                            |                                   |
+                            |                                   |
+      [          精通萬物一切原理熟知於心        ]              |
+                            |                                   |
+                            |                                   |
+      [          運用萬物一切原理強身健體        ]              |
+                            |                                   |
+                            |                                   |
+      [  緣起緣滅，讓萬物一切自動運轉，自生自滅  ]              |
+                            |                                   |
+                            |                                   |
+      [        時有時無，萬物一切可有可無        ]              |
+                            |                                   |
+                            |                                   |
+      [             天人合一，無欲無求           ]              |
+                            |                                   |
+                            |                                   |
+      [              萬物一切歸為無              ]              |
+                            |                                   |
+                            |                                   |
+      [           心有所想，創建美妙世界         ] --------------
+
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              如何成為長官的秘訣            劉彩萍指揮官
+    ***************************************************************/
+            
+2025-03-07 10:18:31.011 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] Start...
+2025-03-07 10:18:31.018 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 10:18:31.018 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[WindowTopMost][IFO_000] Setting:[True]
+2025-03-07 10:18:36.803 [5] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Input Description:[F1], Code:[112]
+2025-03-07 10:18:37.778 [5] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_10-18-36-861-AllScreens.jpeg]
+2025-03-07 10:18:37.896 [7] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Input Description:[F1], Code:[112]
+2025-03-07 10:18:37.946 [7] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_10-18-37-408-AllScreens.jpeg]
+2025-03-07 10:18:47.721 [7] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 10:18:50.090 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 10:18:50.920 [5] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Input Description:[F2], Code:[113]
+2025-03-07 10:18:51.309 [5] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_10-18-50-921-AllScreens.jpeg]
+2025-03-07 10:18:51.319 [5] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Input Description:[F2], Code:[113]
+2025-03-07 10:18:51.319 [13] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_10-18-51-128-AllScreens.jpeg]
+2025-03-07 10:19:41.600 [14] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Input Description:[F2], Code:[113]
+2025-03-07 10:19:41.951 [15] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_10-19-41-603-AllScreens.jpeg]
+2025-03-07 10:19:41.951 [14] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Input Description:[F2], Code:[113]
+2025-03-07 10:19:41.956 [15] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_10-19-41-811-AllScreens.jpeg]
+2025-03-07 10:21:04.327 [18] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Input Description:[F2], Code:[113]
+2025-03-07 10:21:04.744 [19] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_10-21-04-334-AllScreens.jpeg]
+2025-03-07 10:21:04.756 [18] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Input Description:[F2], Code:[113]
+2025-03-07 10:21:04.756 [19] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_10-21-04-544-AllScreens.jpeg]
+2025-03-07 10:41:59.056 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+        /***********************************************
+                          _ooOoo_
+                         o8888888o
+                         88" . "88
+                         (| -_- |)
+                         O\  =  /O
+                      ____/`---'\____
+                    .'  \\|     |//  `.
+                   /  \\|||  :  |||//  \
+                  /  _||||| -:- |||||-  \
+                  |   | \\\  -  /// |   |
+                  | \_|  ''\---/''  |   |
+                  \  .-\__  `-`  ___/-. /
+                ___`. .'  /--.--\  `. . __
+             ."" '<  `.___\_<|>_/___.'  >'"".
+            | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+            \  \ `-.   \_ __\ /__ _/   .-` /  /
+       ======`-.____`-.___\_____/___.-`____.-'======
+                          `=---='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                佛祖保佑       永無BUG
+       *********************************************/
+
+2025-03-07 10:42:00.344 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+    /**************************************************************
+
+      [       遵從自然規律，讓萬物自行發揮       ]  <-----------
+                            |                                   |
+                            |                                   |
+      [        遵從自然規律，讓萬物自行相剋      ]              |
+                            |                                   |
+                            |                                   |
+      [          精通萬物一切原理熟知於心        ]              |
+                            |                                   |
+                            |                                   |
+      [          運用萬物一切原理強身健體        ]              |
+                            |                                   |
+                            |                                   |
+      [  緣起緣滅，讓萬物一切自動運轉，自生自滅  ]              |
+                            |                                   |
+                            |                                   |
+      [        時有時無，萬物一切可有可無        ]              |
+                            |                                   |
+                            |                                   |
+      [             天人合一，無欲無求           ]              |
+                            |                                   |
+                            |                                   |
+      [              萬物一切歸為無              ]              |
+                            |                                   |
+                            |                                   |
+      [           心有所想，創建美妙世界         ] --------------
+
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              如何成為長官的秘訣            劉彩萍指揮官
+    ***************************************************************/
+            
+2025-03-07 10:42:00.354 [7] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] Start...
+2025-03-07 10:42:00.362 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 10:42:00.362 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[WindowTopMost][IFO_000] Setting:[True]
+2025-03-07 10:42:02.588 [12] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] aaaaaaaaaaaaaaaaaa:[0]
+2025-03-07 10:42:03.106 [5] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Input Description:[F1], Code:[112]
+2025-03-07 10:42:03.106 [7] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_10-42-02-650-AllScreens.jpeg]
+2025-03-07 10:42:03.112 [5] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] aaaaaaaaaaaaaaaaaa:[0]
+2025-03-07 10:53:35.043 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+        /***********************************************
+                          _ooOoo_
+                         o8888888o
+                         88" . "88
+                         (| -_- |)
+                         O\  =  /O
+                      ____/`---'\____
+                    .'  \\|     |//  `.
+                   /  \\|||  :  |||//  \
+                  /  _||||| -:- |||||-  \
+                  |   | \\\  -  /// |   |
+                  | \_|  ''\---/''  |   |
+                  \  .-\__  `-`  ___/-. /
+                ___`. .'  /--.--\  `. . __
+             ."" '<  `.___\_<|>_/___.'  >'"".
+            | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+            \  \ `-.   \_ __\ /__ _/   .-` /  /
+       ======`-.____`-.___\_____/___.-`____.-'======
+                          `=---='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                佛祖保佑       永無BUG
+       *********************************************/
+
+2025-03-07 10:53:36.239 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+    /**************************************************************
+
+      [       遵從自然規律，讓萬物自行發揮       ]  <-----------
+                            |                                   |
+                            |                                   |
+      [        遵從自然規律，讓萬物自行相剋      ]              |
+                            |                                   |
+                            |                                   |
+      [          精通萬物一切原理熟知於心        ]              |
+                            |                                   |
+                            |                                   |
+      [          運用萬物一切原理強身健體        ]              |
+                            |                                   |
+                            |                                   |
+      [  緣起緣滅，讓萬物一切自動運轉，自生自滅  ]              |
+                            |                                   |
+                            |                                   |
+      [        時有時無，萬物一切可有可無        ]              |
+                            |                                   |
+                            |                                   |
+      [             天人合一，無欲無求           ]              |
+                            |                                   |
+                            |                                   |
+      [              萬物一切歸為無              ]              |
+                            |                                   |
+                            |                                   |
+      [           心有所想，創建美妙世界         ] --------------
+
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              如何成為長官的秘訣            劉彩萍指揮官
+    ***************************************************************/
+            
+2025-03-07 10:53:36.239 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] Start...
+2025-03-07 10:53:36.239 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 10:53:36.239 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[WindowTopMost][IFO_000] Setting:[True]
+2025-03-07 10:53:49.327 [4] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Input Description:[F1], Code:[112]
+2025-03-07 10:53:49.575 [4] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_10-53-49-335-AllScreens.jpeg]
+2025-03-07 10:54:02.124 [4] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:54:02.155 [4] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:54:02.186 [4] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:54:02.217 [4] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:54:02.247 [4] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:54:02.278 [4] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:54:02.325 [4] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:54:02.355 [4] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:54:02.386 [4] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:54:02.417 [4] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:54:02.447 [4] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:54:13.221 [4] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:54:13.426 [4] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Input Description:[F1], Code:[112]
+2025-03-07 10:54:13.426 [4] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_10-54-13-223-AllScreens.jpeg]
+2025-03-07 10:54:15.743 [4] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:54:15.918 [4] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Input Description:[F1], Code:[112]
+2025-03-07 10:54:15.918 [6] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_10-54-15-745-AllScreens.jpeg]
+2025-03-07 10:55:46.381 [3] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:55:51.812 [3] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:56:08.564 [3] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:56:10.523 [3] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:56:29.944 [3] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:57:40.217 [12] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:57:43.876 [12] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 10:57:43.932 [13] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 10:57:44.510 [13] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:57:49.059 [13] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 10:57:49.106 [13] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 10:57:55.897 [13] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 10:57:55.942 [13] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 10:58:02.001 [13] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:58:02.974 [13] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:58:15.295 [13] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:58:31.756 [13] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:58:32.362 [13] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:58:37.701 [13] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:58:38.597 [13] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:58:44.315 [13] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:58:50.116 [13] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:58:53.457 [13] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 10:58:53.526 [13] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 10:58:55.552 [13] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:59:01.534 [13] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:59:02.203 [13] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:59:33.517 [11] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:59:34.383 [11] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:59:37.108 [11] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:59:39.885 [11] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:59:40.092 [11] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:59:43.254 [11] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:59:46.175 [11] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:59:46.708 [11] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:59:54.733 [11] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 10:59:57.073 [11] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:00:00.329 [11] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:00:00.827 [11] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:00:06.134 [11] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:00:54.515 [14] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:01:04.870 [14] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:01:11.809 [14] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:01:11.968 [14] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:01:15.791 [14] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:01:16.948 [14] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:01:43.943 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:01:49.698 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:01:52.639 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:01:52.658 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:01:54.793 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:01:54.857 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:01:56.800 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:01:57.378 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:01:58.947 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:01:59.006 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:02:02.907 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:02:04.087 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:02:05.941 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:02:07.206 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:02:08.828 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:02:10.336 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:02:11.299 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:02:13.108 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:02:14.308 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:02:15.795 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:02:18.401 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:02:21.580 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:02:22.383 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:02:24.140 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:02:25.896 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:02:27.570 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:02:29.596 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:02:31.259 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:02:33.046 [15] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:03:08.350 [13] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:03:08.396 [13] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:03:16.766 [13] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:03:17.561 [13] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:03:18.439 [12] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:03:18.507 [12] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:03:25.333 [12] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:03:30.089 [12] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:03:30.123 [12] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:03:30.697 [12] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:03:31.775 [12] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:03:31.810 [12] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:03:55.069 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:03:58.198 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:04:11.114 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:04:12.097 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:04:14.745 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:04:20.250 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:04:31.574 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:04:32.084 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:04:32.285 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:04:36.534 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:04:39.689 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:04:42.597 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:04:43.071 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:04:44.095 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:04:45.243 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:04:56.617 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:04:58.803 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:05:16.486 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:05:19.930 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:05:28.378 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:05:28.629 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:05:35.217 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:05:35.644 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:05:39.625 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:05:44.260 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:05:59.274 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:06:10.932 [10] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:06:12.666 [3] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:06:12.723 [3] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:06:40.905 [9] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:06:43.339 [9] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:06:43.456 [9] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:06:47.153 [9] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:06:47.204 [9] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:06:47.841 [9] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:06:48.647 [9] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:06:48.702 [9] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:07:01.313 [9] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:07:05.805 [9] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:07:06.822 [9] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:07:07.043 [9] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:07:11.866 [9] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:07:13.417 [9] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:07:16.553 [9] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:07:24.953 [9] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:07:25.953 [9] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:07:42.096 [9] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:07:53.545 [9] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:07:55.221 [9] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:08:26.158 [4] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:08:27.482 [4] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:08:27.949 [4] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:08:29.688 [4] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:08:30.805 [4] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:08:31.805 [17] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:08:34.137 [17] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:08:34.577 [17] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:09:02.769 [18] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:09:04.674 [18] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:09:25.534 [21] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:09:26.747 [21] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:09:28.924 [21] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:09:29.460 [22] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:09:31.869 [22] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:09:34.636 [22] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:09:35.714 [22] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:09:35.770 [22] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:09:36.347 [22] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:09:36.834 [22] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:09:50.208 [22] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:09:54.352 [22] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:09:55.390 [22] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:09:55.435 [22] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:09:56.037 [21] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:09:57.942 [22] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:09:58.638 [22] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:09:59.688 [22] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:09:59.725 [22] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Shift
+2025-03-07 11:10:00.322 [22] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:10:00.642 [22] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下Ctrl
+2025-03-07 11:10:31.198 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+        /***********************************************
+                          _ooOoo_
+                         o8888888o
+                         88" . "88
+                         (| -_- |)
+                         O\  =  /O
+                      ____/`---'\____
+                    .'  \\|     |//  `.
+                   /  \\|||  :  |||//  \
+                  /  _||||| -:- |||||-  \
+                  |   | \\\  -  /// |   |
+                  | \_|  ''\---/''  |   |
+                  \  .-\__  `-`  ___/-. /
+                ___`. .'  /--.--\  `. . __
+             ."" '<  `.___\_<|>_/___.'  >'"".
+            | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+            \  \ `-.   \_ __\ /__ _/   .-` /  /
+       ======`-.____`-.___\_____/___.-`____.-'======
+                          `=---='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                佛祖保佑       永無BUG
+       *********************************************/
+
+2025-03-07 11:10:32.402 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+    /**************************************************************
+
+      [       遵從自然規律，讓萬物自行發揮       ]  <-----------
+                            |                                   |
+                            |                                   |
+      [        遵從自然規律，讓萬物自行相剋      ]              |
+                            |                                   |
+                            |                                   |
+      [          精通萬物一切原理熟知於心        ]              |
+                            |                                   |
+                            |                                   |
+      [          運用萬物一切原理強身健體        ]              |
+                            |                                   |
+                            |                                   |
+      [  緣起緣滅，讓萬物一切自動運轉，自生自滅  ]              |
+                            |                                   |
+                            |                                   |
+      [        時有時無，萬物一切可有可無        ]              |
+                            |                                   |
+                            |                                   |
+      [             天人合一，無欲無求           ]              |
+                            |                                   |
+                            |                                   |
+      [              萬物一切歸為無              ]              |
+                            |                                   |
+                            |                                   |
+      [           心有所想，創建美妙世界         ] --------------
+
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              如何成為長官的秘訣            劉彩萍指揮官
+    ***************************************************************/
+            
+2025-03-07 11:10:32.402 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] Start...
+2025-03-07 11:10:32.402 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 11:10:32.402 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[WindowTopMost][IFO_000] Setting:[True]
+2025-03-07 11:10:34.421 [4] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 指定的按鈕:[112]
+2025-03-07 11:10:34.672 [4] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Input Description:[F1], Code:[112]
+2025-03-07 11:10:34.672 [4] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_11-10-34-431-AllScreens.jpeg]
+2025-03-07 11:11:10.871 [8] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 11:11:13.616 [8] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 11:11:44.218 [6] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下ModifiersHasFlag:[162]+指定的按鈕:[112]
+2025-03-07 11:11:44.419 [6] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Input Description:[Control + F1], Code:[112]
+2025-03-07 11:11:44.419 [4] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_11-11-44-220-AllScreens.jpeg]
+2025-03-07 11:12:18.012 [6] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下ModifiersHasFlag:[162]+指定的按鈕:[112]
+2025-03-07 11:12:18.212 [6] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Input Description:[Control + F1], Code:[112]
+2025-03-07 11:12:18.212 [8] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_11-12-18-012-AllScreens.jpeg]
+2025-03-07 11:12:22.641 [8] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下ModifiersHasFlag:[162]+指定的按鈕:[112]
+2025-03-07 11:12:22.823 [8] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Input Description:[Control + F1], Code:[112]
+2025-03-07 11:12:22.823 [8] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_11-12-22-644-AllScreens.jpeg]
+2025-03-07 11:12:24.525 [8] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下ModifiersHasFlag:[162]+指定的按鈕:[112]
+2025-03-07 11:12:24.705 [8] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Input Description:[Control + F1], Code:[112]
+2025-03-07 11:12:24.705 [6] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_11-12-24-526-AllScreens.jpeg]
+2025-03-07 11:15:32.156 [7] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+        /***********************************************
+                          _ooOoo_
+                         o8888888o
+                         88" . "88
+                         (| -_- |)
+                         O\  =  /O
+                      ____/`---'\____
+                    .'  \\|     |//  `.
+                   /  \\|||  :  |||//  \
+                  /  _||||| -:- |||||-  \
+                  |   | \\\  -  /// |   |
+                  | \_|  ''\---/''  |   |
+                  \  .-\__  `-`  ___/-. /
+                ___`. .'  /--.--\  `. . __
+             ."" '<  `.___\_<|>_/___.'  >'"".
+            | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+            \  \ `-.   \_ __\ /__ _/   .-` /  /
+       ======`-.____`-.___\_____/___.-`____.-'======
+                          `=---='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                佛祖保佑       永無BUG
+       *********************************************/
+
+2025-03-07 11:15:33.540 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+    /**************************************************************
+
+      [       遵從自然規律，讓萬物自行發揮       ]  <-----------
+                            |                                   |
+                            |                                   |
+      [        遵從自然規律，讓萬物自行相剋      ]              |
+                            |                                   |
+                            |                                   |
+      [          精通萬物一切原理熟知於心        ]              |
+                            |                                   |
+                            |                                   |
+      [          運用萬物一切原理強身健體        ]              |
+                            |                                   |
+                            |                                   |
+      [  緣起緣滅，讓萬物一切自動運轉，自生自滅  ]              |
+                            |                                   |
+                            |                                   |
+      [        時有時無，萬物一切可有可無        ]              |
+                            |                                   |
+                            |                                   |
+      [             天人合一，無欲無求           ]              |
+                            |                                   |
+                            |                                   |
+      [              萬物一切歸為無              ]              |
+                            |                                   |
+                            |                                   |
+      [           心有所想，創建美妙世界         ] --------------
+
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              如何成為長官的秘訣            劉彩萍指揮官
+    ***************************************************************/
+            
+2025-03-07 11:15:33.540 [7] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] Start...
+2025-03-07 11:15:33.610 [7] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 11:15:33.616 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[WindowTopMost][IFO_000] Setting:[True]
+2025-03-07 11:15:42.966 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+        /***********************************************
+                          _ooOoo_
+                         o8888888o
+                         88" . "88
+                         (| -_- |)
+                         O\  =  /O
+                      ____/`---'\____
+                    .'  \\|     |//  `.
+                   /  \\|||  :  |||//  \
+                  /  _||||| -:- |||||-  \
+                  |   | \\\  -  /// |   |
+                  | \_|  ''\---/''  |   |
+                  \  .-\__  `-`  ___/-. /
+                ___`. .'  /--.--\  `. . __
+             ."" '<  `.___\_<|>_/___.'  >'"".
+            | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+            \  \ `-.   \_ __\ /__ _/   .-` /  /
+       ======`-.____`-.___\_____/___.-`____.-'======
+                          `=---='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                佛祖保佑       永無BUG
+       *********************************************/
+
+2025-03-07 11:15:44.177 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+    /**************************************************************
+
+      [       遵從自然規律，讓萬物自行發揮       ]  <-----------
+                            |                                   |
+                            |                                   |
+      [        遵從自然規律，讓萬物自行相剋      ]              |
+                            |                                   |
+                            |                                   |
+      [          精通萬物一切原理熟知於心        ]              |
+                            |                                   |
+                            |                                   |
+      [          運用萬物一切原理強身健體        ]              |
+                            |                                   |
+                            |                                   |
+      [  緣起緣滅，讓萬物一切自動運轉，自生自滅  ]              |
+                            |                                   |
+                            |                                   |
+      [        時有時無，萬物一切可有可無        ]              |
+                            |                                   |
+                            |                                   |
+      [             天人合一，無欲無求           ]              |
+                            |                                   |
+                            |                                   |
+      [              萬物一切歸為無              ]              |
+                            |                                   |
+                            |                                   |
+      [           心有所想，創建美妙世界         ] --------------
+
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              如何成為長官的秘訣            劉彩萍指揮官
+    ***************************************************************/
+            
+2025-03-07 11:15:44.177 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] Start...
+2025-03-07 11:15:44.177 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 11:15:44.177 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[WindowTopMost][IFO_000] Setting:[True]
+2025-03-07 11:15:47.718 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 11:15:54.004 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 11:15:58.055 [4] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下ModifiersHasFlag:[162]+指定的按鈕:[123]
+2025-03-07 11:15:58.297 [4] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Input Description:[Control + F12], Code:[123]
+2025-03-07 11:15:58.301 [6] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_11-15-58-064-AllScreens.jpeg]
+2025-03-07 11:16:02.028 [6] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 11:16:05.624 [6] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 11:16:07.191 [6] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下ModifiersHasFlag:[160]+指定的按鈕:[112]
+2025-03-07 11:16:07.390 [6] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Input Description:[Shift + F1], Code:[112]
+2025-03-07 11:16:07.390 [4] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_11-16-07-193-AllScreens.jpeg]
+2025-03-07 11:16:12.374 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 11:16:17.428 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 11:16:42.823 [8] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 11:16:46.886 [8] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 11:20:04.983 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+        /***********************************************
+                          _ooOoo_
+                         o8888888o
+                         88" . "88
+                         (| -_- |)
+                         O\  =  /O
+                      ____/`---'\____
+                    .'  \\|     |//  `.
+                   /  \\|||  :  |||//  \
+                  /  _||||| -:- |||||-  \
+                  |   | \\\  -  /// |   |
+                  | \_|  ''\---/''  |   |
+                  \  .-\__  `-`  ___/-. /
+                ___`. .'  /--.--\  `. . __
+             ."" '<  `.___\_<|>_/___.'  >'"".
+            | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+            \  \ `-.   \_ __\ /__ _/   .-` /  /
+       ======`-.____`-.___\_____/___.-`____.-'======
+                          `=---='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                佛祖保佑       永無BUG
+       *********************************************/
+
+2025-03-07 11:20:06.504 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+    /**************************************************************
+
+      [       遵從自然規律，讓萬物自行發揮       ]  <-----------
+                            |                                   |
+                            |                                   |
+      [        遵從自然規律，讓萬物自行相剋      ]              |
+                            |                                   |
+                            |                                   |
+      [          精通萬物一切原理熟知於心        ]              |
+                            |                                   |
+                            |                                   |
+      [          運用萬物一切原理強身健體        ]              |
+                            |                                   |
+                            |                                   |
+      [  緣起緣滅，讓萬物一切自動運轉，自生自滅  ]              |
+                            |                                   |
+                            |                                   |
+      [        時有時無，萬物一切可有可無        ]              |
+                            |                                   |
+                            |                                   |
+      [             天人合一，無欲無求           ]              |
+                            |                                   |
+                            |                                   |
+      [              萬物一切歸為無              ]              |
+                            |                                   |
+                            |                                   |
+      [           心有所想，創建美妙世界         ] --------------
+
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              如何成為長官的秘訣            劉彩萍指揮官
+    ***************************************************************/
+            
+2025-03-07 11:20:06.519 [6] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] Start...
+2025-03-07 11:20:06.519 [6] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 11:20:06.519 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[WindowTopMost][IFO_000] Setting:[True]
+2025-03-07 11:20:09.472 [6] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 11:20:12.940 [6] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 11:21:27.404 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+        /***********************************************
+                          _ooOoo_
+                         o8888888o
+                         88" . "88
+                         (| -_- |)
+                         O\  =  /O
+                      ____/`---'\____
+                    .'  \\|     |//  `.
+                   /  \\|||  :  |||//  \
+                  /  _||||| -:- |||||-  \
+                  |   | \\\  -  /// |   |
+                  | \_|  ''\---/''  |   |
+                  \  .-\__  `-`  ___/-. /
+                ___`. .'  /--.--\  `. . __
+             ."" '<  `.___\_<|>_/___.'  >'"".
+            | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+            \  \ `-.   \_ __\ /__ _/   .-` /  /
+       ======`-.____`-.___\_____/___.-`____.-'======
+                          `=---='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                佛祖保佑       永無BUG
+       *********************************************/
+
+2025-03-07 11:21:28.656 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+    /**************************************************************
+
+      [       遵從自然規律，讓萬物自行發揮       ]  <-----------
+                            |                                   |
+                            |                                   |
+      [        遵從自然規律，讓萬物自行相剋      ]              |
+                            |                                   |
+                            |                                   |
+      [          精通萬物一切原理熟知於心        ]              |
+                            |                                   |
+                            |                                   |
+      [          運用萬物一切原理強身健體        ]              |
+                            |                                   |
+                            |                                   |
+      [  緣起緣滅，讓萬物一切自動運轉，自生自滅  ]              |
+                            |                                   |
+                            |                                   |
+      [        時有時無，萬物一切可有可無        ]              |
+                            |                                   |
+                            |                                   |
+      [             天人合一，無欲無求           ]              |
+                            |                                   |
+                            |                                   |
+      [              萬物一切歸為無              ]              |
+                            |                                   |
+                            |                                   |
+      [           心有所想，創建美妙世界         ] --------------
+
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              如何成為長官的秘訣            劉彩萍指揮官
+    ***************************************************************/
+            
+2025-03-07 11:21:28.672 [6] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] Start...
+2025-03-07 11:21:28.672 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 11:21:28.680 [6] <INFO> - <System,VisualCaptureApp.MainWindow>[WindowTopMost][IFO_000] Setting:[True]
+2025-03-07 11:21:39.977 [7] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 11:21:42.537 [7] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 11:21:56.317 [7] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 11:22:01.109 [7] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] Setting:[True]
+2025-03-07 11:35:18.829 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+        /***********************************************
+                          _ooOoo_
+                         o8888888o
+                         88" . "88
+                         (| -_- |)
+                         O\  =  /O
+                      ____/`---'\____
+                    .'  \\|     |//  `.
+                   /  \\|||  :  |||//  \
+                  /  _||||| -:- |||||-  \
+                  |   | \\\  -  /// |   |
+                  | \_|  ''\---/''  |   |
+                  \  .-\__  `-`  ___/-. /
+                ___`. .'  /--.--\  `. . __
+             ."" '<  `.___\_<|>_/___.'  >'"".
+            | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+            \  \ `-.   \_ __\ /__ _/   .-` /  /
+       ======`-.____`-.___\_____/___.-`____.-'======
+                          `=---='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                佛祖保佑       永無BUG
+       *********************************************/
+
+2025-03-07 11:35:20.041 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+    /**************************************************************
+
+      [       遵從自然規律，讓萬物自行發揮       ]  <-----------
+                            |                                   |
+                            |                                   |
+      [        遵從自然規律，讓萬物自行相剋      ]              |
+                            |                                   |
+                            |                                   |
+      [          精通萬物一切原理熟知於心        ]              |
+                            |                                   |
+                            |                                   |
+      [          運用萬物一切原理強身健體        ]              |
+                            |                                   |
+                            |                                   |
+      [  緣起緣滅，讓萬物一切自動運轉，自生自滅  ]              |
+                            |                                   |
+                            |                                   |
+      [        時有時無，萬物一切可有可無        ]              |
+                            |                                   |
+                            |                                   |
+      [             天人合一，無欲無求           ]              |
+                            |                                   |
+                            |                                   |
+      [              萬物一切歸為無              ]              |
+                            |                                   |
+                            |                                   |
+      [           心有所想，創建美妙世界         ] --------------
+
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              如何成為長官的秘訣            劉彩萍指揮官
+    ***************************************************************/
+            
+2025-03-07 11:35:20.041 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] Start...
+2025-03-07 11:35:20.041 [6] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] RunWatch, Code:[112], Description:[F1], IsModifiersHasFlag:[False], CM:[None]
+2025-03-07 11:35:20.041 [6] <INFO> - <System,VisualCaptureApp.MainWindow>[WindowTopMost][IFO_000] Setting:[True]
+2025-03-07 11:35:36.885 [6] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] CloseWatch
+2025-03-07 11:35:41.165 [6] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] RunWatch, Code:[113], Description:[Shift + F2], IsModifiersHasFlag:[True], CM:[Shift]
+2025-03-07 11:35:48.622 [6] <INFO> - <System,VisualCaptureApp.Base.BaseWatchKeyboard>[HookCallback][IFO_000] 按下ModifiersHasFlag:[160]+指定的按鈕:[113]
+2025-03-07 11:35:48.871 [4] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Input Description:[Shift + F2], Code:[113]
+2025-03-07 11:35:48.871 [4] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_11-35-48-632-AllScreens.jpeg]
+2025-03-07 11:51:42.367 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+        /***********************************************
+                          _ooOoo_
+                         o8888888o
+                         88" . "88
+                         (| -_- |)
+                         O\  =  /O
+                      ____/`---'\____
+                    .'  \\|     |//  `.
+                   /  \\|||  :  |||//  \
+                  /  _||||| -:- |||||-  \
+                  |   | \\\  -  /// |   |
+                  | \_|  ''\---/''  |   |
+                  \  .-\__  `-`  ___/-. /
+                ___`. .'  /--.--\  `. . __
+             ."" '<  `.___\_<|>_/___.'  >'"".
+            | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+            \  \ `-.   \_ __\ /__ _/   .-` /  /
+       ======`-.____`-.___\_____/___.-`____.-'======
+                          `=---='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                佛祖保佑       永無BUG
+       *********************************************/
+
+2025-03-07 11:51:43.557 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+    /**************************************************************
+
+      [       遵從自然規律，讓萬物自行發揮       ]  <-----------
+                            |                                   |
+                            |                                   |
+      [        遵從自然規律，讓萬物自行相剋      ]              |
+                            |                                   |
+                            |                                   |
+      [          精通萬物一切原理熟知於心        ]              |
+                            |                                   |
+                            |                                   |
+      [          運用萬物一切原理強身健體        ]              |
+                            |                                   |
+                            |                                   |
+      [  緣起緣滅，讓萬物一切自動運轉，自生自滅  ]              |
+                            |                                   |
+                            |                                   |
+      [        時有時無，萬物一切可有可無        ]              |
+                            |                                   |
+                            |                                   |
+      [             天人合一，無欲無求           ]              |
+                            |                                   |
+                            |                                   |
+      [              萬物一切歸為無              ]              |
+                            |                                   |
+                            |                                   |
+      [           心有所想，創建美妙世界         ] --------------
+
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              如何成為長官的秘訣            劉彩萍指揮官
+    ***************************************************************/
+            
+2025-03-07 11:51:43.557 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] Start...
+2025-03-07 11:51:43.557 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] RunWatch, Code:[112], Description:[F1], IsModifiersHasFlag:[False], CM:[None]
+2025-03-07 11:51:43.557 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[WindowTopMost][IFO_000] Setting:[True]
+2025-03-07 11:51:47.867 [4] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Touch Keyboard, Code:[112], Description:[F1], IsModifiersHasFlag:[False], CM:[None]
+2025-03-07 11:51:48.110 [4] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_11-51-47-877-AllScreens.jpeg]
+2025-03-07 11:51:52.698 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] CloseWatch
+2025-03-07 11:51:56.283 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] RunWatch, Code:[27], Description:[ESC], IsModifiersHasFlag:[False], CM:[None]
+2025-03-07 11:51:57.157 [4] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Touch Keyboard, Code:[27], Description:[ESC], IsModifiersHasFlag:[False], CM:[None]
+2025-03-07 11:51:57.354 [4] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_11-51-57-158-AllScreens.jpeg]
+2025-03-07 11:51:59.798 [6] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] CloseWatch
+2025-03-07 11:52:02.607 [6] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] RunWatch, Code:[13], Description:[Enter], IsModifiersHasFlag:[False], CM:[None]
+2025-03-07 11:52:03.565 [6] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Touch Keyboard, Code:[13], Description:[Enter], IsModifiersHasFlag:[False], CM:[None]
+2025-03-07 11:52:03.731 [6] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_11-52-03-567-AllScreens.jpeg]
+2025-03-07 11:52:06.132 [6] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] CloseWatch
+2025-03-07 11:52:09.321 [6] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] RunWatch, Code:[113], Description:[Control + F2], IsModifiersHasFlag:[True], CM:[Control]
+2025-03-07 11:52:11.268 [6] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Touch Keyboard, Code:[113], Description:[Control + F2], IsModifiersHasFlag:[True], CM:[Control]
+2025-03-07 11:52:11.442 [6] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_11-52-11-271-AllScreens.jpeg]
+2025-03-07 11:52:15.178 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] CloseWatch
+2025-03-07 11:52:27.831 [6] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] RunWatch, Code:[120], Description:[Control + F9], IsModifiersHasFlag:[True], CM:[Control]
+2025-03-07 11:52:29.413 [4] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Touch Keyboard, Code:[120], Description:[Control + F9], IsModifiersHasFlag:[True], CM:[Control]
+2025-03-07 11:52:29.597 [4] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_11-52-29-415-AllScreens.jpeg]
+2025-03-07 11:52:32.185 [6] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] CloseWatch
+2025-03-07 11:52:34.279 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] RunWatch, Code:[123], Description:[Control + F12], IsModifiersHasFlag:[True], CM:[Control]
+2025-03-07 11:52:35.593 [6] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Touch Keyboard, Code:[123], Description:[Control + F12], IsModifiersHasFlag:[True], CM:[Control]
+2025-03-07 11:52:35.765 [6] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_11-52-35-594-AllScreens.jpeg]
+2025-03-07 11:52:38.244 [6] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] CloseWatch
+2025-03-07 11:52:44.946 [6] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] RunWatch, Code:[112], Description:[Shift + F1], IsModifiersHasFlag:[True], CM:[Shift]
+2025-03-07 11:52:46.134 [6] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Touch Keyboard, Code:[112], Description:[Shift + F1], IsModifiersHasFlag:[True], CM:[Shift]
+2025-03-07 11:52:46.303 [6] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_11-52-46-136-AllScreens.jpeg]
+2025-03-07 11:52:49.503 [6] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] CloseWatch
+2025-03-07 11:52:52.714 [6] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] RunWatch, Code:[121], Description:[Shift + F10], IsModifiersHasFlag:[True], CM:[Shift]
+2025-03-07 11:52:59.688 [6] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Touch Keyboard, Code:[121], Description:[Shift + F10], IsModifiersHasFlag:[True], CM:[Shift]
+2025-03-07 11:52:59.852 [4] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_11-52-59-690-AllScreens.jpeg]
+2025-03-07 11:53:12.032 [6] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Touch Keyboard, Code:[121], Description:[Shift + F10], IsModifiersHasFlag:[True], CM:[Shift]
+2025-03-07 11:53:12.207 [6] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_11-53-12-032-AllScreens.jpeg]
+2025-03-07 11:53:27.142 [4] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Touch Keyboard, Code:[121], Description:[Shift + F10], IsModifiersHasFlag:[True], CM:[Shift]
+2025-03-07 11:53:27.307 [4] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_11-53-27-142-AllScreens.jpeg]
+2025-03-07 11:56:29.905 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+        /***********************************************
+                          _ooOoo_
+                         o8888888o
+                         88" . "88
+                         (| -_- |)
+                         O\  =  /O
+                      ____/`---'\____
+                    .'  \\|     |//  `.
+                   /  \\|||  :  |||//  \
+                  /  _||||| -:- |||||-  \
+                  |   | \\\  -  /// |   |
+                  | \_|  ''\---/''  |   |
+                  \  .-\__  `-`  ___/-. /
+                ___`. .'  /--.--\  `. . __
+             ."" '<  `.___\_<|>_/___.'  >'"".
+            | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+            \  \ `-.   \_ __\ /__ _/   .-` /  /
+       ======`-.____`-.___\_____/___.-`____.-'======
+                          `=---='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                佛祖保佑       永無BUG
+       *********************************************/
+
+2025-03-07 11:56:31.140 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+    /**************************************************************
+
+      [       遵從自然規律，讓萬物自行發揮       ]  <-----------
+                            |                                   |
+                            |                                   |
+      [        遵從自然規律，讓萬物自行相剋      ]              |
+                            |                                   |
+                            |                                   |
+      [          精通萬物一切原理熟知於心        ]              |
+                            |                                   |
+                            |                                   |
+      [          運用萬物一切原理強身健體        ]              |
+                            |                                   |
+                            |                                   |
+      [  緣起緣滅，讓萬物一切自動運轉，自生自滅  ]              |
+                            |                                   |
+                            |                                   |
+      [        時有時無，萬物一切可有可無        ]              |
+                            |                                   |
+                            |                                   |
+      [             天人合一，無欲無求           ]              |
+                            |                                   |
+                            |                                   |
+      [              萬物一切歸為無              ]              |
+                            |                                   |
+                            |                                   |
+      [           心有所想，創建美妙世界         ] --------------
+
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              如何成為長官的秘訣            劉彩萍指揮官
+    ***************************************************************/
+            
+2025-03-07 11:56:31.140 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] Start...
+2025-03-07 11:56:31.140 [6] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] RunWatch, Code:[112], Description:[F1], IsModifiersHasFlag:[False], CM:[None]
+2025-03-07 11:56:31.144 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[WindowTopMost][IFO_000] Setting:[True]
+2025-03-07 11:56:36.480 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] CloseWatch
+2025-03-07 11:56:39.858 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] RunWatch, Code:[112], Description:[Control + F1], IsModifiersHasFlag:[True], CM:[Control]
+2025-03-07 11:56:41.710 [4] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Touch Keyboard, Code:[112], Description:[Control + F1], IsModifiersHasFlag:[True], CM:[Control]
+2025-03-07 11:56:41.906 [4] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_11-56-41-718-AllScreens.jpeg]
+2025-03-07 11:56:45.182 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] CloseWatch
+2025-03-07 11:56:48.899 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] RunWatch, Code:[113], Description:[Shift + F2], IsModifiersHasFlag:[True], CM:[Shift]
+2025-03-07 11:56:51.211 [4] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Touch Keyboard, Code:[113], Description:[Shift + F2], IsModifiersHasFlag:[True], CM:[Shift]
+2025-03-07 11:56:51.394 [4] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_11-56-51-213-AllScreens.jpeg]
+2025-03-07 11:56:53.653 [6] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Touch Keyboard, Code:[113], Description:[Shift + F2], IsModifiersHasFlag:[True], CM:[Shift]
+2025-03-07 11:56:53.808 [6] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_11-56-53-653-AllScreens.jpeg]
+2025-03-07 11:56:55.591 [6] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Touch Keyboard, Code:[113], Description:[Shift + F2], IsModifiersHasFlag:[True], CM:[Shift]
+2025-03-07 11:56:55.752 [6] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_11-56-55-591-AllScreens.jpeg]
+2025-03-07 11:56:56.934 [6] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[KeyboardWatchEvent][IFO_000] Touch Keyboard, Code:[113], Description:[Shift + F2], IsModifiersHasFlag:[True], CM:[Shift]
+2025-03-07 11:56:57.100 [6] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\Data\2025-03-07_11-56-56-934-AllScreens.jpeg]
+2025-03-07 11:57:48.036 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+        /***********************************************
+                          _ooOoo_
+                         o8888888o
+                         88" . "88
+                         (| -_- |)
+                         O\  =  /O
+                      ____/`---'\____
+                    .'  \\|     |//  `.
+                   /  \\|||  :  |||//  \
+                  /  _||||| -:- |||||-  \
+                  |   | \\\  -  /// |   |
+                  | \_|  ''\---/''  |   |
+                  \  .-\__  `-`  ___/-. /
+                ___`. .'  /--.--\  `. . __
+             ."" '<  `.___\_<|>_/___.'  >'"".
+            | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+            \  \ `-.   \_ __\ /__ _/   .-` /  /
+       ======`-.____`-.___\_____/___.-`____.-'======
+                          `=---='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                佛祖保佑       永無BUG
+       *********************************************/
+
+2025-03-07 11:57:49.359 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+    /**************************************************************
+
+      [       遵從自然規律，讓萬物自行發揮       ]  <-----------
+                            |                                   |
+                            |                                   |
+      [        遵從自然規律，讓萬物自行相剋      ]              |
+                            |                                   |
+                            |                                   |
+      [          精通萬物一切原理熟知於心        ]              |
+                            |                                   |
+                            |                                   |
+      [          運用萬物一切原理強身健體        ]              |
+                            |                                   |
+                            |                                   |
+      [  緣起緣滅，讓萬物一切自動運轉，自生自滅  ]              |
+                            |                                   |
+                            |                                   |
+      [        時有時無，萬物一切可有可無        ]              |
+                            |                                   |
+                            |                                   |
+      [             天人合一，無欲無求           ]              |
+                            |                                   |
+                            |                                   |
+      [              萬物一切歸為無              ]              |
+                            |                                   |
+                            |                                   |
+      [           心有所想，創建美妙世界         ] --------------
+
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              如何成為長官的秘訣            劉彩萍指揮官
+    ***************************************************************/
+            
+2025-03-07 11:57:49.359 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] Start...
+2025-03-07 11:57:49.359 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] RunWatch, Code:[112], Description:[F1], IsModifiersHasFlag:[False], CM:[None]
+2025-03-07 11:57:49.366 [4] <INFO> - <System,VisualCaptureApp.MainWindow>[WindowTopMost][IFO_000] Setting:[True]

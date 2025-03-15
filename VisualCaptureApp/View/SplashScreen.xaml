@@ -1,0 +1,54 @@
+﻿<Window x:Class="VisualCaptureApp.View.SplashScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VisualCaptureApp.View"
+        mc:Ignorable="d"
+        Title="SplashScreen" Height="220" Width="800"
+        WindowStartupLocation="CenterScreen" 
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="#f5e6c8"
+        FontFamily="Consolas"
+        BorderBrush="#FFAA00"
+        BorderThickness="1"
+        >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400">
+            </ColumnDefinition>
+            <ColumnDefinition Width="400">
+            </ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <!-- 設定第二個Column的背景顏色 -->
+        <Rectangle Grid.Column="1" Fill="#c8ffff" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+
+        <StackPanel Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,20,10,20">
+            <WrapPanel>
+                <Image Source="/image/TCT_Icon-1.png" Width="128" Height="128" HorizontalAlignment="Left"/>
+                <TextBlock Text="VisualCaptureApp" FontSize="26" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,5,5,5"></TextBlock>
+            </WrapPanel>
+            <TextBlock Text="Loading..." FontSize="16" FontWeight="Light" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,15,0,2"></TextBlock>
+           
+        </StackPanel>
+        <!-- 背景長條 -->
+        <Rectangle x:Name="progressBarBackground" Width="{Binding WindowWidth, Mode=TwoWay}" Height="10" Fill="LightGray" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,185,10,5" />
+
+        <!-- 進度條 -->
+        <Rectangle x:Name="progressBarRectangle" Width="0" Height="10" Fill="DodgerBlue" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,185,10,5"/>
+
+        <StackPanel Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,10,10,10">
+            <TextBlock Text="蔡承廷" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,5"></TextBlock>
+            <TextBlock Text="Senior Engineer of Semiconductor Product/Testing And ​Automation" FontSize="14" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,5" TextWrapping="Wrap"></TextBlock>
+            <TextBlock Text="Email:​​kp924606@gmail.com" FontSize="14" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,5"></TextBlock>
+            <TextBlock Text="LinkedIn:https://www.linkedin.comin/tsai-cheng-ting/" FontSize="14" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,5" TextWrapping="Wrap"></TextBlock>
+            <TextBlock Text="" FontSize="14" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,2" TextWrapping="Wrap"></TextBlock>
+
+            <TextBlock Text="Copyright © TCT Rights Reserved." FontSize="14" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,2" TextWrapping="Wrap"></TextBlock>
+
+        </StackPanel>
+
+    </Grid>
+</Window>

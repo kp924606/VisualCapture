@@ -1,0 +1,9 @@
+﻿<Application x:Class="VisualCaptureApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:VisualCaptureApp"
+             StartupUri="View\SplashScreen.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

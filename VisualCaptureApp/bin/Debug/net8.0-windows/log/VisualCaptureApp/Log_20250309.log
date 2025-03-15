@@ -1,0 +1,681 @@
+2025-03-09 19:59:08.437 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+        /***********************************************
+                          _ooOoo_
+                         o8888888o
+                         88" . "88
+                         (| -_- |)
+                         O\  =  /O
+                      ____/`---'\____
+                    .'  \\|     |//  `.
+                   /  \\|||  :  |||//  \
+                  /  _||||| -:- |||||-  \
+                  |   | \\\  -  /// |   |
+                  | \_|  ''\---/''  |   |
+                  \  .-\__  `-`  ___/-. /
+                ___`. .'  /--.--\  `. . __
+             ."" '<  `.___\_<|>_/___.'  >'"".
+            | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+            \  \ `-.   \_ __\ /__ _/   .-` /  /
+       ======`-.____`-.___\_____/___.-`____.-'======
+                          `=---='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                佛祖保佑       永無BUG
+       *********************************************/
+
+2025-03-09 19:59:13.488 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+    /**************************************************************
+
+      [       遵從自然規律，讓萬物自行發揮       ]  <-----------
+                            |                                   |
+                            |                                   |
+      [        遵從自然規律，讓萬物自行相剋      ]              |
+                            |                                   |
+                            |                                   |
+      [          精通萬物一切原理熟知於心        ]              |
+                            |                                   |
+                            |                                   |
+      [          運用萬物一切原理強身健體        ]              |
+                            |                                   |
+                            |                                   |
+      [  緣起緣滅，讓萬物一切自動運轉，自生自滅  ]              |
+                            |                                   |
+                            |                                   |
+      [        時有時無，萬物一切可有可無        ]              |
+                            |                                   |
+                            |                                   |
+      [             天人合一，無欲無求           ]              |
+                            |                                   |
+                            |                                   |
+      [              萬物一切歸為無              ]              |
+                            |                                   |
+                            |                                   |
+      [           心有所想，創建美妙世界         ] --------------
+
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              如何成為長官的秘訣            劉彩萍指揮官
+    ***************************************************************/
+            
+2025-03-09 19:59:13.488 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] Start...
+2025-03-09 19:59:13.488 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] RunWatch, Code:[112], Description:[F1], IsModifiersHasFlag:[False], CM:[None]
+2025-03-09 19:59:13.542 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[WindowTopMost][IFO_000] Setting:[True]
+2025-03-09 19:59:32.723 [5] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Debug\net8.0-windows\Data\2025-03-09_19-59-32-421-AllScreens.jpeg]
+2025-03-09 20:01:47.009 [19] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Debug\net8.0-windows\Data\2025-03-09_20-01-46-834-AllScreens.jpeg]
+2025-03-09 20:02:33.915 [10] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+        /***********************************************
+                          _ooOoo_
+                         o8888888o
+                         88" . "88
+                         (| -_- |)
+                         O\  =  /O
+                      ____/`---'\____
+                    .'  \\|     |//  `.
+                   /  \\|||  :  |||//  \
+                  /  _||||| -:- |||||-  \
+                  |   | \\\  -  /// |   |
+                  | \_|  ''\---/''  |   |
+                  \  .-\__  `-`  ___/-. /
+                ___`. .'  /--.--\  `. . __
+             ."" '<  `.___\_<|>_/___.'  >'"".
+            | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+            \  \ `-.   \_ __\ /__ _/   .-` /  /
+       ======`-.____`-.___\_____/___.-`____.-'======
+                          `=---='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                佛祖保佑       永無BUG
+       *********************************************/
+
+2025-03-09 20:02:35.951 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+    /**************************************************************
+
+      [       遵從自然規律，讓萬物自行發揮       ]  <-----------
+                            |                                   |
+                            |                                   |
+      [        遵從自然規律，讓萬物自行相剋      ]              |
+                            |                                   |
+                            |                                   |
+      [          精通萬物一切原理熟知於心        ]              |
+                            |                                   |
+                            |                                   |
+      [          運用萬物一切原理強身健體        ]              |
+                            |                                   |
+                            |                                   |
+      [  緣起緣滅，讓萬物一切自動運轉，自生自滅  ]              |
+                            |                                   |
+                            |                                   |
+      [        時有時無，萬物一切可有可無        ]              |
+                            |                                   |
+                            |                                   |
+      [             天人合一，無欲無求           ]              |
+                            |                                   |
+                            |                                   |
+      [              萬物一切歸為無              ]              |
+                            |                                   |
+                            |                                   |
+      [           心有所想，創建美妙世界         ] --------------
+
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              如何成為長官的秘訣            劉彩萍指揮官
+    ***************************************************************/
+            
+2025-03-09 20:02:35.983 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] Start...
+2025-03-09 20:02:35.985 [7] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] RunWatch, Code:[112], Description:[F1], IsModifiersHasFlag:[False], CM:[None]
+2025-03-09 20:02:35.985 [7] <INFO> - <System,VisualCaptureApp.MainWindow>[WindowTopMost][IFO_000] Setting:[True]
+2025-03-09 20:02:40.467 [5] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Debug\net8.0-windows\Data\2025-03-09_20-02-40-203-AllScreens.jpeg]
+2025-03-09 20:03:23.656 [17] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Debug\net8.0-windows\Data\2025-03-09_20-03-23-431-AllScreens.jpeg]
+2025-03-09 20:04:30.500 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+        /***********************************************
+                          _ooOoo_
+                         o8888888o
+                         88" . "88
+                         (| -_- |)
+                         O\  =  /O
+                      ____/`---'\____
+                    .'  \\|     |//  `.
+                   /  \\|||  :  |||//  \
+                  /  _||||| -:- |||||-  \
+                  |   | \\\  -  /// |   |
+                  | \_|  ''\---/''  |   |
+                  \  .-\__  `-`  ___/-. /
+                ___`. .'  /--.--\  `. . __
+             ."" '<  `.___\_<|>_/___.'  >'"".
+            | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+            \  \ `-.   \_ __\ /__ _/   .-` /  /
+       ======`-.____`-.___\_____/___.-`____.-'======
+                          `=---='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                佛祖保佑       永無BUG
+       *********************************************/
+
+2025-03-09 20:04:32.767 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+    /**************************************************************
+
+      [       遵從自然規律，讓萬物自行發揮       ]  <-----------
+                            |                                   |
+                            |                                   |
+      [        遵從自然規律，讓萬物自行相剋      ]              |
+                            |                                   |
+                            |                                   |
+      [          精通萬物一切原理熟知於心        ]              |
+                            |                                   |
+                            |                                   |
+      [          運用萬物一切原理強身健體        ]              |
+                            |                                   |
+                            |                                   |
+      [  緣起緣滅，讓萬物一切自動運轉，自生自滅  ]              |
+                            |                                   |
+                            |                                   |
+      [        時有時無，萬物一切可有可無        ]              |
+                            |                                   |
+                            |                                   |
+      [             天人合一，無欲無求           ]              |
+                            |                                   |
+                            |                                   |
+      [              萬物一切歸為無              ]              |
+                            |                                   |
+                            |                                   |
+      [           心有所想，創建美妙世界         ] --------------
+
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              如何成為長官的秘訣            劉彩萍指揮官
+    ***************************************************************/
+            
+2025-03-09 20:04:32.767 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] Start...
+2025-03-09 20:04:32.825 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] RunWatch, Code:[112], Description:[F1], IsModifiersHasFlag:[False], CM:[None]
+2025-03-09 20:04:32.832 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[WindowTopMost][IFO_000] Setting:[True]
+2025-03-09 20:04:37.163 [9] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Debug\net8.0-windows\Data\2025-03-09_20-04-36-962-AllScreens.jpeg]
+2025-03-09 20:14:30.607 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+        /***********************************************
+                          _ooOoo_
+                         o8888888o
+                         88" . "88
+                         (| -_- |)
+                         O\  =  /O
+                      ____/`---'\____
+                    .'  \\|     |//  `.
+                   /  \\|||  :  |||//  \
+                  /  _||||| -:- |||||-  \
+                  |   | \\\  -  /// |   |
+                  | \_|  ''\---/''  |   |
+                  \  .-\__  `-`  ___/-. /
+                ___`. .'  /--.--\  `. . __
+             ."" '<  `.___\_<|>_/___.'  >'"".
+            | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+            \  \ `-.   \_ __\ /__ _/   .-` /  /
+       ======`-.____`-.___\_____/___.-`____.-'======
+                          `=---='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                佛祖保佑       永無BUG
+       *********************************************/
+
+2025-03-09 20:14:32.553 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+    /**************************************************************
+
+      [       遵從自然規律，讓萬物自行發揮       ]  <-----------
+                            |                                   |
+                            |                                   |
+      [        遵從自然規律，讓萬物自行相剋      ]              |
+                            |                                   |
+                            |                                   |
+      [          精通萬物一切原理熟知於心        ]              |
+                            |                                   |
+                            |                                   |
+      [          運用萬物一切原理強身健體        ]              |
+                            |                                   |
+                            |                                   |
+      [  緣起緣滅，讓萬物一切自動運轉，自生自滅  ]              |
+                            |                                   |
+                            |                                   |
+      [        時有時無，萬物一切可有可無        ]              |
+                            |                                   |
+                            |                                   |
+      [             天人合一，無欲無求           ]              |
+                            |                                   |
+                            |                                   |
+      [              萬物一切歸為無              ]              |
+                            |                                   |
+                            |                                   |
+      [           心有所想，創建美妙世界         ] --------------
+
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              如何成為長官的秘訣            劉彩萍指揮官
+    ***************************************************************/
+            
+2025-03-09 20:14:32.553 [7] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] Start...
+2025-03-09 20:14:32.563 [7] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] RunWatch, Code:[112], Description:[F1], IsModifiersHasFlag:[False], CM:[None]
+2025-03-09 20:14:32.579 [9] <INFO> - <System,VisualCaptureApp.MainWindow>[WindowTopMost][IFO_000] Setting:[True]
+2025-03-09 20:14:39.465 [7] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Debug\net8.0-windows\Data\2025-03-09_20-14-39-207-AllScreens.jpeg]
+2025-03-09 20:18:37.845 [10] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+        /***********************************************
+                          _ooOoo_
+                         o8888888o
+                         88" . "88
+                         (| -_- |)
+                         O\  =  /O
+                      ____/`---'\____
+                    .'  \\|     |//  `.
+                   /  \\|||  :  |||//  \
+                  /  _||||| -:- |||||-  \
+                  |   | \\\  -  /// |   |
+                  | \_|  ''\---/''  |   |
+                  \  .-\__  `-`  ___/-. /
+                ___`. .'  /--.--\  `. . __
+             ."" '<  `.___\_<|>_/___.'  >'"".
+            | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+            \  \ `-.   \_ __\ /__ _/   .-` /  /
+       ======`-.____`-.___\_____/___.-`____.-'======
+                          `=---='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                佛祖保佑       永無BUG
+       *********************************************/
+
+2025-03-09 20:18:39.396 [10] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+    /**************************************************************
+
+      [       遵從自然規律，讓萬物自行發揮       ]  <-----------
+                            |                                   |
+                            |                                   |
+      [        遵從自然規律，讓萬物自行相剋      ]              |
+                            |                                   |
+                            |                                   |
+      [          精通萬物一切原理熟知於心        ]              |
+                            |                                   |
+                            |                                   |
+      [          運用萬物一切原理強身健體        ]              |
+                            |                                   |
+                            |                                   |
+      [  緣起緣滅，讓萬物一切自動運轉，自生自滅  ]              |
+                            |                                   |
+                            |                                   |
+      [        時有時無，萬物一切可有可無        ]              |
+                            |                                   |
+                            |                                   |
+      [             天人合一，無欲無求           ]              |
+                            |                                   |
+                            |                                   |
+      [              萬物一切歸為無              ]              |
+                            |                                   |
+                            |                                   |
+      [           心有所想，創建美妙世界         ] --------------
+
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              如何成為長官的秘訣            劉彩萍指揮官
+    ***************************************************************/
+            
+2025-03-09 20:18:39.396 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] Start...
+2025-03-09 20:18:39.448 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] RunWatch, Code:[112], Description:[F1], IsModifiersHasFlag:[False], CM:[None]
+2025-03-09 20:18:39.448 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[WindowTopMost][IFO_000] Setting:[True]
+2025-03-09 20:18:44.332 [10] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Debug\net8.0-windows\Data\2025-03-09_20-18-44-113-AllScreens.jpeg]
+2025-03-09 20:20:59.554 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+        /***********************************************
+                          _ooOoo_
+                         o8888888o
+                         88" . "88
+                         (| -_- |)
+                         O\  =  /O
+                      ____/`---'\____
+                    .'  \\|     |//  `.
+                   /  \\|||  :  |||//  \
+                  /  _||||| -:- |||||-  \
+                  |   | \\\  -  /// |   |
+                  | \_|  ''\---/''  |   |
+                  \  .-\__  `-`  ___/-. /
+                ___`. .'  /--.--\  `. . __
+             ."" '<  `.___\_<|>_/___.'  >'"".
+            | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+            \  \ `-.   \_ __\ /__ _/   .-` /  /
+       ======`-.____`-.___\_____/___.-`____.-'======
+                          `=---='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                佛祖保佑       永無BUG
+       *********************************************/
+
+2025-03-09 20:21:01.552 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+    /**************************************************************
+
+      [       遵從自然規律，讓萬物自行發揮       ]  <-----------
+                            |                                   |
+                            |                                   |
+      [        遵從自然規律，讓萬物自行相剋      ]              |
+                            |                                   |
+                            |                                   |
+      [          精通萬物一切原理熟知於心        ]              |
+                            |                                   |
+                            |                                   |
+      [          運用萬物一切原理強身健體        ]              |
+                            |                                   |
+                            |                                   |
+      [  緣起緣滅，讓萬物一切自動運轉，自生自滅  ]              |
+                            |                                   |
+                            |                                   |
+      [        時有時無，萬物一切可有可無        ]              |
+                            |                                   |
+                            |                                   |
+      [             天人合一，無欲無求           ]              |
+                            |                                   |
+                            |                                   |
+      [              萬物一切歸為無              ]              |
+                            |                                   |
+                            |                                   |
+      [           心有所想，創建美妙世界         ] --------------
+
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              如何成為長官的秘訣            劉彩萍指揮官
+    ***************************************************************/
+            
+2025-03-09 20:21:01.565 [7] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] Start...
+2025-03-09 20:21:01.565 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] RunWatch, Code:[112], Description:[F1], IsModifiersHasFlag:[False], CM:[None]
+2025-03-09 20:21:01.565 [7] <INFO> - <System,VisualCaptureApp.MainWindow>[WindowTopMost][IFO_000] Setting:[True]
+2025-03-09 20:21:05.772 [5] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Debug\net8.0-windows\Data\2025-03-09_20-21-05-574-AllScreens.jpeg]
+2025-03-09 20:27:41.880 [10] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+        /***********************************************
+                          _ooOoo_
+                         o8888888o
+                         88" . "88
+                         (| -_- |)
+                         O\  =  /O
+                      ____/`---'\____
+                    .'  \\|     |//  `.
+                   /  \\|||  :  |||//  \
+                  /  _||||| -:- |||||-  \
+                  |   | \\\  -  /// |   |
+                  | \_|  ''\---/''  |   |
+                  \  .-\__  `-`  ___/-. /
+                ___`. .'  /--.--\  `. . __
+             ."" '<  `.___\_<|>_/___.'  >'"".
+            | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+            \  \ `-.   \_ __\ /__ _/   .-` /  /
+       ======`-.____`-.___\_____/___.-`____.-'======
+                          `=---='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                佛祖保佑       永無BUG
+       *********************************************/
+
+2025-03-09 20:27:43.979 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+    /**************************************************************
+
+      [       遵從自然規律，讓萬物自行發揮       ]  <-----------
+                            |                                   |
+                            |                                   |
+      [        遵從自然規律，讓萬物自行相剋      ]              |
+                            |                                   |
+                            |                                   |
+      [          精通萬物一切原理熟知於心        ]              |
+                            |                                   |
+                            |                                   |
+      [          運用萬物一切原理強身健體        ]              |
+                            |                                   |
+                            |                                   |
+      [  緣起緣滅，讓萬物一切自動運轉，自生自滅  ]              |
+                            |                                   |
+                            |                                   |
+      [        時有時無，萬物一切可有可無        ]              |
+                            |                                   |
+                            |                                   |
+      [             天人合一，無欲無求           ]              |
+                            |                                   |
+                            |                                   |
+      [              萬物一切歸為無              ]              |
+                            |                                   |
+                            |                                   |
+      [           心有所想，創建美妙世界         ] --------------
+
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              如何成為長官的秘訣            劉彩萍指揮官
+    ***************************************************************/
+            
+2025-03-09 20:27:43.979 [7] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] Start...
+2025-03-09 20:27:43.979 [7] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] RunWatch, Code:[112], Description:[F1], IsModifiersHasFlag:[False], CM:[None]
+2025-03-09 20:27:43.979 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[WindowTopMost][IFO_000] Setting:[True]
+2025-03-09 20:27:50.341 [5] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Debug\net8.0-windows\Data\2025-03-09_20-27-50-088-AllScreens.jpeg]
+2025-03-09 20:28:23.981 [16] <INFO> - <System,VisualCaptureApp.MainWindow>[DoScreenShotFunction][FCT_002][ExpectedInfo] ILogger.AP.ExpectedInfo: [BaseScreenshot,Start]:Catch[System.InvalidOperationException: 關閉視窗之後，無法設定 Visibility 或呼叫 Show、ShowDialog 或 WindowInteropHelper.EnsureHandle。
+   at System.Windows.Window.VerifyCanShow()
+   at System.Windows.Window.ShowDialog()
+   at VisualCaptureApp.Base.BaseScreenshot.TriggerFlashEffect() in D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\Base\BaseScreenshot.cs:line 376
+   at VisualCaptureApp.Base.BaseScreenshot.Start() in D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\Base\BaseScreenshot.cs:line 347]
+   at VisualCaptureApp.Base.BaseScreenshot.Start() in D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\Base\BaseScreenshot.cs:line 365
+   at VisualCaptureApp.MainWindow.DoScreenShotFunction(Object sender, RoutedEventArgs e) in D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\MainWindow.xaml.cs:line 836
+2025-03-09 20:28:37.672 [10] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+        /***********************************************
+                          _ooOoo_
+                         o8888888o
+                         88" . "88
+                         (| -_- |)
+                         O\  =  /O
+                      ____/`---'\____
+                    .'  \\|     |//  `.
+                   /  \\|||  :  |||//  \
+                  /  _||||| -:- |||||-  \
+                  |   | \\\  -  /// |   |
+                  | \_|  ''\---/''  |   |
+                  \  .-\__  `-`  ___/-. /
+                ___`. .'  /--.--\  `. . __
+             ."" '<  `.___\_<|>_/___.'  >'"".
+            | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+            \  \ `-.   \_ __\ /__ _/   .-` /  /
+       ======`-.____`-.___\_____/___.-`____.-'======
+                          `=---='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                佛祖保佑       永無BUG
+       *********************************************/
+
+2025-03-09 20:28:39.889 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+    /**************************************************************
+
+      [       遵從自然規律，讓萬物自行發揮       ]  <-----------
+                            |                                   |
+                            |                                   |
+      [        遵從自然規律，讓萬物自行相剋      ]              |
+                            |                                   |
+                            |                                   |
+      [          精通萬物一切原理熟知於心        ]              |
+                            |                                   |
+                            |                                   |
+      [          運用萬物一切原理強身健體        ]              |
+                            |                                   |
+                            |                                   |
+      [  緣起緣滅，讓萬物一切自動運轉，自生自滅  ]              |
+                            |                                   |
+                            |                                   |
+      [        時有時無，萬物一切可有可無        ]              |
+                            |                                   |
+                            |                                   |
+      [             天人合一，無欲無求           ]              |
+                            |                                   |
+                            |                                   |
+      [              萬物一切歸為無              ]              |
+                            |                                   |
+                            |                                   |
+      [           心有所想，創建美妙世界         ] --------------
+
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              如何成為長官的秘訣            劉彩萍指揮官
+    ***************************************************************/
+            
+2025-03-09 20:28:39.900 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] Start...
+2025-03-09 20:28:39.906 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] RunWatch, Code:[112], Description:[F1], IsModifiersHasFlag:[False], CM:[None]
+2025-03-09 20:28:39.906 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[WindowTopMost][IFO_000] Setting:[True]
+2025-03-09 20:28:48.142 [5] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Debug\net8.0-windows\Data\2025-03-09_20-28-47-944-AllScreens.jpeg]
+2025-03-09 20:34:37.333 [10] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+        /***********************************************
+                          _ooOoo_
+                         o8888888o
+                         88" . "88
+                         (| -_- |)
+                         O\  =  /O
+                      ____/`---'\____
+                    .'  \\|     |//  `.
+                   /  \\|||  :  |||//  \
+                  /  _||||| -:- |||||-  \
+                  |   | \\\  -  /// |   |
+                  | \_|  ''\---/''  |   |
+                  \  .-\__  `-`  ___/-. /
+                ___`. .'  /--.--\  `. . __
+             ."" '<  `.___\_<|>_/___.'  >'"".
+            | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+            \  \ `-.   \_ __\ /__ _/   .-` /  /
+       ======`-.____`-.___\_____/___.-`____.-'======
+                          `=---='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                佛祖保佑       永無BUG
+       *********************************************/
+
+2025-03-09 20:34:39.537 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+    /**************************************************************
+
+      [       遵從自然規律，讓萬物自行發揮       ]  <-----------
+                            |                                   |
+                            |                                   |
+      [        遵從自然規律，讓萬物自行相剋      ]              |
+                            |                                   |
+                            |                                   |
+      [          精通萬物一切原理熟知於心        ]              |
+                            |                                   |
+                            |                                   |
+      [          運用萬物一切原理強身健體        ]              |
+                            |                                   |
+                            |                                   |
+      [  緣起緣滅，讓萬物一切自動運轉，自生自滅  ]              |
+                            |                                   |
+                            |                                   |
+      [        時有時無，萬物一切可有可無        ]              |
+                            |                                   |
+                            |                                   |
+      [             天人合一，無欲無求           ]              |
+                            |                                   |
+                            |                                   |
+      [              萬物一切歸為無              ]              |
+                            |                                   |
+                            |                                   |
+      [           心有所想，創建美妙世界         ] --------------
+
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              如何成為長官的秘訣            劉彩萍指揮官
+    ***************************************************************/
+            
+2025-03-09 20:34:39.546 [7] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] Start...
+2025-03-09 20:34:39.546 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] RunWatch, Code:[112], Description:[F1], IsModifiersHasFlag:[False], CM:[None]
+2025-03-09 20:34:39.606 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[WindowTopMost][IFO_000] Setting:[True]
+2025-03-09 20:34:43.453 [10] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Debug\net8.0-windows\Data\2025-03-09_20-34-43-227-AllScreens.jpeg]
+2025-03-09 20:35:54.218 [9] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+        /***********************************************
+                          _ooOoo_
+                         o8888888o
+                         88" . "88
+                         (| -_- |)
+                         O\  =  /O
+                      ____/`---'\____
+                    .'  \\|     |//  `.
+                   /  \\|||  :  |||//  \
+                  /  _||||| -:- |||||-  \
+                  |   | \\\  -  /// |   |
+                  | \_|  ''\---/''  |   |
+                  \  .-\__  `-`  ___/-. /
+                ___`. .'  /--.--\  `. . __
+             ."" '<  `.___\_<|>_/___.'  >'"".
+            | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+            \  \ `-.   \_ __\ /__ _/   .-` /  /
+       ======`-.____`-.___\_____/___.-`____.-'======
+                          `=---='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                佛祖保佑       永無BUG
+       *********************************************/
+
+2025-03-09 20:35:56.271 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+    /**************************************************************
+
+      [       遵從自然規律，讓萬物自行發揮       ]  <-----------
+                            |                                   |
+                            |                                   |
+      [        遵從自然規律，讓萬物自行相剋      ]              |
+                            |                                   |
+                            |                                   |
+      [          精通萬物一切原理熟知於心        ]              |
+                            |                                   |
+                            |                                   |
+      [          運用萬物一切原理強身健體        ]              |
+                            |                                   |
+                            |                                   |
+      [  緣起緣滅，讓萬物一切自動運轉，自生自滅  ]              |
+                            |                                   |
+                            |                                   |
+      [        時有時無，萬物一切可有可無        ]              |
+                            |                                   |
+                            |                                   |
+      [             天人合一，無欲無求           ]              |
+                            |                                   |
+                            |                                   |
+      [              萬物一切歸為無              ]              |
+                            |                                   |
+                            |                                   |
+      [           心有所想，創建美妙世界         ] --------------
+
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              如何成為長官的秘訣            劉彩萍指揮官
+    ***************************************************************/
+            
+2025-03-09 20:35:56.271 [7] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] Start...
+2025-03-09 20:35:56.271 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] RunWatch, Code:[112], Description:[F1], IsModifiersHasFlag:[False], CM:[None]
+2025-03-09 20:35:56.290 [7] <INFO> - <System,VisualCaptureApp.MainWindow>[WindowTopMost][IFO_000] Setting:[True]
+2025-03-09 20:36:05.577 [7] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Debug\net8.0-windows\Data\2025-03-09_20-36-05-369-AllScreens.jpeg]
+2025-03-09 20:42:45.118 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+        /***********************************************
+                          _ooOoo_
+                         o8888888o
+                         88" . "88
+                         (| -_- |)
+                         O\  =  /O
+                      ____/`---'\____
+                    .'  \\|     |//  `.
+                   /  \\|||  :  |||//  \
+                  /  _||||| -:- |||||-  \
+                  |   | \\\  -  /// |   |
+                  | \_|  ''\---/''  |   |
+                  \  .-\__  `-`  ___/-. /
+                ___`. .'  /--.--\  `. . __
+             ."" '<  `.___\_<|>_/___.'  >'"".
+            | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+            \  \ `-.   \_ __\ /__ _/   .-` /  /
+       ======`-.____`-.___\_____/___.-`____.-'======
+                          `=---='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                佛祖保佑       永無BUG
+       *********************************************/
+
+2025-03-09 20:42:47.022 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] 
+    /**************************************************************
+
+      [       遵從自然規律，讓萬物自行發揮       ]  <-----------
+                            |                                   |
+                            |                                   |
+      [        遵從自然規律，讓萬物自行相剋      ]              |
+                            |                                   |
+                            |                                   |
+      [          精通萬物一切原理熟知於心        ]              |
+                            |                                   |
+                            |                                   |
+      [          運用萬物一切原理強身健體        ]              |
+                            |                                   |
+                            |                                   |
+      [  緣起緣滅，讓萬物一切自動運轉，自生自滅  ]              |
+                            |                                   |
+                            |                                   |
+      [        時有時無，萬物一切可有可無        ]              |
+                            |                                   |
+                            |                                   |
+      [             天人合一，無欲無求           ]              |
+                            |                                   |
+                            |                                   |
+      [              萬物一切歸為無              ]              |
+                            |                                   |
+                            |                                   |
+      [           心有所想，創建美妙世界         ] --------------
+
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              如何成為長官的秘訣            劉彩萍指揮官
+    ***************************************************************/
+            
+2025-03-09 20:42:47.022 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[.ctor][IFO_000] Start...
+2025-03-09 20:42:47.022 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[DoEnableWatchKeyboard][IFO_000] RunWatch, Code:[112], Description:[F1], IsModifiersHasFlag:[False], CM:[None]
+2025-03-09 20:42:47.022 [5] <INFO> - <System,VisualCaptureApp.MainWindow>[WindowTopMost][IFO_000] Setting:[True]
+2025-03-09 20:42:52.913 [9] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Debug\net8.0-windows\Data\2025-03-09_20-42-52-682-AllScreens.jpeg]
+2025-03-09 20:43:13.838 [9] <INFO> - <System,VisualCaptureApp.Base.BaseScreenshot>[DoScreenshotFullScreen][IFO_000] SaveScreenshot:[D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Debug\net8.0-windows\Data\2025-03-09_20-43-13-680-AllScreens.jpeg]

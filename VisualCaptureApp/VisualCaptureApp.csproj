@@ -1,0 +1,101 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="image\Close-1.png" />
+    <None Remove="image\Folder1.png" />
+    <None Remove="image\Folder2.png" />
+    <None Remove="image\Hide1.png" />
+    <None Remove="image\MessageAlarmImage.png" />
+    <None Remove="image\MessageErrorImage.png" />
+    <None Remove="image\MessageInfoImage.png" />
+    <None Remove="image\MessagePassImage.png" />
+    <None Remove="image\Pull.png" />
+    <None Remove="image\Push.png" />
+    <None Remove="image\Screenshot1.png" />
+    <None Remove="image\ScreenshotFullScreen.png" />
+    <None Remove="image\ScreenshotSpecifyRange.png" />
+    <None Remove="image\TCT_Icon-1.ico" />
+    <None Remove="image\TCT_Icon-1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="image\Close-1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="image\Folder1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="image\Folder2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="image\Hide1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="image\MessageAlarmImage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="image\MessageErrorImage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="image\MessageInfoImage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="image\MessagePassImage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="image\Pull.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="image\Push.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="image\Screenshot1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="image\ScreenshotFullScreen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="image\ScreenshotSpecifyRange.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="image\TCT_Icon-1.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="image\TCT_Icon-1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\My\HolyGift\HolyGift.csproj" />
+    <ProjectReference Include="..\..\My\ILogger\ILogger.csproj" />
+    <ProjectReference Include="..\..\My\Judgment\Judgment.csproj" />
+    <ProjectReference Include="..\..\My\OLogger\OLogger.csproj" />
+    <ProjectReference Include="..\..\My\TCTUtility\TCTUtility.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="View\GoodbyeScreen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="View\GoodbyeScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+</Project>

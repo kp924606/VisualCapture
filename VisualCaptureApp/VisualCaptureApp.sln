@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35514.174 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualCaptureApp", "VisualCaptureApp.csproj", "{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolyGift", "..\..\My\HolyGift\HolyGift.csproj", "{5E9E088F-2830-4980-959B-4A81ED16D38D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILogger", "..\..\My\ILogger\ILogger.csproj", "{42DD1238-7818-4A10-9B80-9CE7DD036C7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Judgment", "..\..\My\Judgment\Judgment.csproj", "{0403E528-79A4-4BE7-94E7-31CAC081ACE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OLogger", "..\..\My\OLogger\OLogger.csproj", "{AE7D8872-8C90-4B3C-8817-FD7DFE54E052}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCTUtility", "..\..\My\TCTUtility\TCTUtility.csproj", "{8BCB2AD4-102C-4FF5-B776-F3B788946B59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E9E088F-2830-4980-959B-4A81ED16D38D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E9E088F-2830-4980-959B-4A81ED16D38D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E9E088F-2830-4980-959B-4A81ED16D38D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E9E088F-2830-4980-959B-4A81ED16D38D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42DD1238-7818-4A10-9B80-9CE7DD036C7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42DD1238-7818-4A10-9B80-9CE7DD036C7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42DD1238-7818-4A10-9B80-9CE7DD036C7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42DD1238-7818-4A10-9B80-9CE7DD036C7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0403E528-79A4-4BE7-94E7-31CAC081ACE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0403E528-79A4-4BE7-94E7-31CAC081ACE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0403E528-79A4-4BE7-94E7-31CAC081ACE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0403E528-79A4-4BE7-94E7-31CAC081ACE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE7D8872-8C90-4B3C-8817-FD7DFE54E052}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE7D8872-8C90-4B3C-8817-FD7DFE54E052}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE7D8872-8C90-4B3C-8817-FD7DFE54E052}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE7D8872-8C90-4B3C-8817-FD7DFE54E052}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BCB2AD4-102C-4FF5-B776-F3B788946B59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BCB2AD4-102C-4FF5-B776-F3B788946B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BCB2AD4-102C-4FF5-B776-F3B788946B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BCB2AD4-102C-4FF5-B776-F3B788946B59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -97,15 +97,42 @@ action refer as Combox Selected.
 
 *This screen will switch to the specific settings based on the feature you select.*
 
+
 1.ScreenshotFullScreen:
 
   1-1:AnimationEffects/動畫效果:
   
-    啟用時，會在執行拍攝時，讓全螢幕有短暫的白色閃爍動畫.
+  啟用時，會在執行拍攝時，讓全螢幕有短暫的白色閃爍動畫.
     
-    *When enabled, a brief white flash animation will appear on the entire screen during the capture process.*
+  *When enabled, a brief white flash animation will appear on the entire screen during the capture process.*
     
-    ![image](https://github.com/user-attachments/assets/2a196678-7a85-4af5-8633-e3c2fe815ea2)
+  ![image](https://github.com/user-attachments/assets/2a196678-7a85-4af5-8633-e3c2fe815ea2)
+
+------
+
+### 4-5. Hide Window
+執行後會將此程式視窗隱藏至系統通知內。
+
+*After execution, the program window will be hidden in the system tray.*
+
+![image](https://github.com/user-attachments/assets/283141ea-dee1-45c4-90aa-5a0b8e9fb44b)
+
+![image](https://github.com/user-attachments/assets/23da0afb-dc6a-4b4b-97c4-249763cbbda4)
+
+![image](https://github.com/user-attachments/assets/91a86f9d-a1f1-49ca-b993-9f9dcca2f9b2)
+
+------
+
+### 4-6. Close App
+執行後會顯示MessageBox，若按下 Yes 則將此程式關閉並呈現關閉動畫視窗。
+
+*After execution, a MessageBox will be displayed. If 'Yes' is clicked, the program will close and show a closing animation window.*
+
+![image](https://github.com/user-attachments/assets/08c3ed68-ed8a-446a-a096-94b3e269012b)
+
+![image](https://github.com/user-attachments/assets/febb4a86-c218-4bb4-87f9-a180f0e60779)
+
+![image](https://github.com/user-attachments/assets/f6545c50-587d-44bb-8c3c-dc55e8c69fb4)
 
 ------
 

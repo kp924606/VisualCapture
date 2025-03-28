@@ -1,11 +1,11 @@
 ![](https://img.shields.io/badge/Creater-TCT-FFFF00) ![](https://img.shields.io/badge/development-csharp-006400) ![](https://img.shields.io/badge/SDK-DotNet8-blue) ![](https://img.shields.io/badge/Tool-VisualStudio2022-222222) ![](https://img.shields.io/badge/OS-Windows-FF8022) ![](https://img.shields.io/badge/UI-WPF-FF6666)
 
 # VisualCapture
-VisualCapture/視覺捕捉/全螢幕截圖(Full-screen screenshot)
+一個好玩實用的工具:VisualCapture/視覺捕捉/螢幕截圖/螢幕錄製等功能(持續開發中)
 
-只想使用執行檔案(不含程式碼)，請將以下資料夾下載"VisualCaptureApp/bin/Release/net8.0-windows".
-   
-If you only want to use the executable files (excluding the source code), please download the following folder:"VisualCaptureApp/bin/Release/net8.0-windows".
+若只想使用執行檔案(不含程式碼)，請進入下載完的壓縮檔，進入以下資料夾"VisualCaptureApp/bin/Release/net8.0-windows"並開啟 VisualCaptureApp.exe.
+
+If you only want to use the executable file (without the source code), please open the downloaded compressed file, navigate to the following folder: `VisualCaptureApp/bin/Release/net8.0-windows`, and run `VisualCaptureApp.exe`.
 
 ## 1. App Main Window
 ![image](https://github.com/user-attachments/assets/1d7a0041-9d96-4d8f-a5ac-86c6663a44f2)

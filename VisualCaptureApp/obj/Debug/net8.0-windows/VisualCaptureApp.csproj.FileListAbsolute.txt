@@ -59,3 +59,8 @@ D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Debug\net8.0-windows
 D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Debug\net8.0-windows\image\MessageInfoImage.png
 D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Debug\net8.0-windows\image\MessagePassImage.png
 D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\obj\Debug\net8.0-windows\VisualCaptureApp.sourcelink.json
+D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Debug\net8.0-windows\image\RecordFullScreen.png
+D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Debug\net8.0-windows\ProjectLifeModuleManagement.dll
+D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Debug\net8.0-windows\ProjectLifeModuleManagement.pdb
+D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\obj\Debug\net8.0-windows\View\RecordFullScreen.g.cs
+D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\obj\Debug\net8.0-windows\View\RecordFullScreen.baml

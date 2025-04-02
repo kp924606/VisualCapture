@@ -80,6 +80,22 @@
           "bin/placeholder/OLogger.dll": {}
         }
       },
+      "ProjectLifeModuleManagement/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "HolyGift": "1.0.0",
+          "ILogger": "1.0.0",
+          "Judgment": "1.0.0",
+          "TCTUtility": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProjectLifeModuleManagement.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProjectLifeModuleManagement.dll": {}
+        }
+      },
       "TCTUtility/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -163,6 +179,11 @@
       "path": "../../My/OLogger/OLogger.csproj",
       "msbuildProject": "../../My/OLogger/OLogger.csproj"
     },
+    "ProjectLifeModuleManagement/1.0.0": {
+      "type": "project",
+      "path": "../../My/ProjectLifeModuleManagement/ProjectLifeModuleManagement.csproj",
+      "msbuildProject": "../../My/ProjectLifeModuleManagement/ProjectLifeModuleManagement.csproj"
+    },
     "TCTUtility/1.0.0": {
       "type": "project",
       "path": "../../My/TCTUtility/TCTUtility.csproj",
@@ -176,6 +197,7 @@
       "ILogger >= 1.0.0",
       "Judgment >= 1.0.0",
       "OLogger >= 1.0.0",
+      "ProjectLifeModuleManagement >= 1.0.0",
       "TCTUtility >= 1.0.0"
     ]
   },
@@ -223,6 +245,9 @@
             },
             "D:\\蔡承廷\\Development\\My\\OLogger\\OLogger.csproj": {
               "projectPath": "D:\\蔡承廷\\Development\\My\\OLogger\\OLogger.csproj"
+            },
+            "D:\\蔡承廷\\Development\\My\\ProjectLifeModuleManagement\\ProjectLifeModuleManagement.csproj": {
+              "projectPath": "D:\\蔡承廷\\Development\\My\\ProjectLifeModuleManagement\\ProjectLifeModuleManagement.csproj"
             },
             "D:\\蔡承廷\\Development\\My\\TCTUtility\\TCTUtility.csproj": {
               "projectPath": "D:\\蔡承廷\\Development\\My\\TCTUtility\\TCTUtility.csproj"

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35514.174 d17.12
+VisualStudioVersion = 17.12.35514.174
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualCaptureApp", "VisualCaptureApp.csproj", "{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OLogger", "..\..\My\OLogger\OLogger.csproj", "{AE7D8872-8C90-4B3C-8817-FD7DFE54E052}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCTUtility", "..\..\My\TCTUtility\TCTUtility.csproj", "{8BCB2AD4-102C-4FF5-B776-F3B788946B59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectLifeModuleManagement", "..\..\My\ProjectLifeModuleManagement\ProjectLifeModuleManagement.csproj", "{711FB28A-2ECE-4B25-A6BB-6CCF39B4139A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{8BCB2AD4-102C-4FF5-B776-F3B788946B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BCB2AD4-102C-4FF5-B776-F3B788946B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BCB2AD4-102C-4FF5-B776-F3B788946B59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{711FB28A-2ECE-4B25-A6BB-6CCF39B4139A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{711FB28A-2ECE-4B25-A6BB-6CCF39B4139A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{711FB28A-2ECE-4B25-A6BB-6CCF39B4139A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{711FB28A-2ECE-4B25-A6BB-6CCF39B4139A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

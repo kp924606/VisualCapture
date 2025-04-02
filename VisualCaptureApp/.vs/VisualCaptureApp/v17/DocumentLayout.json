@@ -3,30 +3,27 @@
   "WorkspaceRootPath": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|d:\\\u8521\u627F\u5EF7\\development\\visualcapture\\visualcaptureapp\\view\\messageboxwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|solutionrelative:view\\messageboxwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|d:\\\u8521\u627F\u5EF7\\development\\visualcapture\\visualcaptureapp\\view\\messageboxwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|solutionrelative:view\\messageboxwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|d:\\\u8521\u627F\u5EF7\\development\\visualcapture\\visualcaptureapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|d:\\\u8521\u627F\u5EF7\\development\\visualcapture\\visualcaptureapp\\base\\basescreenshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|solutionrelative:base\\basescreenshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|d:\\\u8521\u627F\u5EF7\\development\\visualcapture\\visualcaptureapp\\view\\splashscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|solutionrelative:view\\splashscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|d:\\\u8521\u627F\u5EF7\\development\\visualcapture\\visualcaptureapp\\base\\baserecordfullscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|solutionrelative:base\\baserecordfullscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42DD1238-7818-4A10-9B80-9CE7DD036C7D}|..\\..\\My\\ILogger\\ILogger.csproj|d:\\\u8521\u627F\u5EF7\\development\\my\\ilogger\\ap\\expectedinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{711FB28A-2ECE-4B25-A6BB-6CCF39B4139A}|..\\..\\My\\ProjectLifeModuleManagement\\ProjectLifeModuleManagement.csproj|d:\\\u8521\u627F\u5EF7\\development\\my\\projectlifemodulemanagement\\base\\bmolecule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42DD1238-7818-4A10-9B80-9CE7DD036C7D}|..\\..\\My\\ILogger\\ILogger.csproj|d:\\\u8521\u627F\u5EF7\\development\\my\\ilogger\\ap\\loginfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|d:\\\u8521\u627F\u5EF7\\development\\visualcapture\\visualcaptureapp\\view\\recordfullscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|solutionrelative:view\\recordfullscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|d:\\\u8521\u627F\u5EF7\\development\\visualcapture\\visualcaptureapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|d:\\\u8521\u627F\u5EF7\\development\\visualcapture\\visualcaptureapp\\view\\recordfullscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|solutionrelative:view\\recordfullscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1ED8AE5C-44BE-4F25-B718-DDC5A2936734}|VisualCaptureApp.csproj|d:\\\u8521\u627F\u5EF7\\development\\visualcapture\\visualcaptureapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -40,108 +37,96 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MessageBoxWindow.xaml",
-              "DocumentMoniker": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\View\\MessageBoxWindow.xaml",
-              "RelativeDocumentMoniker": "View\\MessageBoxWindow.xaml",
-              "ToolTip": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\View\\MessageBoxWindow.xaml",
-              "RelativeToolTip": "View\\MessageBoxWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-12T03:15:52.705Z",
+              "DocumentIndex": 3,
+              "Title": "BMolecule.cs",
+              "DocumentMoniker": "D:\\\u8521\u627F\u5EF7\\Development\\My\\ProjectLifeModuleManagement\\Base\\BMolecule.cs",
+              "RelativeDocumentMoniker": "..\\..\\My\\ProjectLifeModuleManagement\\Base\\BMolecule.cs",
+              "ToolTip": "D:\\\u8521\u627F\u5EF7\\Development\\My\\ProjectLifeModuleManagement\\Base\\BMolecule.cs",
+              "RelativeToolTip": "..\\..\\My\\ProjectLifeModuleManagement\\Base\\BMolecule.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAArwJsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T12:12:43.231Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "LogInfo.cs",
-              "DocumentMoniker": "D:\\\u8521\u627F\u5EF7\\Development\\My\\ILogger\\AP\\LogInfo.cs",
-              "RelativeDocumentMoniker": "..\\..\\My\\ILogger\\AP\\LogInfo.cs",
-              "ToolTip": "D:\\\u8521\u627F\u5EF7\\Development\\My\\ILogger\\AP\\LogInfo.cs",
-              "RelativeToolTip": "..\\..\\My\\ILogger\\AP\\LogInfo.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAWwBoAAAAPAAAAAAAAAA==",
+              "Title": "RecordFullScreen.xaml.cs",
+              "DocumentMoniker": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\View\\RecordFullScreen.xaml.cs",
+              "RelativeDocumentMoniker": "View\\RecordFullScreen.xaml.cs",
+              "ToolTip": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\View\\RecordFullScreen.xaml.cs",
+              "RelativeToolTip": "View\\RecordFullScreen.xaml.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAApwEMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T03:49:22.424Z",
+              "WhenOpened": "2025-04-02T11:16:33.048Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ExpectedInfo.cs",
-              "DocumentMoniker": "D:\\\u8521\u627F\u5EF7\\Development\\My\\ILogger\\AP\\ExpectedInfo.cs",
-              "RelativeDocumentMoniker": "..\\..\\My\\ILogger\\AP\\ExpectedInfo.cs",
-              "ToolTip": "D:\\\u8521\u627F\u5EF7\\Development\\My\\ILogger\\AP\\ExpectedInfo.cs",
-              "RelativeToolTip": "..\\..\\My\\ILogger\\AP\\ExpectedInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T03:48:00.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SplashScreen.xaml.cs",
-              "DocumentMoniker": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\View\\SplashScreen.xaml.cs",
-              "RelativeDocumentMoniker": "View\\SplashScreen.xaml.cs",
-              "ToolTip": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\View\\SplashScreen.xaml.cs",
-              "RelativeToolTip": "View\\SplashScreen.xaml.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAuwBoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T00:29:49.775Z",
+              "Title": "RecordFullScreen.xaml",
+              "DocumentMoniker": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\View\\RecordFullScreen.xaml",
+              "RelativeDocumentMoniker": "View\\RecordFullScreen.xaml",
+              "ToolTip": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\View\\RecordFullScreen.xaml",
+              "RelativeToolTip": "View\\RecordFullScreen.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-02T10:08:40.12Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BaseScreenshot.cs",
-              "DocumentMoniker": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\Base\\BaseScreenshot.cs",
-              "RelativeDocumentMoniker": "Base\\BaseScreenshot.cs",
-              "ToolTip": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\Base\\BaseScreenshot.cs",
-              "RelativeToolTip": "Base\\BaseScreenshot.cs",
-              "ViewState": "AgIAABIBAAAAAAAAAAAYwB4BAAAQAAAAAAAAAA==",
+              "Title": "BaseRecordFullScreen.cs",
+              "DocumentMoniker": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\Base\\BaseRecordFullScreen.cs",
+              "RelativeDocumentMoniker": "Base\\BaseRecordFullScreen.cs",
+              "ToolTip": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\Base\\BaseRecordFullScreen.cs",
+              "RelativeToolTip": "Base\\BaseRecordFullScreen.cs",
+              "ViewState": "AgIAAAkBAAAAAAAAAAApwBMBAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T12:16:05.785Z",
+              "WhenOpened": "2025-03-28T00:53:16.107Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MessageBoxWindow.xaml.cs",
-              "DocumentMoniker": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\View\\MessageBoxWindow.xaml.cs",
-              "RelativeDocumentMoniker": "View\\MessageBoxWindow.xaml.cs",
-              "ToolTip": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\View\\MessageBoxWindow.xaml.cs",
-              "RelativeToolTip": "View\\MessageBoxWindow.xaml.cs",
-              "ViewState": "AgIAAHQBAAAAAAAAAAAIwHcBAAAnAAAAAAAAAA==",
+              "Title": "BaseScreenshot.cs",
+              "DocumentMoniker": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\Base\\BaseScreenshot.cs",
+              "RelativeDocumentMoniker": "Base\\BaseScreenshot.cs",
+              "ToolTip": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\Base\\BaseScreenshot.cs",
+              "RelativeToolTip": "Base\\BaseScreenshot.cs",
+              "ViewState": "AgIAAHkBAAAAAAAAAAArwIoBAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T02:17:11.294Z",
+              "WhenOpened": "2025-03-26T04:47:53.51Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAB4BAAAAAAAAAAAvwIMBAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAEYDAAAAAAAAAAAkwFsDAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-04T03:24:20.82Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
               "ToolTip": "D:\\\u8521\u627F\u5EF7\\Development\\VisualCapture\\VisualCaptureApp\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-04T03:24:28.857Z"
+              "WhenOpened": "2025-03-04T03:24:28.857Z",
+              "EditorCaption": ""
             }
           ]
         }

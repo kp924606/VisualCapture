@@ -11,9 +11,11 @@ namespace VisualCaptureApp.AP
         #region Static
         public const string ScreenshotFullScreen = "ScreenshotFullScreen";
         public const string ScreenshotSpecifyRange = "ScreenshotSpecifyRange";
+        public const string RecordFullScreen = "RecordFullScreen";
 
         public const string ScreenshotFullScreenImagPath = "image/ScreenshotFullScreen.png";
         public const string ScreenshotSpecifyRangeImagPath = "image/ScreenshotSpecifyRange.png";
+        public const string RecordFullScreenImagPath = "image/RecordFullScreen.png";
 
         #endregion
 

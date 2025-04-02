@@ -24,6 +24,7 @@ using System.Windows.Media.Animation;
 using System.Windows;
 using Application = System.Windows.Application;
 using VisualCaptureApp.View;
+using ProjectLifeModuleManagement.Base;
 
 namespace VisualCaptureApp.Base
 {
@@ -74,6 +75,11 @@ namespace VisualCaptureApp.Base
         public bool IsDoOnce
         {
             get => this._isDoOnce;
+
+            set 
+            {
+                this._isDoOnce = value;
+            }
         }
 
         /// <summary>
@@ -89,7 +95,8 @@ namespace VisualCaptureApp.Base
                 }
                 else
                 {
-                    return this.BaseCaptureFunctionL.FirstOrDefault()!.Name!;
+                    return this.BaseCaptureFunctionL[this.FunctionIndex].Name!;
+                    //return this.BaseCaptureFunctionL.FirstOrDefault()!.Name!;
                 }
             }
         }
@@ -225,21 +232,27 @@ namespace VisualCaptureApp.Base
         public Action<BaseKeyboardShortcut>? DoKeyboardWatchEvent { set; get; }
 
         /// <summary>
-        /// 全螢幕拍照
+        /// 閃光動畫
         /// </summary>
         public FScreenshotFullScreen? FSFS { set; get; }
+
+        /// <summary>
+        /// 全螢幕錄影
+        /// </summary>
+        public BaseRecordFullScreen? BaseRecordFullScreen { set; get; }
 
         #endregion
 
         /**/
         #region Constructor
-        public BaseScreenshot()
+        public BaseScreenshot(string defaultSaveFolderPath)
         {
             try
             {
                 this.BaseCaptureFunctionL = new List<BaseCaptureFunction>();
                 this.BaseCaptureFunctionL.Add(new BaseCaptureFunction(BaseCaptureFunction.ScreenshotFullScreen, BaseCaptureFunction.ScreenshotFullScreenImagPath, true));
                 //this.BaseCaptureFunctionL.Add(new BaseCaptureFunction(BaseCaptureFunction.ScreenshotSpecifyRange, BaseCaptureFunction.ScreenshotSpecifyRangeImagPath, true));
+                this.BaseCaptureFunctionL.Add(new BaseCaptureFunction(BaseCaptureFunction.RecordFullScreen, BaseCaptureFunction.RecordFullScreenImagPath, true));
 
                 this.BaseKeyboardShortcutL = new List<BaseKeyboardShortcut>();
                 this.BaseKeyboardShortcutL.Add(new BaseKeyboardShortcut() { Code = 112, Description = @"F1", IsModifiersHasFlag =false });
@@ -290,8 +303,17 @@ namespace VisualCaptureApp.Base
 
                 BaseWatchKeyboard.Communication = Communication;
 
+                //閃光動畫效果
                 this.FSFS = new FScreenshotFullScreen();
                 this.FSFS.IsAnimationEffects = true;
+
+                Dictionary<string, object> dic = new Dictionary<string, object>();
+                dic.Add(Key.SaveFolder, defaultSaveFolderPath);
+                this.BaseRecordFullScreen = new BaseRecordFullScreen(BaseCaptureFunction.RecordFullScreen, dic);
+
+                //設定模組內的溝通方式
+                BMolecule.Communication = Communication;
+
             }
             catch (ExpectedInfo ex)
             {
@@ -349,6 +371,26 @@ namespace VisualCaptureApp.Base
                         
                         break;
                     case BaseCaptureFunction.ScreenshotSpecifyRange:
+
+                        break;
+                    //全螢幕錄影
+                    case BaseCaptureFunction.RecordFullScreen:
+                        if (!this.BaseRecordFullScreen!.IsRunning)
+                        {
+                            this._isDoOnce = false;
+                            //Dictionary<string, object> dic = new Dictionary<string, object>();
+                            //dic.Add(Key.fps, 30);
+                            //dic.Add(Key.SaveFolder, this.saveFolder!);
+                            //this.BaseRecordFullScreen = new BaseRecordFullScreen(BaseCaptureFunction.RecordFullScreen, dic);
+                            this.BaseRecordFullScreen.SaveFolder = this.saveFolder!;
+                            this.BaseRecordFullScreen.Start();
+                        }
+                        else
+                        {
+                            this._isDoOnce = true;
+                            //this.BaseRecordFullScreen.Annihilation();
+                            this.BaseRecordFullScreen.Interruption();
+                        }
 
                         break;
                     default:

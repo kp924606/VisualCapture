@@ -18,6 +18,7 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/messagepassimage.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/pull.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/push.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/recordfullscreen.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/screenshot1.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/screenshotfullscreen.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/screenshotspecifyrange.png")]

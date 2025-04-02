@@ -13,6 +13,7 @@
           "ILogger": "1.0.0",
           "Judgment": "1.0.0",
           "OLogger": "1.0.0",
+          "ProjectLifeModuleManagement": "1.0.0",
           "TCTUtility": "1.0.0"
         },
         "runtime": {
@@ -76,6 +77,20 @@
           }
         }
       },
+      "ProjectLifeModuleManagement/1.0.0": {
+        "dependencies": {
+          "HolyGift": "1.0.0",
+          "ILogger": "1.0.0",
+          "Judgment": "1.0.0",
+          "TCTUtility": "1.0.0"
+        },
+        "runtime": {
+          "ProjectLifeModuleManagement.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "TCTUtility/1.0.0": {
         "dependencies": {
           "HolyGift": "1.0.0",
@@ -127,6 +142,11 @@
       "sha512": ""
     },
     "OLogger/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProjectLifeModuleManagement/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

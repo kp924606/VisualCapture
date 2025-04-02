@@ -69,7 +69,7 @@ namespace VisualCaptureApp.View
             {
                 if (MainWindow.BaseSh == null || MainWindow.BaseSh!.FSFS == null)
                 {
-                    MainWindow.BaseSh = new BaseScreenshot();
+                    //MainWindow.BaseSh = new BaseScreenshot();
                     MainWindow.BaseSh!.FSFS!.IsAnimationEffects = false;
                 }
                 else

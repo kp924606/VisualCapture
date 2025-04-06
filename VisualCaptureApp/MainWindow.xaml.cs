@@ -61,6 +61,7 @@ using Judgment;
 using OLogger.AP;
 using System.Buffers.Text;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 using System.Text;
@@ -408,6 +409,15 @@ namespace VisualCaptureApp
             }
         }
 
+        /// <summary>
+        /// PID
+        /// </summary>        
+        public string PID
+        {
+            get => Process.GetCurrentProcess().Id.ToString();
+        }
+
+
         #endregion
 
         public MainWindow()
@@ -723,7 +733,7 @@ namespace VisualCaptureApp
             }
             finally
             {
-            }            
+            }
         }
 
         private void HideWindow(object sender, RoutedEventArgs e)
@@ -857,11 +867,13 @@ namespace VisualCaptureApp
 
                     //做單次,做完了
                     if (BaseSh!.IsDoOnce)
-                    {                        
+                    {
                         this.Button_ScreenShotFunction.Background = new SolidColorBrush(Colors.Yellow);
+                        this.ComboxCaptureFunction.IsEnabled = true;
                     }
                     else
                     {
+                        this.ComboxCaptureFunction.IsEnabled = false;
                     }
                     this.isDoScreenShotFunctioning = false;
                 }

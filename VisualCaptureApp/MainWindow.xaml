@@ -344,6 +344,18 @@
                             <!-- 第五個 StackPanel -->
                             <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,0,2,0" Orientation="Vertical">
                                 <WrapPanel>
+                                    <!-- PID -->
+                                    <TextBlock Text="PID" FontSize="12" FontWeight="Bold" Margin="5,5,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBlock x:Name="TextBlockPID" Text="{Binding PID, Mode=OneWay}" FontSize="12" FontWeight="Bold" Margin="5,5,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>                                    
+                                </WrapPanel>
+                            </StackPanel>
+
+                            <!-- 分隔線 -->
+                            <Border Height="1" Background="#BBBBBB" Margin="1,3,1,0"/>
+
+                            <!-- 第六個 StackPanel -->
+                            <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,0,2,0" Orientation="Vertical">
+                                <WrapPanel>
 
                                 </WrapPanel>
                             </StackPanel>

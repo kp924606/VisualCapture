@@ -8,6 +8,7 @@ using ProjectLifeModuleManagement.Module;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -23,7 +24,7 @@ using VisualCaptureApp.Interface;
 
 namespace VisualCaptureApp.Base
 {
-    public class BaseRecordFullScreen : BMolecule
+    public class BaseRecordFullScreen : BMolecule, INotifyPropertyChanged
     {
         #region Static
        
@@ -90,6 +91,9 @@ namespace VisualCaptureApp.Base
         /// </summary>
         private string? saveFolder { set; get; }
 
+        /// <summary>
+        /// 檔案儲存位置
+        /// </summary>
         public string? SaveFolder
         {
             get { return this.saveFolder; }
@@ -102,6 +106,94 @@ namespace VisualCaptureApp.Base
             }
         }
 
+        /// <summary>
+        /// 錄製時間
+        /// </summary>
+        private int recordTime { set; get; }
+
+        /// <summary>
+        /// 錄製時間
+        /// </summary>
+        public int RecordTime
+        {
+            get { return this.recordTime; }
+            set
+            {
+                this.recordTime = value;
+                OnPropertyChanged(nameof(this.RecordTime));
+                OnPropertyChanged(nameof(this.RecordTimeDate));
+            }
+        }
+        public string RecordTimeDate
+        {
+            get {
+                TimeSpan time = TimeSpan.FromSeconds(this.recordTime);
+                // 格式化輸出
+                string formattedTime = $"{time.Days:D2}/{time.Hours:D2}/{time.Minutes:D2}/{time.Seconds:D2}";
+                return formattedTime;
+            }
+            set
+            {
+                OnPropertyChanged(nameof(this.RecordTimeDate));
+            }
+        }
+
+        /// <summary>
+        /// 錄製音效
+        /// </summary>
+        private bool _isRecordAudio { get; set; }
+
+        /// <summary>
+        /// 錄製音效
+        /// </summary>
+        public bool IsRecordAudio
+        {
+            get { return this._isRecordAudio; }
+            set
+            {
+                this._isRecordAudio = value;
+                // 通知屬性已變更
+                OnPropertyChanged(nameof(IsRecordAudio));
+            }
+        }
+
+        /// <summary>
+        /// 目前選擇的音效
+        /// </summary>
+        private int _currentAudioIndex { get; set; }
+
+        /// <summary>
+        /// 目前選擇的音效
+        /// </summary>
+        public int CurrentAudioIndex
+        {
+            get { return this._currentAudioIndex; }
+            set
+            {
+                this._currentAudioIndex = value;
+                // 通知屬性已變更
+                OnPropertyChanged(nameof(CurrentAudioIndex));
+            }
+        }
+
+        /// <summary>
+        /// 音效清單
+        /// </summary>
+        private List<string>? _audioList { set; get; }
+
+        /// <summary>
+        /// 音效清單
+        /// </summary>
+        public List<string>? AudioList
+        { 
+            get => this._audioList;
+        }
+
+        public event PropertyChangedEventHandler? PropertyChanged;
+        protected void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
         #endregion
 
         #region Init
@@ -110,10 +202,18 @@ namespace VisualCaptureApp.Base
         {
             try
             {
+                if (!this.CheckffmpegExists())
+                {
+                    throw new ExpectedInfo($@"Please check ffmpeg, ffmpeg is not installed or not available.", Code.CMD_001);
+                }
+
                 //this.fps = FUtility.GetIntAndCheckNOrEFromDic(dic, Key.fps);
                 this.saveFolder = FUtility.GetStringAndCheckNOrEFromDic(dic, Key.SaveFolder);
-
+                this._audioList = new List<string>();
+                this.RecordTime = 0;
+                this.GetAudioList();
                 this.AddProject(new MRightNow(@"DoScreenshot_MRightNow", DoScreenshot, DoScreenshotFinish));
+                this.AddProject(new MTimer(@"DoRecordTime_MTimer", DoRecordTime, DoRecordTimeFinish, 1, false, true));                
             }
             catch (ExpectedInfo ex)
             {
@@ -131,8 +231,125 @@ namespace VisualCaptureApp.Base
 
         #endregion
 
-
         #region Method
+
+        /// <summary>
+        /// 確認 ffmpeg  是否存在
+        /// </summary>
+        /// <returns></returns>
+        private bool CheckffmpegExists()
+        {
+            try
+            {
+                // 構建 ProcessStartInfo 來執行 ffmpeg -version 命令
+                ProcessStartInfo startInfo = new ProcessStartInfo
+                {
+                    FileName = "ffmpeg",
+                    Arguments = "-version",  // 檢查 ffmpeg 版本
+                    RedirectStandardOutput = true,
+                    RedirectStandardError = true,
+                    UseShellExecute = false,
+                    CreateNoWindow = true
+                };
+
+                // 啟動外部進程來執行 ffmpeg 命令
+                using (Process process = Process.Start(startInfo)!)
+                {
+                    // 讀取並忽略標準輸出與錯誤輸出
+                    string output = process.StandardOutput.ReadToEnd();
+                    string error = process.StandardError.ReadToEnd();
+                    process.WaitForExit();
+
+                    // 如果成功執行，表示 ffmpeg 存在
+                    if (process.ExitCode == 0)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        Console.WriteLine("FFmpeg Error: " + error);
+                        return false;
+                    }
+                }
+            }
+            catch (ExpectedInfo ex)
+            {
+                BMolecule.Communication?.Invoke(new LogInfo(this.Name, this.GetType().Name, MethodBase.GetCurrentMethod()!.Name, Key.ExpectedInfo, ex.ReasonCode, ILogType.Error, ex, null));
+                return false;
+            }
+            catch (Exception ex)
+            {
+                BMolecule.Communication?.Invoke(new LogInfo(this.Name, this.GetType().Name, MethodBase.GetCurrentMethod()!.Name, Key.Catch, Code.FCT_002, ILogType.Catch, ex, null));
+                return false;
+            }
+            finally
+            {
+
+            }
+        }
+
+
+        /// <summary>
+        /// 取得音效清單
+        /// </summary>
+        /// <exception cref="ExpectedInfo"></exception>
+        private void GetAudioList()
+        {
+            // 設定命令
+            string command = "ffmpeg";
+            string arguments = "-list_devices true -f dshow -i dummy";
+
+            // 使用 Process 啟動外部命令並捕獲其輸出
+            ProcessStartInfo startInfo = new ProcessStartInfo
+            {
+                FileName = command,
+                Arguments = arguments,
+                RedirectStandardOutput = true,
+                RedirectStandardError = true,
+                UseShellExecute = false,
+                CreateNoWindow = true,
+                StandardErrorEncoding = Encoding.UTF8, // 設定錯誤輸出的編碼為 UTF-8
+                StandardOutputEncoding = Encoding.UTF8  // 設定標準輸出的編碼為 UTF-8
+            };
+
+            List<string> audioDevices = new List<string>();
+
+            try
+            {
+                using (Process process = Process.Start(startInfo)!)
+                {
+                    // 捕獲錯誤和標準輸出的內容
+                    string output = process.StandardError.ReadToEnd();
+                    process.WaitForExit();  // 等待命令執行結束
+
+                    // 使用 findstr 來過濾出包含 "audio" 的行
+                    string[] lines = output.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+
+                    foreach (var line in lines)
+                    {
+                        // 用 "audio" 關鍵字來過濾音訊裝置
+                        if (line.IndexOf("audio", StringComparison.OrdinalIgnoreCase) >= 0)
+                        {
+                            // 提取設備名稱並加入 List
+                            var deviceName = line.Trim().Split('\"')[1];  // 取出雙引號中的部分
+                            audioDevices.Add(deviceName);
+                        }
+                    }
+                }
+                this._audioList = audioDevices;
+            }
+            catch (ExpectedInfo ex)
+            {
+                throw new ExpectedInfo($@"[{this.GetType().Name},{MethodBase.GetCurrentMethod()!.Name}]:{Key.ExpectedInfo}[{ex}]", ex.ReasonCode);
+            }
+            catch (Exception ex)
+            {
+                throw new ExpectedInfo($@"[{this.GetType().Name},{MethodBase.GetCurrentMethod()!.Name}]:{Key.Catch}[{ex}]", Code.FCT_002);
+            }
+            finally
+            {
+            }
+        }
 
         /// <summary>
         /// 開始擷取影像
@@ -155,8 +372,25 @@ namespace VisualCaptureApp.Base
                 //-q:v 視訊品質指標，數值範圍通常是 1 (最佳畫質)~ 31 (最低畫質)
                 //-preset fast 壓縮效能與編碼速度, 控制編碼時間, 輸出影片的大小, ultrafast 速度最快 檔案最大 CPU 負擔最低
                 //-crf 23 是 H.264 (libx264) 壓縮的品質控制參數，它決定了 影片的畫質與檔案大小之間的平衡, 數值範圍是 0（無損）到 51（最差）, 23 是 H.264 的預設值
+                //-f dshow	使用 DirectShow 來擷取音訊 (適用 Windows)
+                //-i audio="virtual-audio-capturer"	指定擷取系統音效的裝置
+                //-c:a aac	音訊編碼格式，使用 aac (建議格式，適用於大多數播放器)
+                //-b:a 192k	音訊位元率，設定為 192kbps (可調整)
+
+                string ffmpegArgs = string.Empty;
+                if (this.IsRecordAudio)
+                {
+                    ffmpegArgs = $@"-y -f gdigrab -framerate {this.fps} -i desktop -f dshow -i audio=""{this.AudioList![this.CurrentAudioIndex]}"" -c:v mpeg4 -q:v {this._videoQuality} {this.saveFolder}\output_{DateTime.Now.ToString(@"yyyyMMddHHmmss")}.avi";
+                }
+                else
+                {
+                    ffmpegArgs = $@"-y -f gdigrab -framerate {this.fps} -i desktop -c:v mpeg4 -q:v {this._videoQuality} {this.saveFolder}\output_{DateTime.Now.ToString(@"yyyyMMddHHmmss")}.avi";
+                }
+
+                //string ffmpegArgs = $@"-y -f gdigrab -framerate {this.fps} -i desktop -f dshow -i audio=""Line 1 (Virtual Audio Cable)"" -c:v mpeg4 -q:v {this._videoQuality} {this.saveFolder}\output_{DateTime.Now.ToString(@"yyyyMMddHHmmss")}.avi";
                 
-                string ffmpegArgs = $@"-y -f gdigrab -framerate {this.fps} -i desktop -c:v mpeg4 -q:v {this._videoQuality} {this.saveFolder}\output_{DateTime.Now.ToString(@"yyyyMMddHHmmss")}.avi";
+                //string ffmpegArgs = $@"-y -f gdigrab -framerate {this.fps} -i desktop -c:v mpeg4 -q:v {this._videoQuality} {this.saveFolder}\output_{DateTime.Now.ToString(@"yyyyMMddHHmmss")}.avi";
+
                 //string ffmpegArgs = $@"-y -f gdigrab -framerate {this.fps} -i desktop -c:v mpeg4 -q:v 5 {this.saveFolder}\output_{DateTime.Now.ToString(@"yyyyMMddHHmmss")}.avi";
                 //string ffmpegArgs = $@"-y -f gdigrab -framerate {this.fps} -i desktop -c:v libx264 -crf 2 {this.saveFolder}\output_{DateTime.Now.ToString(@"yyyyMMddHHmmss")}.mp4";
 
@@ -184,6 +418,7 @@ namespace VisualCaptureApp.Base
 
                 // 啟動 FFmpeg 程序
                 this.ffmpegProcess = Process.Start(startInfo);
+                this.RecordTime = 0;
 
                 // 顯示 FFmpeg 的錯誤訊息
                 this.ffmpegProcess!.ErrorDataReceived += (sender, e) => {
@@ -231,7 +466,7 @@ namespace VisualCaptureApp.Base
 
                     }
                 };
-                this.ffmpegProcess.BeginOutputReadLine();
+                this.ffmpegProcess.BeginOutputReadLine();             
             }
             catch (ExpectedInfo ex)
             {
@@ -262,10 +497,46 @@ namespace VisualCaptureApp.Base
             }
             finally
             {
+            }
+        }
+
+        private void DoRecordTime(object obj)
+        {
+            try
+            {
+                this.RecordTime += 1;
+            }
+            catch (ExpectedInfo ex)
+            {
+                BMolecule.Communication?.Invoke(new LogInfo(this.Name, this.GetType().Name, MethodBase.GetCurrentMethod()!.Name, Key.ExpectedInfo, ex.ReasonCode, ILogType.Error, ex, null));
+            }
+            catch (Exception ex)
+            {
+                BMolecule.Communication?.Invoke(new LogInfo(this.Name, this.GetType().Name, MethodBase.GetCurrentMethod()!.Name, Key.Catch, Code.FCT_002, ILogType.Catch, ex, null));
+            }
+            finally
+            {
 
             }
-        }       
+        }
 
+        private void DoRecordTimeFinish(object obj)
+        {
+            try
+            {
+            }
+            catch (ExpectedInfo ex)
+            {
+                BMolecule.Communication?.Invoke(new LogInfo(this.Name, this.GetType().Name, MethodBase.GetCurrentMethod()!.Name, Key.ExpectedInfo, ex.ReasonCode, ILogType.Error, ex, null));
+            }
+            catch (Exception ex)
+            {
+                BMolecule.Communication?.Invoke(new LogInfo(this.Name, this.GetType().Name, MethodBase.GetCurrentMethod()!.Name, Key.Catch, Code.FCT_002, ILogType.Catch, ex, null));
+            }
+            finally
+            {
+            }
+        }
 
         #endregion
 
@@ -282,6 +553,7 @@ namespace VisualCaptureApp.Base
                     this.ffmpegProcess.WaitForExit();
                     this.ffmpegProcess.Dispose();
                     this.ffmpegProcess = null;
+                    this.RecordTime = 0;
                     BMolecule.Communication?.Invoke(new LogInfo(this.Name, this.GetType().Name, MethodBase.GetCurrentMethod()!.Name, $@"FFmpeg Record Interruption", Code.IFO_000, ILogType.Info, null, null));
                 }
                 base.Interruption();

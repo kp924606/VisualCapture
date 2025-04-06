@@ -94,7 +94,8 @@ namespace VisualCaptureApp.View
         public ScreenshotFullScreen()
         {
             InitializeComponent();
-            //this.DataContext = MainWindow.BaseSh;
+
+            
             this.DataContext = this;
         }
 

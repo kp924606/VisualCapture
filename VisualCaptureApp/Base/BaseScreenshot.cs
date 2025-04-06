@@ -382,7 +382,13 @@ namespace VisualCaptureApp.Base
                             //dic.Add(Key.fps, 30);
                             //dic.Add(Key.SaveFolder, this.saveFolder!);
                             //this.BaseRecordFullScreen = new BaseRecordFullScreen(BaseCaptureFunction.RecordFullScreen, dic);
+
+                            if (this.FSFS!.IsAnimationEffects)
+                            {
+                                this.TriggerFlashEffect(128,0,222,0, 100);
+                            }
                             this.BaseRecordFullScreen.SaveFolder = this.saveFolder!;
+                            SpinWait.SpinUntil(() => false, 100);
                             this.BaseRecordFullScreen.Start();
                         }
                         else
@@ -390,6 +396,11 @@ namespace VisualCaptureApp.Base
                             this._isDoOnce = true;
                             //this.BaseRecordFullScreen.Annihilation();
                             this.BaseRecordFullScreen.Interruption();
+
+                            if (this.FSFS!.IsAnimationEffects)
+                            {
+                                this.TriggerFlashEffect();
+                            }
                         }
 
                         break;
@@ -419,6 +430,28 @@ namespace VisualCaptureApp.Base
             try
             {
                 FScreenshotFullScreen.TriggerFlashEffect();
+            }
+            catch (ExpectedInfo ex)
+            {
+                throw new ExpectedInfo($@"[{this.GetType().Name},{MethodBase.GetCurrentMethod()!.Name}]:{Key.ExpectedInfo}[{ex}]", ex.ReasonCode);
+            }
+            catch (Exception ex)
+            {
+                throw new ExpectedInfo($@"[{this.GetType().Name},{MethodBase.GetCurrentMethod()!.Name}]:{Key.Catch}[{ex}]", Code.FCT_002);
+            }
+            finally
+            {
+            }
+        }
+
+        /// <summary>
+        /// 執行拍攝動畫閃光
+        /// </summary>
+        private void TriggerFlashEffect(byte a, byte r, byte g, byte b, double time)
+        {
+            try
+            {
+                FScreenshotFullScreen.TriggerFlashEffect(a, r, g, b, 100);
             }
             catch (ExpectedInfo ex)
             {

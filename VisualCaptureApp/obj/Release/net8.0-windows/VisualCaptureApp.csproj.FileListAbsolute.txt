@@ -64,3 +64,8 @@ D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windo
 D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\image\RecordFullScreen.png
 D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\obj\Release\net8.0-windows\View\RecordFullScreen.g.cs
 D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\obj\Release\net8.0-windows\View\RecordFullScreen.baml
+D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\bin\Release\net8.0-windows\image\RecordSpecifiedRange.png
+D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\obj\Release\net8.0-windows\View\RecordSpecifiedRange.g.cs
+D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\obj\Release\net8.0-windows\View\SpecifiedRange.g.cs
+D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\obj\Release\net8.0-windows\View\RecordSpecifiedRange.baml
+D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\obj\Release\net8.0-windows\View\SpecifiedRange.baml

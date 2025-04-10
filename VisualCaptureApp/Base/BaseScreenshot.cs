@@ -95,8 +95,7 @@ namespace VisualCaptureApp.Base
                 }
                 else
                 {
-                    return this.BaseCaptureFunctionL[this.FunctionIndex].Name!;
-                    //return this.BaseCaptureFunctionL.FirstOrDefault()!.Name!;
+                    return this.BaseCaptureFunctionL[this.FunctionIndex].Name!;                    
                 }
             }
         }
@@ -241,6 +240,11 @@ namespace VisualCaptureApp.Base
         /// </summary>
         public BaseRecordFullScreen? BaseRecordFullScreen { set; get; }
 
+        /// <summary>
+        /// Window 指定範圍
+        /// </summary>
+        private SpecifiedRange? _specifiedRange { set; get; }
+
         #endregion
 
         /**/
@@ -253,6 +257,7 @@ namespace VisualCaptureApp.Base
                 this.BaseCaptureFunctionL.Add(new BaseCaptureFunction(BaseCaptureFunction.ScreenshotFullScreen, BaseCaptureFunction.ScreenshotFullScreenImagPath, true));
                 //this.BaseCaptureFunctionL.Add(new BaseCaptureFunction(BaseCaptureFunction.ScreenshotSpecifyRange, BaseCaptureFunction.ScreenshotSpecifyRangeImagPath, true));
                 this.BaseCaptureFunctionL.Add(new BaseCaptureFunction(BaseCaptureFunction.RecordFullScreen, BaseCaptureFunction.RecordFullScreenImagPath, true));
+                this.BaseCaptureFunctionL.Add(new BaseCaptureFunction(BaseCaptureFunction.RecordSpecifiedRange, BaseCaptureFunction.RecordSpecifiedRangeImagPath, true));
 
                 this.BaseKeyboardShortcutL = new List<BaseKeyboardShortcut>();
                 this.BaseKeyboardShortcutL.Add(new BaseKeyboardShortcut() { Code = 112, Description = @"F1", IsModifiersHasFlag =false });
@@ -361,12 +366,13 @@ namespace VisualCaptureApp.Base
                 //777 錄影
                 switch (this.Name)
                 {
+                    //全螢幕截圖
                     case BaseCaptureFunction.ScreenshotFullScreen:                        
                         this._isDoOnce = true;
                         this.DoScreenshotFullScreen();
                         if (this.FSFS!.IsAnimationEffects)
                         {
-                            this.TriggerFlashEffect();
+                            this.TriggerFlashEffectAsync();
                         }
                         
                         break;
@@ -388,22 +394,52 @@ namespace VisualCaptureApp.Base
                                 this.TriggerFlashEffect(128,0,222,0, 100);
                             }
                             this.BaseRecordFullScreen.SaveFolder = this.saveFolder!;
-                            SpinWait.SpinUntil(() => false, 100);
+                            this.BaseRecordFullScreen.IsSpecifiedRange = false;
+                            //SpinWait.SpinUntil(() => false, 100);
                             this.BaseRecordFullScreen.Start();
                         }
                         else
                         {
                             this._isDoOnce = true;
-                            //this.BaseRecordFullScreen.Annihilation();
                             this.BaseRecordFullScreen.Interruption();
-
                             if (this.FSFS!.IsAnimationEffects)
                             {
-                                this.TriggerFlashEffect();
+                                this.TriggerFlashEffectAsync();
                             }
                         }
-
                         break;
+                    //指定螢幕範圍錄影
+                    case BaseCaptureFunction.RecordSpecifiedRange:
+                        if (!this.BaseRecordFullScreen!.IsRunning)
+                        {
+                            this._isDoOnce = false;                           
+                            if (this.FSFS!.IsAnimationEffects)
+                            {
+                                this.TriggerFlashEffect(128, 0, 222, 0, 100);
+                            }
+                            this.BaseRecordFullScreen.SaveFolder = this.saveFolder!;
+                            this.BaseRecordFullScreen.IsSpecifiedRange = true;
+                            //SpinWait.SpinUntil(() => false, 100);
+                            this._specifiedRange!.SpecifiedRangeBorderColor1 = GenerallySize.SpecifiedRangeBorderDoColor1;
+                            this._specifiedRange!.SpecifiedRangeBorderColor2 = GenerallySize.SpecifiedRangeBorderDoColor2;
+
+                            this.BaseRecordFullScreen.Start();
+                        }
+                        else
+                        {
+                            this._isDoOnce = true;
+                            this.BaseRecordFullScreen.Interruption();
+                            this.BaseRecordFullScreen.IsSpecifiedRange = false;
+                            if (this.FSFS!.IsAnimationEffects)
+                            {
+                                this.TriggerFlashEffectAsync();
+                            }
+                            this._specifiedRange!.SpecifiedRangeBorderColor1 = GenerallySize.SpecifiedRangeBorderDefaultColor1;
+                            this._specifiedRange!.SpecifiedRangeBorderColor2 = GenerallySize.SpecifiedRangeBorderDefaultColor2;
+
+                        }
+                        break;
+
                     default:
                         throw new ExpectedInfo($@"Please check Name, Unknow:[{this.Name}]", Code.FCT_004);
                         //break;
@@ -425,11 +461,11 @@ namespace VisualCaptureApp.Base
         /// <summary>
         /// 執行拍攝動畫閃光
         /// </summary>
-        private void TriggerFlashEffect()
+        private void TriggerFlashEffectAsync()
         {
             try
             {
-                FScreenshotFullScreen.TriggerFlashEffect();
+                FScreenshotFullScreen.TriggerFlashEffectAsync();
             }
             catch (ExpectedInfo ex)
             {
@@ -565,6 +601,62 @@ namespace VisualCaptureApp.Base
                     Communication?.Invoke(new LogInfo(Key.System, MethodBase.GetCurrentMethod()!.DeclaringType!.ToString(), MethodBase.GetCurrentMethod()!.Name, $@"Touch Keyboard, Code:[{bks.Code}], Description:[{bks.Description}], IsModifiersHasFlag:[{bks.IsModifiersHasFlag}], CM:[{bks.CM.ToString()}]", Code.IFO_000));                    
                     this.DoKeyboardWatchEvent!.Invoke(bks);
                     this._isDoKeyboardWatchEvent = false;
+                }
+            }
+            catch (ExpectedInfo ex)
+            {
+                throw new ExpectedInfo($@"[{this.GetType().Name},{MethodBase.GetCurrentMethod()!.Name}]:{Key.ExpectedInfo}[{ex}]", ex.ReasonCode);
+            }
+            catch (Exception ex)
+            {
+                throw new ExpectedInfo($@"[{this.GetType().Name},{MethodBase.GetCurrentMethod()!.Name}]:{Key.Catch}[{ex}]", Code.FCT_002);
+            }
+            finally
+            {
+            }
+        }
+
+        /// <summary>
+        /// 功能切換
+        /// </summary>
+        /// <exception cref="ExpectedInfo"></exception>
+        public void FunctionChange()
+        {
+            try
+            {
+                switch (this.Name)
+                {
+                    case BaseCaptureFunction.ScreenshotFullScreen:
+                        if (this._specifiedRange != null)
+                        {
+                            this._specifiedRange.Close();
+                        }
+                        break;
+                    case BaseCaptureFunction.ScreenshotSpecifyRange:
+                        if (this._specifiedRange != null)
+                        {
+                            this._specifiedRange.Close();
+                        }
+                        break;
+                    //全螢幕錄影
+                    case BaseCaptureFunction.RecordFullScreen:
+                        if (this._specifiedRange != null)
+                        {
+                            this._specifiedRange.Close();
+                        }
+                        break;
+                    //指定螢幕範圍錄影
+                    case BaseCaptureFunction.RecordSpecifiedRange:
+                        //123
+                        this._specifiedRange = new SpecifiedRange(this.BaseRecordFullScreen!);
+                        this._specifiedRange.SpecifiedRangeBorderColor1 = GenerallySize.SpecifiedRangeBorderDefaultColor1;
+                        this._specifiedRange.SpecifiedRangeBorderColor2 = GenerallySize.SpecifiedRangeBorderDefaultColor2;
+                        this._specifiedRange.Show();
+                        break;
+
+                    default:
+                        throw new ExpectedInfo($@"Please check Name, Unknow:[{this.Name}]", Code.FCT_004);
+                        //break;
                 }
             }
             catch (ExpectedInfo ex)

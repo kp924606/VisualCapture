@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
 
 namespace VisualCaptureApp.AP
 {
@@ -98,6 +99,33 @@ namespace VisualCaptureApp.AP
         /// 初始Combox寬度大小預設值
         /// </summary>
         public const double DefaultComboxInputWidth = 120;
+
+        /// <summary>
+        /// 指定範圍邊框粗細
+        /// </summary>
+        public const double SpecifiedRangeBorderThickness = 2;
+
+        //public static SolidColorBrush SpecifiedRangeBorderDefaultColor1 = new SolidColorBrush(Color.FromScRgb(1.0f, 255 / 255f, 255 / 255f, 0 / 255f));
+        /// <summary>
+        /// 指定範圍邊框預設顏色1
+        /// </summary>
+        public static SolidColorBrush SpecifiedRangeBorderDefaultColor1 = Brushes.Yellow;
+
+        /// <summary>
+        /// 指定範圍邊框預設顏色2
+        /// </summary>
+        public static SolidColorBrush SpecifiedRangeBorderDefaultColor2 = Brushes.Black;
+
+        /// <summary>
+        /// 指定範圍邊框預設顏色1
+        /// </summary>
+        public static SolidColorBrush SpecifiedRangeBorderDoColor1 = Brushes.Green;
+        //new SolidColorBrush(Colors.Green);
+
+        /// <summary>
+        /// 指定範圍邊框預設顏色2
+        /// </summary>
+        public static SolidColorBrush SpecifiedRangeBorderDoColor2 = Brushes.White;
 
         #endregion
     }

@@ -13,10 +13,16 @@
     <Compile Update="View\RecordFullScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\RecordSpecifiedRange.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\ScreenshotFullScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\ScreenshotSpecifyRange.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\SpecifiedRange.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\SplashScreen.xaml.cs">
@@ -33,6 +39,9 @@
     <Page Update="View\RecordFullScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\RecordSpecifiedRange.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\ScreenshotFullScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -40,6 +49,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\GoodbyeScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\SpecifiedRange.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\SplashScreen.xaml">

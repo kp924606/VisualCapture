@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\App.xaml
-71000878831
-16-833707724
-201721231072
+91464016685
+17-472362263
+23326649613
 215-694308867
-MainWindow.xaml;View\GoodbyeScreen.xaml;View\MessageBoxWindow.xaml;View\RecordFullScreen.xaml;View\ScreenshotFullScreen.xaml;View\ScreenshotSpecifyRange.xaml;View\SplashScreen.xaml;
+MainWindow.xaml;View\GoodbyeScreen.xaml;View\MessageBoxWindow.xaml;View\RecordFullScreen.xaml;View\RecordSpecifiedRange.xaml;View\ScreenshotFullScreen.xaml;View\ScreenshotSpecifyRange.xaml;View\SpecifiedRange.xaml;View\SplashScreen.xaml;
 
 True
 

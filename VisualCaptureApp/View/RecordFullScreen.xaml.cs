@@ -29,30 +29,6 @@ namespace VisualCaptureApp.View
     {
         #region Property
 
-        ///// <summary>
-        ///// 錄製時間
-        ///// </summary>
-        //private int _recordTime { set; get; }
-
-        ///// <summary>
-        ///// 錄製時間
-        ///// </summary>
-        //public int RecordTime
-        //{
-        //    get
-        //    {
-        //        return this._recordTime;
-        //    }
-        //    set
-        //    {
-        //        if (this._recordTime != value)
-        //        {
-        //            this._recordTime = value;
-        //            OnPropertyChanged(nameof(this.RecordTime));
-        //        }
-        //    }
-        //}
-
         /// <summary>
         /// 事件觸發
         /// </summary>
@@ -172,7 +148,7 @@ namespace VisualCaptureApp.View
         private void ComboxAudio_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             try
-            {                
+            {
                 if (MainWindow.BaseSh!.BaseRecordFullScreen != null)
                 {
                     int selectedIndex = this.ComboxAudio.SelectedIndex;

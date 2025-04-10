@@ -12,6 +12,8 @@ using System.Windows.Forms;
 using System.Windows.Media.Animation;
 using System.Windows;
 using System.Windows.Media;
+using System.Windows.Interop;
+using System.Runtime.InteropServices;
 
 namespace VisualCaptureApp.Function
 {
@@ -35,6 +37,17 @@ namespace VisualCaptureApp.Function
                 this._isAnimationEffects = value;
             }
         }
+
+        [DllImport("user32.dll")]
+        private static extern int SetWindowLong(IntPtr hwnd, int nIndex, int dwNewLong);
+
+        [DllImport("user32.dll")]
+        private static extern int GetWindowLong(IntPtr hwnd, int nIndex);
+
+        private const int GWL_EXSTYLE = -20;
+        private const int WS_EX_LAYERED = 0x80000;
+        private const int WS_EX_TRANSPARENT = 0x20;
+
         #endregion
 
         #region Static
@@ -42,7 +55,7 @@ namespace VisualCaptureApp.Function
         /// <summary>
         /// 閃光動畫效果
         /// </summary>
-        public static void TriggerFlashEffect()
+        public static void TriggerFlashEffectAsync()
         {
             try
             {
@@ -68,6 +81,14 @@ namespace VisualCaptureApp.Function
                         Width = maxX - minX,
                         Height = maxY - minY,
                         Opacity = 0,
+                    };
+
+                    // 設定 Win32 API 讓視窗變成透明點擊穿透
+                    flashWindow.SourceInitialized += (s, _) =>
+                    {
+                        IntPtr hwnd = new WindowInteropHelper(flashWindow).Handle;
+                        int extendedStyle = GetWindowLong(hwnd, GWL_EXSTYLE);
+                        SetWindowLong(hwnd, GWL_EXSTYLE, extendedStyle | WS_EX_LAYERED | WS_EX_TRANSPARENT);
                     };
 
                     // 淡入淡出動畫
@@ -135,6 +156,14 @@ namespace VisualCaptureApp.Function
                     Width = maxX - minX,
                     Height = maxY - minY,
                     Opacity = 0,
+                };
+
+                // 設定 Win32 API 讓視窗變成透明點擊穿透
+                flashWindow.SourceInitialized += (s, _) =>
+                {
+                    IntPtr hwnd = new WindowInteropHelper(flashWindow).Handle;
+                    int extendedStyle = GetWindowLong(hwnd, GWL_EXSTYLE);
+                    SetWindowLong(hwnd, GWL_EXSTYLE, extendedStyle | WS_EX_LAYERED | WS_EX_TRANSPARENT);
                 };
 
                 // 淡入淡出動畫

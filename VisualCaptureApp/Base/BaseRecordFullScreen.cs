@@ -189,6 +189,16 @@ namespace VisualCaptureApp.Base
             get => this._audioList;
         }
 
+        /// <summary>
+        /// 指定範圍
+        /// </summary>
+        public BaseSpecifiedRange? BaseSpecifiedRange { set; get; }
+
+        /// <summary>
+        /// 使用者定範圍
+        /// </summary>
+        public bool IsSpecifiedRange { set; get; }
+
         public event PropertyChangedEventHandler? PropertyChanged;
         protected void OnPropertyChanged(string propertyName)
         {
@@ -212,6 +222,8 @@ namespace VisualCaptureApp.Base
                 this._audioList = new List<string>();
                 this.RecordTime = 0;
                 this.GetAudioList();
+                this.BaseSpecifiedRange = new BaseSpecifiedRange();
+                this.IsSpecifiedRange = false;
                 this.AddProject(new MRightNow(@"DoScreenshot_MRightNow", DoScreenshot, DoScreenshotFinish));
                 this.AddProject(new MTimer(@"DoRecordTime_MTimer", DoRecordTime, DoRecordTimeFinish, 1, false, true));                
             }
@@ -378,19 +390,35 @@ namespace VisualCaptureApp.Base
                 //-b:a 192k	音訊位元率，設定為 192kbps (可調整)
 
                 string ffmpegArgs = string.Empty;
-                if (this.IsRecordAudio)
+                string ffmpegRange = string.Empty;
+                //指定螢幕範圍
+                if (this.IsSpecifiedRange)
                 {
-                    ffmpegArgs = $@"-y -f gdigrab -framerate {this.fps} -i desktop -f dshow -i audio=""{this.AudioList![this.CurrentAudioIndex]}"" -c:v mpeg4 -q:v {this._videoQuality} {this.saveFolder}\output_{DateTime.Now.ToString(@"yyyyMMddHHmmss")}.avi";
+                    //ffmpegRange = $@"-video_size {this.BaseSpecifiedRange!.Width}x{this.BaseSpecifiedRange!.Height} -offset_x {this.BaseSpecifiedRange!.Left} -offset_y {this.BaseSpecifiedRange!.Top} -i desktop";
+                    //把範圍聚焦在虛線邊框內
+                    //ffmpegRange = $@"-video_size {this.BaseSpecifiedRange!.Width - (this.BaseSpecifiedRange!.BorderThickness * 3)}x{this.BaseSpecifiedRange!.Height - (this.BaseSpecifiedRange!.BorderThickness * 4)} -offset_x {this.BaseSpecifiedRange!.Left + this.BaseSpecifiedRange!.BorderThickness} -offset_y {this.BaseSpecifiedRange!.Top + (this.BaseSpecifiedRange!.BorderThickness * 2)} -i desktop";
+                    ffmpegRange = $@"-video_size {this.BaseSpecifiedRange!.Width - (this.BaseSpecifiedRange!.BorderThickness * 3)}x{this.BaseSpecifiedRange!.Height - (this.BaseSpecifiedRange!.BorderThickness * 4)} -offset_x {this.BaseSpecifiedRange!.Left + this.BaseSpecifiedRange!.BorderThickness} -offset_y {this.BaseSpecifiedRange!.Top + (this.BaseSpecifiedRange!.BorderThickness * 2)} -i desktop";
                 }
                 else
                 {
-                    ffmpegArgs = $@"-y -f gdigrab -framerate {this.fps} -i desktop -c:v mpeg4 -q:v {this._videoQuality} {this.saveFolder}\output_{DateTime.Now.ToString(@"yyyyMMddHHmmss")}.avi";
+                    ffmpegRange = @"-i desktop";
                 }
 
-                //string ffmpegArgs = $@"-y -f gdigrab -framerate {this.fps} -i desktop -f dshow -i audio=""Line 1 (Virtual Audio Cable)"" -c:v mpeg4 -q:v {this._videoQuality} {this.saveFolder}\output_{DateTime.Now.ToString(@"yyyyMMddHHmmss")}.avi";
-                
-                //string ffmpegArgs = $@"-y -f gdigrab -framerate {this.fps} -i desktop -c:v mpeg4 -q:v {this._videoQuality} {this.saveFolder}\output_{DateTime.Now.ToString(@"yyyyMMddHHmmss")}.avi";
+                if (this.IsRecordAudio)
+                {
+                    ffmpegArgs = $@"-y -f gdigrab -framerate {this.fps} {ffmpegRange} -f dshow -i audio=""{this.AudioList![this.CurrentAudioIndex]}"" -c:v mpeg4 -q:v {this._videoQuality} {this.saveFolder}\output_{DateTime.Now.ToString(@"yyyyMMddHHmmss")}.avi";
+                    //ffmpegArgs = $@"-y -f gdigrab -framerate {this.fps} -i desktop -f dshow -i audio=""{this.AudioList![this.CurrentAudioIndex]}"" -c:v mpeg4 -q:v {this._videoQuality} {this.saveFolder}\output_{DateTime.Now.ToString(@"yyyyMMddHHmmss")}.avi";
+                }
+                else
+                {
+                    ffmpegArgs = $@"-y -f gdigrab -framerate {this.fps} {ffmpegRange} -c:v mpeg4 -q:v {this._videoQuality} {this.saveFolder}\output_{DateTime.Now.ToString(@"yyyyMMddHHmmss")}.avi";
+                    //ffmpegArgs = $@"-y -f gdigrab -framerate {this.fps} -i desktop -c:v mpeg4 -q:v {this._videoQuality} {this.saveFolder}\output_{DateTime.Now.ToString(@"yyyyMMddHHmmss")}.avi";
+                }
 
+                BMolecule.Communication?.Invoke(new LogInfo(this.Name, this.GetType().Name, MethodBase.GetCurrentMethod()!.Name, $@"FFmpeg Args:[{ffmpegArgs}]", Code.IFO_000, ILogType.Info, null, null));
+
+                //string ffmpegArgs = $@"-y -f gdigrab -framerate {this.fps} -i desktop -f dshow -i audio=""Line 1 (Virtual Audio Cable)"" -c:v mpeg4 -q:v {this._videoQuality} {this.saveFolder}\output_{DateTime.Now.ToString(@"yyyyMMddHHmmss")}.avi";
+                //string ffmpegArgs = $@"-y -f gdigrab -framerate {this.fps} -i desktop -c:v mpeg4 -q:v {this._videoQuality} {this.saveFolder}\output_{DateTime.Now.ToString(@"yyyyMMddHHmmss")}.avi";
                 //string ffmpegArgs = $@"-y -f gdigrab -framerate {this.fps} -i desktop -c:v mpeg4 -q:v 5 {this.saveFolder}\output_{DateTime.Now.ToString(@"yyyyMMddHHmmss")}.avi";
                 //string ffmpegArgs = $@"-y -f gdigrab -framerate {this.fps} -i desktop -c:v libx264 -crf 2 {this.saveFolder}\output_{DateTime.Now.ToString(@"yyyyMMddHHmmss")}.mp4";
 
@@ -482,6 +510,10 @@ namespace VisualCaptureApp.Base
             }
         }
 
+        /// <summary>
+        /// 執行指定擷取完成
+        /// </summary>
+        /// <param name="obj"></param>
         private void DoScreenshotFinish(object obj)
         {
             try
@@ -500,6 +532,10 @@ namespace VisualCaptureApp.Base
             }
         }
 
+        /// <summary>
+        /// 計時錄製時間
+        /// </summary>
+        /// <param name="obj"></param>
         private void DoRecordTime(object obj)
         {
             try

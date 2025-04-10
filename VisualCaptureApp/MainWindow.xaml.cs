@@ -505,7 +505,7 @@ namespace VisualCaptureApp
 
                 BaseSh = new BaseScreenshot(this._defaultSaveFolderPath);
                 
-                this.DataContext = this; // 設定 DataContext，讓 XAML 可以綁定變數                       
+                this.DataContext = this; // 設定 DataContext，讓 XAML 可以綁定變數
             }
             catch (ExpectedInfo ex)
             {
@@ -721,7 +721,10 @@ namespace VisualCaptureApp
                 this.DefaultFutrueImageSourcePath = BaseSh!.BaseCaptureFunctionL![selectedIndex].ImagePath!;
                 var tpDViewName = BaseSh.BaseCaptureFunctionL[selectedIndex].Name;
                 DetailFrame.Navigate(new Uri($@"View\{tpDViewName}.xaml", UriKind.Relative));
-                //BaseSh!.IsDoOnce = false;
+                
+                //執行指定拍照動作
+                BaseSh!.FunctionIndex = selectedIndex;
+                BaseSh.FunctionChange();
             }
             catch (ExpectedInfo ex)
             {

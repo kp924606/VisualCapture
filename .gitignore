@@ -1,3 +1,5 @@
 document/
 VisualCaptureApp/bin/Debug/net8.0-windows/Data/
 VisualCaptureApp/bin/Release/net8.0-windows/Data/
+VisualCaptureApp/bin/Release/net8.0-windows/log/
+VisualCaptureApp/bin/Debug/net8.0-windows/log/

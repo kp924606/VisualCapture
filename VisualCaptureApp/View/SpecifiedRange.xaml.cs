@@ -15,6 +15,7 @@ using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -29,6 +30,11 @@ namespace VisualCaptureApp.View
     /// </summary>
     public partial class SpecifiedRange : Window, INotifyPropertyChanged
     {
+        /// <summary>
+        /// 邊框邊界
+        /// </summary>
+        const int SnapThreshold = 3; // 吸附距離（像素）
+
         /// <summary>
         /// 選擇範圍邊框
         /// </summary>
@@ -93,6 +99,24 @@ namespace VisualCaptureApp.View
         }
 
         /// <summary>
+        /// 顯示十字架
+        /// </summary>
+        private bool _isShowCrossCanvas;
+
+        /// <summary>
+        /// 顯示十字架
+        /// </summary>
+        public bool IsShowCrossCanvas
+        {
+            get => this._isShowCrossCanvas;
+            set
+            {
+                this._isShowCrossCanvas = value;
+                OnPropertyChanged(nameof(IsShowCrossCanvas));
+            }
+        }
+
+        /// <summary>
         /// 選擇範圍物件
         /// </summary>
         private BaseRecordFullScreen? _baseRecordFullScreen { set; get; }
@@ -106,6 +130,11 @@ namespace VisualCaptureApp.View
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
+        /// <summary>
+        /// 初始化
+        /// </summary>
+        /// <param name="brfs"></param>
+        /// <exception cref="ExpectedInfo"></exception>
         public SpecifiedRange(BaseRecordFullScreen brfs)
         {
             InitializeComponent();
@@ -117,9 +146,6 @@ namespace VisualCaptureApp.View
 
             this._baseRecordFullScreen = brfs!;
             this.DataContext = this; // 設定 DataContext，讓 XAML 可以綁定變數
-
-            //this.SpecifiedRangeBorderColor1 = System.Windows.Media.Brushes.Yellow;
-            //this.SpecifiedRangeBorderColor2 = System.Windows.Media.Brushes.Black;
         }
 
         /// <summary>
@@ -157,55 +183,139 @@ namespace VisualCaptureApp.View
 
                     void DoLeft()
                     {
-                        var oldLeft = Left;
-                        var oldRight = Left + Region.Width;
-                        var left = Left + E.HorizontalChange;
-                        Left = left;
-                        //if (left > 0)
-                        //    Left = left;
-                        //else
-                        //{
-                        //    Left = 0;
-                        //    Region.Width = oldRight;
-                        //    return;
-                        //}
+                        //var oldLeft = Left;
+                        //var oldRight = Left + Region.Width;
+                        //var left = Left + E.HorizontalChange;
+                        //Left = left;                        
 
-                        //Left = left;
-                        //if (oldRight > 0)
-                        //{
-                        //    Region.Width = oldRight;
-                        //}
-
-                        var width = Width - E.HorizontalChange;
-
-                        //if (width > Region.MinWidth)
+                        //var width = Width - E.HorizontalChange;
+                        //if (width > 0)
                         //    Region.Width = width;
-                        //else Left = oldLeft;
+                        //---
 
-                        if (width > 0)
-                            Region.Width = width;
+                        double minLeft = Screen.AllScreens.Min(s => s.Bounds.Left);                       
+
+                        double oldLeft = Left;
+                        double newLeft = oldLeft + E.HorizontalChange;
+                        double oldRight = oldLeft + Width;
+
+                        // 限制不要超出螢幕左邊界
+                        if (newLeft < minLeft)
+                            newLeft = minLeft;
+                        double newWidth = oldRight - newLeft;
+
+                        if (newWidth > Region.MinWidth)
+                        {
+                            Left = newLeft;
+                            Region.Width = newWidth;
+                        }
                     }
 
                     void DoBottom()
                     {
-                        var height = Height + E.VerticalChange;
+                        //var height = Height + E.VerticalChange;
 
-                        if (height > 0)
-                            Region.Height = height;
+                        //if (height > 0)
+                        //    Region.Height = height;
+
+                        //---
+
+                        double maxBottom = Screen.AllScreens.Max(s => s.Bounds.Bottom);
+
+                        double newHeight = Height + E.VerticalChange;
+                        double maxHeight = maxBottom - Top;
+
+                        // 限制不能超出螢幕下邊界
+                        if (newHeight > 0 && (Top + newHeight <= maxBottom))
+                            Region.Height = newHeight;
+                        else
+                            Region.Height = maxHeight;
                     }
 
                     void DoRight()
                     {
-                        var width = Width + E.HorizontalChange;
-                    
-                        if (width > 0)
-                            Region.Width = width;
+                        //var width = Width + E.HorizontalChange;
+
+                        //if (width > 0)
+                        //    Region.Width = width;
+
+                        //---
+                        double maxRight = Screen.AllScreens.Max(s => s.Bounds.Right);
+
+                        double newWidth = Width + E.HorizontalChange;
+                        double maxWidth = maxRight - Left;
+
+                        // 限制不能超出螢幕右邊界
+                        if (newWidth > 0 && (Left + newWidth <= maxRight))
+                            Region.Width = newWidth;
+                        else
+                            Region.Width = maxWidth;
                     }
 
                     void DoMove()
                     {
-                        Left += E.HorizontalChange;
-                        Top += E.VerticalChange;
+                        //Left += E.HorizontalChange;
+                        //Top += E.VerticalChange;
+                        //---
+                        //// 取得目前所在螢幕（含工作列）
+                        //var screen = System.Windows.Forms.Screen.FromHandle(
+                        //    new System.Windows.Interop.WindowInteropHelper(this).Handle
+                        //);
+                        //var screenBounds = screen.Bounds;
+
+                        //// 原本位置 + 拖曳變化
+                        //double newLeft = Left + E.HorizontalChange;
+                        //double newTop = Top + E.VerticalChange;
+
+                        //// 計算最大 Left / Top（不超出螢幕）
+                        //double maxLeft = screenBounds.Right - Width;
+                        //double maxTop = screenBounds.Bottom - Height;
+
+                        //// ======== X 軸吸附邏輯 ========
+                        //if (Math.Abs(newLeft - screenBounds.Left) <= SnapThreshold)
+                        //    Left = screenBounds.Left;
+                        //else if (Math.Abs(newLeft - maxLeft) <= SnapThreshold)
+                        //    Left = maxLeft;
+                        //else
+                        //    Left = Math.Clamp(newLeft, screenBounds.Left, maxLeft);
+
+                        //// ======== Y 軸吸附邏輯 ========
+                        //if (Math.Abs(newTop - screenBounds.Top) <= SnapThreshold)
+                        //    Top = screenBounds.Top;
+                        //else if (Math.Abs(newTop - maxTop) <= SnapThreshold)
+                        //    Top = maxTop;
+                        //else
+                        //    Top = Math.Clamp(newTop, screenBounds.Top, maxTop);
+
+                        //---
+                        double minLeft = Screen.AllScreens.Min(s => s.Bounds.Left);
+                        double minTop = Screen.AllScreens.Min(s => s.Bounds.Top);
+                        double maxRight = Screen.AllScreens.Max(s => s.Bounds.Right);
+                        double maxBottom = Screen.AllScreens.Max(s => s.Bounds.Bottom);
+
+                        // 原本位置 + 拖曳變化
+                        double newLeft = Left + E.HorizontalChange;
+                        double newTop = Top + E.VerticalChange;
+
+                        // 計算最大 Left / Top（不超出螢幕）
+                        double maxLeft = maxRight - Width;
+                        double maxTop = maxBottom - Height;
+
+                        // ======== X 軸吸附邏輯 ========
+                        if (Math.Abs(newLeft - minLeft) <= SnapThreshold)
+                            Left = minLeft;
+                        else if (Math.Abs(newLeft - maxLeft) <= SnapThreshold)
+                            Left = maxLeft;
+                        else
+                            Left = Math.Clamp(newLeft, minLeft, maxLeft);
+
+                        // ======== Y 軸吸附邏輯 ========
+                        if (Math.Abs(newTop - minTop) <= SnapThreshold)
+                            Top = minTop;
+                        else if (Math.Abs(newTop - maxTop) <= SnapThreshold)
+                            Top = maxTop;
+                        else
+                            Top = Math.Clamp(newTop, minTop, maxTop);
                     }
 
                     switch (element.Tag)

@@ -410,9 +410,10 @@ namespace VisualCaptureApp.Base
                         break;
                     //指定螢幕範圍錄影
                     case BaseCaptureFunction.RecordSpecifiedRange:
+                        //準備開始錄製
                         if (!this.BaseRecordFullScreen!.IsRunning)
                         {
-                            this._isDoOnce = false;                           
+                            this._isDoOnce = false;
                             if (this.FSFS!.IsAnimationEffects)
                             {
                                 this.TriggerFlashEffect(128, 0, 222, 0, 100);
@@ -422,7 +423,7 @@ namespace VisualCaptureApp.Base
                             //SpinWait.SpinUntil(() => false, 100);
                             this._specifiedRange!.SpecifiedRangeBorderColor1 = GenerallySize.SpecifiedRangeBorderDoColor1;
                             this._specifiedRange!.SpecifiedRangeBorderColor2 = GenerallySize.SpecifiedRangeBorderDoColor2;
-
+                            this._specifiedRange!.IsShowCrossCanvas = false;
                             this.BaseRecordFullScreen.Start();
                         }
                         else
@@ -436,7 +437,7 @@ namespace VisualCaptureApp.Base
                             }
                             this._specifiedRange!.SpecifiedRangeBorderColor1 = GenerallySize.SpecifiedRangeBorderDefaultColor1;
                             this._specifiedRange!.SpecifiedRangeBorderColor2 = GenerallySize.SpecifiedRangeBorderDefaultColor2;
-
+                            this._specifiedRange!.IsShowCrossCanvas = true;
                         }
                         break;
 
@@ -651,6 +652,7 @@ namespace VisualCaptureApp.Base
                         this._specifiedRange = new SpecifiedRange(this.BaseRecordFullScreen!);
                         this._specifiedRange.SpecifiedRangeBorderColor1 = GenerallySize.SpecifiedRangeBorderDefaultColor1;
                         this._specifiedRange.SpecifiedRangeBorderColor2 = GenerallySize.SpecifiedRangeBorderDefaultColor2;
+                        this._specifiedRange.IsShowCrossCanvas = true;
                         this._specifiedRange.Show();
                         break;
 

@@ -2,8 +2,8 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:VisualCaptureApp.View"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"        
+        xmlns:converter="clr-namespace:VisualCaptureApp.ValueConverter"
         mc:Ignorable="d"
         Title="SpecifiedRange"
         Background="Transparent"
@@ -15,6 +15,12 @@
         ShowInTaskbar="False"
         WindowStartupLocation="CenterScreen" 
         >
+
+    <Window.Resources>
+        <converter:HalfValueConverter x:Key="HalfValueConverter"/>
+        <BooleanToVisibilityConverter x:Key="BoolToVis"/>
+    </Window.Resources>
+
     <Grid>
         <Grid.Resources>
             <Style TargetType="Thumb">
@@ -38,8 +44,8 @@
 
         <Border BorderThickness="{Binding SpecifiedRangeBorderThickness, Mode=TwoWay}"
                 Name="Region"                
-                MinHeight="200"
-                MinWidth="300">
+                MinHeight="50"
+                MinWidth="100">
             <Border.BorderBrush>
                 <DrawingBrush TileMode="Tile" Viewport="0,0,20,20" ViewportUnits="Absolute">
                     <DrawingBrush.Drawing>
@@ -70,22 +76,74 @@
                         </DrawingGroup>
                     </DrawingBrush.Drawing>
                 </DrawingBrush>
-            </Border.BorderBrush>            
+            </Border.BorderBrush>
 
-            <!--<InkCanvas Background="Transparent"
-               Visibility="Visible"
-               Name="InkCanvas"/>-->
+            <Grid>
+                <!-- 中央十字線 -->
+                <Canvas Name="CrossCanvas" Visibility="{Binding IsShowCrossCanvas, Converter={StaticResource BoolToVis}}" Background="Transparent">
+                    <Canvas.Resources>
+                        <Style x:Key="DashedLine1" TargetType="Line">
+                            <Setter Property="StrokeThickness" Value="2"/>
+                            <Setter Property="StrokeDashArray" Value="6,2"/>
+                            <!-- 虛線樣式 -->
+                        </Style>
+                        <Style x:Key="DashedLine2" TargetType="Line">
+                            <Setter Property="StrokeThickness" Value="2"/>
+                            <Setter Property="StrokeDashArray" Value="4,4"/>
+                            <!-- 虛線樣式 -->
+                        </Style>
+                    </Canvas.Resources>
 
-            <!--<Thumb Background="Transparent"
-           Cursor="SizeAll"
-           DragDelta="Thumb_OnDragDelta"
-           Tag="Move"/>-->
-            
-            <Thumb HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"
-               Height="2"
-               Cursor="SizeAll"
-               Tag="Move"/>
+                    <!-- 垂直虛線 -->
+                    <Line X1="0"
+                          Y1="{Binding ActualHeight, ElementName=CrossCanvas, Converter={StaticResource HalfValueConverter}}"
+                          X2="{Binding ActualWidth, ElementName=CrossCanvas}"
+                          Y2="{Binding ActualHeight, ElementName=CrossCanvas, Converter={StaticResource HalfValueConverter}}"
+                          Stroke="{Binding SpecifiedRangeBorderColor1}"
+                          Style="{StaticResource DashedLine1}"/>
+
+                    <Line X1="0"
+                          Y1="{Binding ActualHeight, ElementName=CrossCanvas, Converter={StaticResource HalfValueConverter}}"
+                          X2="{Binding ActualWidth, ElementName=CrossCanvas}"
+                          Y2="{Binding ActualHeight, ElementName=CrossCanvas, Converter={StaticResource HalfValueConverter}}"
+                          Stroke="{Binding SpecifiedRangeBorderColor2}"
+                          Style="{StaticResource DashedLine2}"/>
+
+                    <!-- 水平虛線 -->
+                    <Line X1="{Binding ActualWidth, ElementName=CrossCanvas, Converter={StaticResource HalfValueConverter}}"
+                          Y1="0"
+                          X2="{Binding ActualWidth, ElementName=CrossCanvas, Converter={StaticResource HalfValueConverter}}"
+                          Y2="{Binding ActualHeight, ElementName=CrossCanvas}"
+                          Stroke="{Binding SpecifiedRangeBorderColor1}"
+                          Style="{StaticResource DashedLine1}"/>
+
+                    <Line X1="{Binding ActualWidth, ElementName=CrossCanvas, Converter={StaticResource HalfValueConverter}}"
+                          Y1="0"
+                          X2="{Binding ActualWidth, ElementName=CrossCanvas, Converter={StaticResource HalfValueConverter}}"
+                          Y2="{Binding ActualHeight, ElementName=CrossCanvas}"
+                          Stroke="{Binding SpecifiedRangeBorderColor2}"
+                          Style="{StaticResource DashedLine2}"/>                   
+                </Canvas>
+
+                <!-- 十字線上的水平拖曳 Thumb -->
+                <Thumb HorizontalAlignment="Stretch"
+                       VerticalAlignment="Center"
+                       Height="5"
+                       Cursor="SizeAll"
+                       Tag="Move"/>
+                <!-- 十字線上的垂直拖曳 Thumb -->
+                <Thumb HorizontalAlignment="Center"
+                       VerticalAlignment="Stretch"
+                       Width="5"
+                       Cursor="SizeAll"
+                       Tag="Move"/>                
+            </Grid>
+
+            <!--<Thumb HorizontalAlignment="Stretch"
+                   VerticalAlignment="Stretch"
+                   Height="2"
+                   Cursor="SizeAll"
+                   Tag="Move"/>-->
 
         </Border>
 
@@ -98,43 +156,43 @@
               Grid.Column="0"
               IsEnabled="True">
             <Thumb VerticalAlignment="Bottom"
-           Height="2"
-           Cursor="SizeNS"
-           Tag="Bottom"/>
+               Height="2"
+               Cursor="SizeNS"
+               Tag="Bottom"/>
 
             <Thumb HorizontalAlignment="Left"
-           Width="2"
-           Cursor="SizeWE"
-           Tag="Left"/>
+               Width="2"
+               Cursor="SizeWE"
+               Tag="Left"/>
 
             <Thumb HorizontalAlignment="Right"
-           Width="2"
-           Cursor="SizeWE"
-           Tag="Right"/>
+               Width="2"
+               Cursor="SizeWE"
+               Tag="Right"/>
 
             <Thumb HorizontalAlignment="Left"
-           VerticalAlignment="Top"
-           Style="{StaticResource CornerThumb}"
-           Cursor="SizeNWSE"
-           Tag="TopLeft"/>
+               VerticalAlignment="Top"
+               Style="{StaticResource CornerThumb}"
+               Cursor="SizeNWSE"
+               Tag="TopLeft"/>
 
             <Thumb HorizontalAlignment="Right"
-           VerticalAlignment="Top"
-           Style="{StaticResource CornerThumb}"
-           Cursor="SizeNESW"
-           Tag="TopRight"/>
+               VerticalAlignment="Top"
+               Style="{StaticResource CornerThumb}"
+               Cursor="SizeNESW"
+               Tag="TopRight"/>
 
             <Thumb HorizontalAlignment="Left"
-           VerticalAlignment="Bottom"
-           Style="{StaticResource CornerThumb}"
-           Cursor="SizeNESW"
-           Tag="BottomLeft"/>
+               VerticalAlignment="Bottom"
+               Style="{StaticResource CornerThumb}"
+               Cursor="SizeNESW"
+               Tag="BottomLeft"/>
 
             <Thumb HorizontalAlignment="Right"
-           VerticalAlignment="Bottom"
-           Style="{StaticResource CornerThumb}"
-           Cursor="SizeNWSE"
-           Tag="BottomRight"/>
+               VerticalAlignment="Bottom"
+               Style="{StaticResource CornerThumb}"
+               Cursor="SizeNWSE"
+               Tag="BottomRight"/>
         </Grid>
         
     </Grid>

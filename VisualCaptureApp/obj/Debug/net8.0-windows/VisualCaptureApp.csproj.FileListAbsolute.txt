@@ -69,3 +69,4 @@ D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\obj\Debug\net8.0-windows
 D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\obj\Debug\net8.0-windows\View\SpecifiedRange.baml
 D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\obj\Debug\net8.0-windows\View\RecordSpecifiedRange.g.cs
 D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\obj\Debug\net8.0-windows\View\RecordSpecifiedRange.baml
+D:\蔡承廷\Development\VisualCapture\VisualCaptureApp\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs

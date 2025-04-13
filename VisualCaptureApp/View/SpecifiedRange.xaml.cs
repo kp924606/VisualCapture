@@ -119,7 +119,10 @@ namespace VisualCaptureApp.View
         /// <summary>
         /// 選擇範圍物件
         /// </summary>
-        private BaseRecordFullScreen? _baseRecordFullScreen { set; get; }
+        //private BaseRecordFullScreen? _baseRecordFullScreen { set; get; }
+
+        ///基本指定範圍
+        private BaseSpecifiedRange _baseSpecifiedRange { set; get; }
 
         /// <summary>
         /// 事件觸發
@@ -135,16 +138,17 @@ namespace VisualCaptureApp.View
         /// </summary>
         /// <param name="brfs"></param>
         /// <exception cref="ExpectedInfo"></exception>
-        public SpecifiedRange(BaseRecordFullScreen brfs)
+        public SpecifiedRange(BaseSpecifiedRange bsr)
         {
+            //public SpecifiedRange(BaseRecordFullScreen brfs)
             InitializeComponent();
 
-            if (brfs == null)
+            if (bsr == null)
             {
                 throw new ExpectedInfo($@"Please check BaseSpecifiedRange, Object is Null", Code.ODI_005);
             }
 
-            this._baseRecordFullScreen = brfs!;
+            this._baseSpecifiedRange = bsr!;
             this.DataContext = this; // 設定 DataContext，讓 XAML 可以綁定變數
         }
 
@@ -360,11 +364,11 @@ namespace VisualCaptureApp.View
                             break;
                     }
 
-                    this._baseRecordFullScreen!.BaseSpecifiedRange!.Top = Top;
-                    this._baseRecordFullScreen!.BaseSpecifiedRange!.Left = Left;
-                    this._baseRecordFullScreen!.BaseSpecifiedRange!.Height = Height;
-                    this._baseRecordFullScreen!.BaseSpecifiedRange!.Width = Width;
-                    this._baseRecordFullScreen!.BaseSpecifiedRange!.BorderThickness = this._specifiedRangeBorderThickness.Top;
+                    this._baseSpecifiedRange!.Top = Top;
+                    this._baseSpecifiedRange!.Left = Left;
+                    this._baseSpecifiedRange!.Height = Height;
+                    this._baseSpecifiedRange!.Width = Width;
+                    this._baseSpecifiedRange!.BorderThickness = this._specifiedRangeBorderThickness.Top;
                 }
             }
             catch (ExpectedInfo ex)

@@ -9,6 +9,7 @@
       Title="ScreenshotSpecifyRange">
 
     <Grid>
-        <TextBlock Text="這是 ScreenshotSpecifyRange View" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <!--<TextBlock Text="這是 ScreenshotSpecifyRange View" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>-->
+    
     </Grid>
 </Page>

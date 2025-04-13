@@ -25,6 +25,7 @@ using System.Windows;
 using Application = System.Windows.Application;
 using VisualCaptureApp.View;
 using ProjectLifeModuleManagement.Base;
+using System.Windows.Media.Media3D;
 
 namespace VisualCaptureApp.Base
 {
@@ -245,6 +246,11 @@ namespace VisualCaptureApp.Base
         /// </summary>
         private SpecifiedRange? _specifiedRange { set; get; }
 
+        /// <summary>
+        /// 基本指定範圍
+        /// </summary>
+        private BaseSpecifiedRange? _baseSpecifiedRange { set; get; }
+
         #endregion
 
         /**/
@@ -255,7 +261,7 @@ namespace VisualCaptureApp.Base
             {
                 this.BaseCaptureFunctionL = new List<BaseCaptureFunction>();
                 this.BaseCaptureFunctionL.Add(new BaseCaptureFunction(BaseCaptureFunction.ScreenshotFullScreen, BaseCaptureFunction.ScreenshotFullScreenImagPath, true));
-                //this.BaseCaptureFunctionL.Add(new BaseCaptureFunction(BaseCaptureFunction.ScreenshotSpecifyRange, BaseCaptureFunction.ScreenshotSpecifyRangeImagPath, true));
+                this.BaseCaptureFunctionL.Add(new BaseCaptureFunction(BaseCaptureFunction.ScreenshotSpecifyRange, BaseCaptureFunction.ScreenshotSpecifyRangeImagPath, true));
                 this.BaseCaptureFunctionL.Add(new BaseCaptureFunction(BaseCaptureFunction.RecordFullScreen, BaseCaptureFunction.RecordFullScreenImagPath, true));
                 this.BaseCaptureFunctionL.Add(new BaseCaptureFunction(BaseCaptureFunction.RecordSpecifiedRange, BaseCaptureFunction.RecordSpecifiedRangeImagPath, true));
 
@@ -316,6 +322,9 @@ namespace VisualCaptureApp.Base
                 dic.Add(Key.SaveFolder, defaultSaveFolderPath);
                 this.BaseRecordFullScreen = new BaseRecordFullScreen(BaseCaptureFunction.RecordFullScreen, dic);
 
+                //指定範圍
+                this._baseSpecifiedRange = new BaseSpecifiedRange();
+
                 //設定模組內的溝通方式
                 BMolecule.Communication = Communication;
 
@@ -363,7 +372,6 @@ namespace VisualCaptureApp.Base
         {
             try
             {
-                //777 錄影
                 switch (this.Name)
                 {
                     //全螢幕截圖
@@ -372,12 +380,21 @@ namespace VisualCaptureApp.Base
                         this.DoScreenshotFullScreen();
                         if (this.FSFS!.IsAnimationEffects)
                         {
-                            this.TriggerFlashEffectAsync();
+                            FScreenshotFullScreen.TriggerFlashEffectAsync();
                         }
                         
                         break;
+                    //指定螢幕範圍截圖
                     case BaseCaptureFunction.ScreenshotSpecifyRange:
-
+                        //123
+                        this._isDoOnce = true;
+                        this._specifiedRange!.Hide();
+                        this.DoScreenshotFullScreenByRange();
+                        if (this.FSFS!.IsAnimationEffects)
+                        {
+                            FScreenshotFullScreen.TriggerFlashEffectAsyncByRange(this._baseSpecifiedRange!.Left, this._baseSpecifiedRange!.Top, this._baseSpecifiedRange!.Width, this._baseSpecifiedRange!.Height);
+                        }
+                        this._specifiedRange!.Show();
                         break;
                     //全螢幕錄影
                     case BaseCaptureFunction.RecordFullScreen:
@@ -391,7 +408,7 @@ namespace VisualCaptureApp.Base
 
                             if (this.FSFS!.IsAnimationEffects)
                             {
-                                this.TriggerFlashEffect(128,0,222,0, 100);
+                                FScreenshotFullScreen.TriggerFlashEffect(128, 0, 222, 0, 100);
                             }
                             this.BaseRecordFullScreen.SaveFolder = this.saveFolder!;
                             this.BaseRecordFullScreen.IsSpecifiedRange = false;
@@ -404,7 +421,7 @@ namespace VisualCaptureApp.Base
                             this.BaseRecordFullScreen.Interruption();
                             if (this.FSFS!.IsAnimationEffects)
                             {
-                                this.TriggerFlashEffectAsync();
+                                FScreenshotFullScreen.TriggerFlashEffectAsync();
                             }
                         }
                         break;
@@ -416,7 +433,10 @@ namespace VisualCaptureApp.Base
                             this._isDoOnce = false;
                             if (this.FSFS!.IsAnimationEffects)
                             {
-                                this.TriggerFlashEffect(128, 0, 222, 0, 100);
+                                //this.TriggerFlashEffect(128, 0, 222, 0, 100);
+                                //FScreenshotFullScreen.TriggerFlashEffect(128, 0, 222, 0, 100);                                
+                                FScreenshotFullScreen.TriggerFlashEffectAsyncByRange(this.BaseRecordFullScreen.BaseSpecifiedRange!.Left, this.BaseRecordFullScreen.BaseSpecifiedRange!.Top, this.BaseRecordFullScreen.BaseSpecifiedRange!.Width, this.BaseRecordFullScreen.BaseSpecifiedRange!.Height);
+
                             }
                             this.BaseRecordFullScreen.SaveFolder = this.saveFolder!;
                             this.BaseRecordFullScreen.IsSpecifiedRange = true;
@@ -426,6 +446,7 @@ namespace VisualCaptureApp.Base
                             this._specifiedRange!.IsShowCrossCanvas = false;
                             this.BaseRecordFullScreen.Start();
                         }
+                        //錄製完成
                         else
                         {
                             this._isDoOnce = true;
@@ -433,7 +454,7 @@ namespace VisualCaptureApp.Base
                             this.BaseRecordFullScreen.IsSpecifiedRange = false;
                             if (this.FSFS!.IsAnimationEffects)
                             {
-                                this.TriggerFlashEffectAsync();
+                                FScreenshotFullScreen.TriggerFlashEffectAsync();
                             }
                             this._specifiedRange!.SpecifiedRangeBorderColor1 = GenerallySize.SpecifiedRangeBorderDefaultColor1;
                             this._specifiedRange!.SpecifiedRangeBorderColor2 = GenerallySize.SpecifiedRangeBorderDefaultColor2;
@@ -462,46 +483,46 @@ namespace VisualCaptureApp.Base
         /// <summary>
         /// 執行拍攝動畫閃光
         /// </summary>
-        private void TriggerFlashEffectAsync()
-        {
-            try
-            {
-                FScreenshotFullScreen.TriggerFlashEffectAsync();
-            }
-            catch (ExpectedInfo ex)
-            {
-                throw new ExpectedInfo($@"[{this.GetType().Name},{MethodBase.GetCurrentMethod()!.Name}]:{Key.ExpectedInfo}[{ex}]", ex.ReasonCode);
-            }
-            catch (Exception ex)
-            {
-                throw new ExpectedInfo($@"[{this.GetType().Name},{MethodBase.GetCurrentMethod()!.Name}]:{Key.Catch}[{ex}]", Code.FCT_002);
-            }
-            finally
-            {
-            }
-        }
+        //private void TriggerFlashEffectAsync()
+        //{
+        //    try
+        //    {
+        //        FScreenshotFullScreen.TriggerFlashEffectAsync();
+        //    }
+        //    catch (ExpectedInfo ex)
+        //    {
+        //        throw new ExpectedInfo($@"[{this.GetType().Name},{MethodBase.GetCurrentMethod()!.Name}]:{Key.ExpectedInfo}[{ex}]", ex.ReasonCode);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw new ExpectedInfo($@"[{this.GetType().Name},{MethodBase.GetCurrentMethod()!.Name}]:{Key.Catch}[{ex}]", Code.FCT_002);
+        //    }
+        //    finally
+        //    {
+        //    }
+        //}
 
-        /// <summary>
-        /// 執行拍攝動畫閃光
-        /// </summary>
-        private void TriggerFlashEffect(byte a, byte r, byte g, byte b, double time)
-        {
-            try
-            {
-                FScreenshotFullScreen.TriggerFlashEffect(a, r, g, b, 100);
-            }
-            catch (ExpectedInfo ex)
-            {
-                throw new ExpectedInfo($@"[{this.GetType().Name},{MethodBase.GetCurrentMethod()!.Name}]:{Key.ExpectedInfo}[{ex}]", ex.ReasonCode);
-            }
-            catch (Exception ex)
-            {
-                throw new ExpectedInfo($@"[{this.GetType().Name},{MethodBase.GetCurrentMethod()!.Name}]:{Key.Catch}[{ex}]", Code.FCT_002);
-            }
-            finally
-            {
-            }
-        }
+        ///// <summary>
+        ///// 執行拍攝動畫閃光
+        ///// </summary>
+        //private void TriggerFlashEffect(byte a, byte r, byte g, byte b, double time)
+        //{
+        //    try
+        //    {
+        //        FScreenshotFullScreen.TriggerFlashEffect(a, r, g, b, 100);
+        //    }
+        //    catch (ExpectedInfo ex)
+        //    {
+        //        throw new ExpectedInfo($@"[{this.GetType().Name},{MethodBase.GetCurrentMethod()!.Name}]:{Key.ExpectedInfo}[{ex}]", ex.ReasonCode);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw new ExpectedInfo($@"[{this.GetType().Name},{MethodBase.GetCurrentMethod()!.Name}]:{Key.Catch}[{ex}]", Code.FCT_002);
+        //    }
+        //    finally
+        //    {
+        //    }
+        //}
 
         /// <summary>
         /// 執行全螢幕截圖
@@ -563,13 +584,54 @@ namespace VisualCaptureApp.Base
 
                     currentX += screen.Bounds.Width;
                 }
-                // 確保存檔資料夾存在                
+                // 確保存檔資料夾存在
                 var filePath = Path.Combine(this.saveFolder!, $@"{date}-AllScreens.jpeg");
 
                 // 儲存高解析圖片
                 combinedScreenshot.Save(filePath, ImageFormat.Jpeg);
                 Communication?.Invoke(new LogInfo(Key.System, MethodBase.GetCurrentMethod()!.DeclaringType!.ToString(), MethodBase.GetCurrentMethod()!.Name, $@"SaveScreenshot:[{filePath}]", Code.IFO_000));
+            }
+            catch (ExpectedInfo ex)
+            {
+                throw new ExpectedInfo($@"[{this.GetType().Name},{MethodBase.GetCurrentMethod()!.Name}]:{Key.ExpectedInfo}[{ex}]", ex.ReasonCode);
+            }
+            catch (Exception ex)
+            {
+                throw new ExpectedInfo($@"[{this.GetType().Name},{MethodBase.GetCurrentMethod()!.Name}]:{Key.Catch}[{ex}]", Code.FCT_002);
+            }
+            finally
+            {
+            }
+        }
 
+        /// <summary>
+        /// 執行指定螢幕範圍截圖
+        /// </summary>
+        /// <exception cref="ExpectedInfo"></exception>
+        private void DoScreenshotFullScreenByRange()
+        {
+            try
+            {
+                var date = DateTime.Now.ToString(@"yyyy-MM-dd_HH-mm-ss-fff");
+                
+                var captureRect = new Rectangle((int)this._baseSpecifiedRange!.Left, (int)this._baseSpecifiedRange!.Top, (int)this._baseSpecifiedRange!.Width - (int)this._baseSpecifiedRange!.BorderThickness, (int)this._baseSpecifiedRange!.Height);
+
+                using var screenshot = new Bitmap(captureRect.Width, captureRect.Height, PixelFormat.Format32bppArgb);
+                using var gfx = Graphics.FromImage(screenshot);
+
+                gfx.CopyFromScreen(
+                    captureRect.X,
+                    captureRect.Y,
+                    0,
+                    0,
+                    captureRect.Size,
+                    CopyPixelOperation.SourceCopy);
+                // 確保存檔資料夾存在
+                var filePath = Path.Combine(this.saveFolder!, $@"{date}-ByRange.jpeg");
+
+                // 儲存高解析圖片
+                screenshot.Save(filePath, ImageFormat.Jpeg);
+                Communication?.Invoke(new LogInfo(Key.System, MethodBase.GetCurrentMethod()!.DeclaringType!.ToString(), MethodBase.GetCurrentMethod()!.Name, $@"SaveScreenshot:[{filePath}]", Code.IFO_000));
             }
             catch (ExpectedInfo ex)
             {
@@ -634,10 +696,17 @@ namespace VisualCaptureApp.Base
                         }
                         break;
                     case BaseCaptureFunction.ScreenshotSpecifyRange:
+                        //123
                         if (this._specifiedRange != null)
                         {
                             this._specifiedRange.Close();
                         }
+                        this._specifiedRange = new SpecifiedRange(this._baseSpecifiedRange!);
+                        this._specifiedRange.SpecifiedRangeBorderColor1 = GenerallySize.SpecifiedRangeBorderDefaultColor1;
+                        this._specifiedRange.SpecifiedRangeBorderColor2 = GenerallySize.SpecifiedRangeBorderDefaultColor2;
+                        this._specifiedRange.IsShowCrossCanvas = true;
+                        this._specifiedRange.Opacity = 0.6;
+                        this._specifiedRange.Show();
                         break;
                     //全螢幕錄影
                     case BaseCaptureFunction.RecordFullScreen:
@@ -649,13 +718,17 @@ namespace VisualCaptureApp.Base
                     //指定螢幕範圍錄影
                     case BaseCaptureFunction.RecordSpecifiedRange:
                         //123
-                        this._specifiedRange = new SpecifiedRange(this.BaseRecordFullScreen!);
+                        if (this._specifiedRange != null)
+                        {
+                            this._specifiedRange.Close();
+                        }
+                        this._specifiedRange = new SpecifiedRange(this.BaseRecordFullScreen!.BaseSpecifiedRange!);
                         this._specifiedRange.SpecifiedRangeBorderColor1 = GenerallySize.SpecifiedRangeBorderDefaultColor1;
                         this._specifiedRange.SpecifiedRangeBorderColor2 = GenerallySize.SpecifiedRangeBorderDefaultColor2;
                         this._specifiedRange.IsShowCrossCanvas = true;
+                        this._specifiedRange.Opacity = 0.6;
                         this._specifiedRange.Show();
                         break;
-
                     default:
                         throw new ExpectedInfo($@"Please check Name, Unknow:[{this.Name}]", Code.FCT_004);
                         //break;

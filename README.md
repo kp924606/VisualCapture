@@ -27,7 +27,7 @@ If you only want to use the executable file (without the source code), please op
 ### 4-1. Show General settings and detailed settings
 ![image](https://github.com/user-attachments/assets/c2b20a7b-b9f1-4ebc-aab3-0957e5a6d8b2)
 
-![image](https://github.com/user-attachments/assets/8a076235-81a5-44d7-bef9-3f86199f75b8)
+![image](https://github.com/user-attachments/assets/fbfd7466-b65b-43d0-af82-b9578118d067)
 
 ![image](https://github.com/user-attachments/assets/f43a4f5b-464a-4c2e-a04b-a3f190c07e61)
 
@@ -40,14 +40,34 @@ action refer as Combox Selected.
 
 ![image](https://github.com/user-attachments/assets/7e0f481a-e474-466f-9a04-56dd303f1849)
 
-```diff
-! 未來會持續擴充更多功能。
-! More features will be continuously added in the future.
-```
+## 4-2-1.ScreenshotFullScreen/全螢幕截圖
+![image](https://github.com/user-attachments/assets/25c82170-c516-42a4-a0fe-4e2552479d13)
+
+
+## 4-2-2.ScreenshotSpecifyRange/指定螢幕範圍截圖
+![image](https://github.com/user-attachments/assets/e2d70461-a9a2-4b24-b277-e53fdd95cd6d)
+
+指定範圍/SpecifyRange
+
+![image](https://github.com/user-attachments/assets/19845b61-62df-421b-a37a-63c621ef3c8c)
+
+![image](https://github.com/user-attachments/assets/406ab926-25c5-432b-a364-1e36536289fd)
+
+
+## 4-2-3.RecordFullScreen/全螢幕錄影
+![image](https://github.com/user-attachments/assets/67bc1705-5485-4c59-ba3f-909cfc957d3a)
+
+
+## 4-2-4.RecordSpecifiedRange/指定螢幕範圍錄影
+![image](https://github.com/user-attachments/assets/ce1f7197-d181-4c5a-b7a9-ac57e1d3298c)
+
+指定範圍/SpecifyRange
+
+![image](https://github.com/user-attachments/assets/cbd729de-080f-4a26-8a84-403e83b1814e)
 
 ------
 
-### 4-3. General Settings Page
+### 4-3. General Page
 1.SaveFoler/儲存資料夾
 
   瀏覽您的電腦資料夾並選擇儲存資料夾。
@@ -140,7 +160,67 @@ action refer as Combox Selected.
 
 ------
 
-# 1. Package Introduce
+## 5. Install ffmpeg
+
+### 5-1.前往官方網站下載及安裝
+[ffmpeg](https://ffmpeg.org/download.html).
+
+*Please download and install*
+
+![image](https://github.com/user-attachments/assets/81f3dea2-201e-4840-b358-39cd98c8f597)
+
+### 5-2.解壓縮，並將壓縮檔解壓縮至一個資料夾(C:\ffmpeg)
+*Extract the archive and unzip it into a folder (C:\ffmpeg).*
+
+![image](https://github.com/user-attachments/assets/02f95c41-edd5-4b13-ae5c-5e4535f96735)
+
+### 5-3.設定環境變數
+將 C:\ffmpeg\bin 加入環境變數 Path 中。
+
+在開始選單搜尋「環境變數」 > 編輯系統環境變數。
+
+點選「環境變數」。
+
+在「系統變數」區域找到 Path，點選編輯。
+
+加入：C:\ffmpeg\bin
+
+儲存並關閉。
+
+*Add C:\ffmpeg\bin to the system environment variable Path:*
+
+*Search for "Environment Variables" in the Start menu and open "Edit the system environment variables".*
+
+*Click on the "Environment Variables" button.*
+
+*In the "System variables" section, find and select Path, then click "Edit".*
+
+*Add: C:\ffmpeg\bin*
+
+*Save and close.*
+
+![image](https://github.com/user-attachments/assets/e1470cb7-75c1-451e-969c-ab804c7a7db1)
+
+![image](https://github.com/user-attachments/assets/33e0c901-50b8-4696-a536-da385c5f0aab)
+
+![image](https://github.com/user-attachments/assets/06c4def1-9de6-4109-a5b1-50a967b81df7)
+
+![image](https://github.com/user-attachments/assets/711604d3-d820-4f40-986d-bac7aacfb3ce)
+
+### 5-3.測試是否安裝成功
+開啟命令提示字元(cmd)輸入:
+
+*Open the Command Prompt (cmd) and enter:*
+
+```bash
+ffmpeg -version
+```
+
+![image](https://github.com/user-attachments/assets/a73c2edf-cc6d-4edf-8f25-dd4d333d63eb)
+
+------
+
+# 6. Package Introduce
 
 | **Item** | **Name** | **Version** | **Function** |
 |----------|--------------|-------------|-------------|
@@ -148,7 +228,7 @@ action refer as Combox Selected.
 | **2** | **NLog** | 5.40 | 日誌框架.<br>logging framework. |
 
 
-## 1-1. Hardcodet.NotifyIcon.Wpf
+## 6-1. Hardcodet.NotifyIcon.Wpf
 Hardcodet.NotifyIcon.Wpf 是一個為 WPF (Windows Presentation Foundation) 應用程式提供系統通知圖示功能的套件。它允許開發者在 Windows 的系統匣 (system tray) 上顯示應用程式的圖示，並提供與這些圖示互動的功能，例如顯示通知、提供右鍵選單等。
 
 *Hardcodet.NotifyIcon.Wpf is a package that provides system tray icon functionality for WPF (Windows Presentation Foundation) applications. It allows developers to display an application's icon in the system tray on Windows and provides interaction features with these icons, such as displaying notifications and offering right-click context menus.*
@@ -190,7 +270,7 @@ Hardcodet.NotifyIcon.Wpf 是一個為 WPF (Windows Presentation Foundation) 應�
 
 ------
 
-## 1-2. NLog
+## 6-2. NLog
 NLog 是一個功能強大的 開源日誌框架，用於 .NET 應用程式的日誌記錄。它提供了一個靈活且高效的方式來記錄應用程式的運行狀況、錯誤訊息、警告、調試資訊等，並支援多種日誌輸出方式（如檔案、資料庫、控制台等）。
 
 *NLog is a powerful open-source logging framework for .NET applications. It provides a flexible and efficient way to log application runtime status, error messages, warnings, debugging information, and more. NLog supports multiple logging output options, such as files, databases, and the console.*
@@ -240,7 +320,7 @@ NLog 是一個功能強大的 開源日誌框架，用於 .NET 應用程式的�
 
 ------
 
-# 2. Self-Developed Component Introduce
+# 7. Self-Developed Component Introduce
 
 | **Item** | **Name** | **Function** |
 |----------|--------------|-------------|
@@ -255,7 +335,7 @@ NLog 是一個功能強大的 開源日誌框架，用於 .NET 應用程式的�
 ! The component project mentioned in point five is not included within this project. If you wish to use it in the development tool, please manually replace the DLL from the Release folder.
 ```
 
-## 2-1. Hardcodet.NotifyIcon.Wpf
+## 7-1. Hardcodet.NotifyIcon.Wpf
 定義通用真名，可用於各專案需求.
 
 *Define a universal true name, which can be used for various project needs.*
@@ -273,7 +353,7 @@ HolyGift.Key.System
 
 ------
 
-## 2-2. ILogger.dll
+## 7-2. ILogger.dll
 定義 Log 物件，可用於各專案需求.
 
 *Define a Log object that can be used for various project requirements.*
@@ -291,7 +371,7 @@ new LogInfo(HolyGift.Key.System, MethodBase.GetCurrentMethod()!.DeclaringType!.T
 
 ------
 
-## 2-3. Judgment.dll
+## 7-3. Judgment.dll
 定義原因代碼，可用於錯誤原因及各種情況，便於分析及釐清問題.
 
 *Define a reason code that can be used for error causes and various situations, making it easier to analyze and clarify issues.*
@@ -310,7 +390,7 @@ throw new ExpectedInfo($@"Please check BaseScreenshot BaseCaptureFunctionL, List
 
 ------
 
-## 2-4. OLogger.dll
+## 7-4. OLogger.dll
 將 Log 物件，儲存成檔案.
 
 *Save the Log object as a file.*
@@ -330,7 +410,7 @@ ologinfo!.Logger.Info($@"<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}] {l
 
 ------
 
-## 2-5. TCTUtility.dll
+## 7-5. TCTUtility.dll
 通用功能，提供常用到的函示。
 
 *General functions, providing commonly used functions.*

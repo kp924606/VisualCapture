@@ -27,7 +27,7 @@ If you only want to use the executable file (without the source code), please op
 ### 4-1. Show General settings and detailed settings
 ![image](https://github.com/user-attachments/assets/c2b20a7b-b9f1-4ebc-aab3-0957e5a6d8b2)
 
-![image](https://github.com/user-attachments/assets/fbfd7466-b65b-43d0-af82-b9578118d067)
+![image](https://github.com/user-attachments/assets/97383985-8058-4f69-b45f-6dd3766d9c95)
 
 ![image](https://github.com/user-attachments/assets/f43a4f5b-464a-4c2e-a04b-a3f190c07e61)
 
@@ -39,6 +39,9 @@ If you only want to use the executable file (without the source code), please op
 action refer as Combox Selected.
 
 ![image](https://github.com/user-attachments/assets/7e0f481a-e474-466f-9a04-56dd303f1849)
+
+![image](https://github.com/user-attachments/assets/d8621db8-093a-470b-a3f2-2c7c82952095)
+
 
 ## 4-2-1.ScreenshotFullScreen/全螢幕截圖
 ![image](https://github.com/user-attachments/assets/25c82170-c516-42a4-a0fe-4e2552479d13)
@@ -57,6 +60,10 @@ action refer as Combox Selected.
 ## 4-2-3.RecordFullScreen/全螢幕錄影
 ![image](https://github.com/user-attachments/assets/67bc1705-5485-4c59-ba3f-909cfc957d3a)
 
+可以設置幀率, 影像品質或啟用錄製音效
+*You Can Setting FPS, VideoQuality or Enabble RecordAudio.*
+![image](https://github.com/user-attachments/assets/b8df8b7f-521f-454b-b60f-b2f479485f9c)
+
 
 ## 4-2-4.RecordSpecifiedRange/指定螢幕範圍錄影
 ![image](https://github.com/user-attachments/assets/ce1f7197-d181-4c5a-b7a9-ac57e1d3298c)
@@ -64,6 +71,11 @@ action refer as Combox Selected.
 指定範圍/SpecifyRange
 
 ![image](https://github.com/user-attachments/assets/cbd729de-080f-4a26-8a84-403e83b1814e)
+
+可以設置幀率, 影像品質或啟用錄製音效
+*You Can Setting FPS, VideoQuality or Enabble RecordAudio.*
+![image](https://github.com/user-attachments/assets/cdba73fe-102a-43a9-9172-70ae71d4fd97)
+
 
 ------
 
@@ -161,6 +173,18 @@ action refer as Combox Selected.
 ------
 
 ## 5. Install ffmpeg
+
+FFmpeg 是一個功能強大的開源跨平台工具，用來處理音訊與視訊的「轉檔、剪輯、壓縮、合併、錄製、串流」等工作。
+
+| **Item** | **功能** | **說明** |
+|----------|--------------|--------------|
+| **1** | **影片轉檔** | **支援幾乎所有格式（如 mp4、avi、mov、mkv、webm 等）互轉** |
+| **2** | **音訊轉檔** | **mp3、aac、wav、flac、ogg 等格式轉換** |
+| **3** | **影片剪輯** | **可剪去片段、擷取區間、加上浮水印** |
+| **4** | **合併音訊/影片** | **將多段影片或音訊合成一個檔案** |
+| **5** | **串流推播** | **支援如 RTMP / HLS / RTP 等串流協定** |
+| **6** | **擷取縮圖** | **從影片中抓取畫面做成縮圖或序列圖** |
+
 
 ### 5-1.前往官方網站下載及安裝
 [ffmpeg](https://ffmpeg.org/download.html).

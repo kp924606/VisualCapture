@@ -1,7 +1,12 @@
-﻿using System;
+﻿using ILogger.AP;
+using Judgment;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Drawing;
 using System.Linq;
+using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -10,6 +15,12 @@ namespace VisualCaptureApp.Base
 {
     public class BaseSpecifiedRange: INotifyPropertyChanged    
     {
+        [DllImport("gdi32.dll")]
+        static extern int GetDeviceCaps(IntPtr hdc, int nIndex);
+        const int LOGPIXELSX = 88;
+
+        public double ScaleFactor { set; get; }
+
         //public double Top { set; get; }
         private double _top;
         public double Top
@@ -17,11 +28,8 @@ namespace VisualCaptureApp.Base
             get => this._top;
             set
             {
-                if (this._top != value)
-                {
-                    this._top = value;
-                    OnPropertyChanged(nameof(this.Top));
-                }
+                this._top = value * this.ScaleFactor;
+                OnPropertyChanged(nameof(this.Top));
             }
         }
 
@@ -32,11 +40,8 @@ namespace VisualCaptureApp.Base
             get => this._left;
             set
             {
-                if (this._left != value)
-                {
-                    this._left = value;
-                    OnPropertyChanged(nameof(this.Left));
-                }
+                this._left = value * this.ScaleFactor;
+                OnPropertyChanged(nameof(this.Left));
             }
         }
 
@@ -47,11 +52,8 @@ namespace VisualCaptureApp.Base
             get => this._height;
             set
             {
-                if (this._height != value)
-                {
-                    this._height = value;
-                    OnPropertyChanged(nameof(this.Height));
-                }
+                this._height = value * this.ScaleFactor;
+                OnPropertyChanged(nameof(this.Height));
             }
         }
 
@@ -61,11 +63,8 @@ namespace VisualCaptureApp.Base
             get => this._width;
             set
             {
-                if (this._width != value)
-                {
-                    this._width = value;
-                    OnPropertyChanged(nameof(this.Width));
-                }
+                this._width = value * this.ScaleFactor;
+                OnPropertyChanged(nameof(this.Width));
             }
         }
 
@@ -88,6 +87,37 @@ namespace VisualCaptureApp.Base
         protected void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public BaseSpecifiedRange()
+        {
+            try
+            {
+                this.ScaleFactor = GetScaleFactor();
+            }
+            catch (ExpectedInfo ex)
+            {
+                throw new ExpectedInfo($@"[{MethodBase.GetCurrentMethod()!.DeclaringType!.Name},{MethodBase.GetCurrentMethod()!.Name}]:{HolyGift.Key.ExpectedInfo}[{ex}]", ex.ReasonCode);
+            }
+            catch (Exception ex)
+            {
+                throw new ExpectedInfo($@"[{MethodBase.GetCurrentMethod()!.DeclaringType!.Name},{MethodBase.GetCurrentMethod()!.Name}]:{HolyGift.Key.Catch}[{ex}]", Code.FCT_002);
+            }
+            finally
+            {
+            }
+        }
+
+        static float GetScaleFactor()
+        {
+            using (Graphics g = Graphics.FromHwnd(IntPtr.Zero))
+            {
+                IntPtr desktop = g.GetHdc();
+                int dpi = GetDeviceCaps(desktop, LOGPIXELSX);
+                g.ReleaseHdc(desktop);
+
+                return dpi / 96.0f; // 96 DPI = 100% 縮放
+            }
         }
     }
 }

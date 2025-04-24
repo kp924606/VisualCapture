@@ -111,8 +111,25 @@
                         <ScrollViewer x:Name="ScrollViewer_Content" VerticalScrollBarVisibility="Auto" Margin="10,0,0,0">
                             <!--<TextBlock x:Name="TextBlock_Content" Width="{Binding TextBlockWidth, Mode=TwoWay}" Height="Auto" Text="{Binding WindowContent, Mode=TwoWay}" 
                             FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,5,5,5" TextWrapping="Wrap" TextAlignment="Center"/>-->
-                            <TextBox x:Name="TextBox_Content" Width="{Binding TextBlockWidth, Mode=TwoWay}" Height="Auto" Text="{Binding WindowContent, Mode=TwoWay}" 
-                                       FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,5,5,5" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" BorderThickness="0" Background="Transparent"/>
+                            
+                            <!--<TextBox x:Name="TextBox_Content" Width="{Binding TextBlockWidth, Mode=TwoWay}" Height="Auto" Text="{Binding WindowContent, Mode=TwoWay}" 
+                                       FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,5,5,5" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" BorderThickness="0" Background="Transparent"/>-->
+                            
+                            <TextBlock x:Name="TextBlock_Content"
+                                       Width="{Binding TextBlockWidth, Mode=TwoWay}"
+                                       Text="{Binding WindowContent, Mode=TwoWay}"
+                                       FontSize="16"
+                                       FontWeight="Bold"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       Margin="5"
+                                       TextWrapping="Wrap"
+                                       TextAlignment="Justify"
+                                       Background="Transparent"
+                                       IsHitTestVisible="True"
+                                       Focusable="True"
+                                       TextTrimming="None"
+                                       />
 
                         </ScrollViewer>
                     </WrapPanel>       

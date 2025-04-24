@@ -189,6 +189,24 @@ namespace VisualCaptureApp.Base
             get => this._audioList;
         }
 
+
+        /// <summary>
+        /// 確認有 ffmpeg
+        /// </summary>
+        private bool _isHaveffmpeg { get; set; }
+
+        /// <summary>
+        /// 確認有 ffmpeg
+        /// </summary>
+        public bool isHaveffmpeg
+        {
+            get { return this._isHaveffmpeg; }
+            set
+            {
+                this._isHaveffmpeg = value;
+            }
+        }
+
         /// <summary>
         /// 指定範圍
         /// </summary>
@@ -214,7 +232,14 @@ namespace VisualCaptureApp.Base
             {
                 if (!this.CheckffmpegExists())
                 {
-                    throw new ExpectedInfo($@"Please check ffmpeg, ffmpeg is not installed or not available.", Code.CMD_001);
+                    //123
+                    //BMolecule.Communication?.Invoke(new LogInfo(this.Name, this.GetType().Name, MethodBase.GetCurrentMethod()!.Name, Key.ExpectedInfo, Code.CMD_001, ILogType.Error, new Exception($@"Please check ffmpeg, ffmpeg is not installed or not available."), null));
+                    this._isHaveffmpeg = false;
+                    throw new ExpectedInfo($@"Please check ffmpeg, ffmpeg is not installed or not available.", Code.CMD_001, ILogType.ShowError);
+                }
+                else
+                {
+                    this._isHaveffmpeg = true;
                 }
 
                 //this.fps = FUtility.GetIntAndCheckNOrEFromDic(dic, Key.fps);
@@ -229,7 +254,8 @@ namespace VisualCaptureApp.Base
             }
             catch (ExpectedInfo ex)
             {
-                BMolecule.Communication?.Invoke(new LogInfo(this.Name, this.GetType().Name, MethodBase.GetCurrentMethod()!.Name, Key.ExpectedInfo, ex.ReasonCode, ILogType.Error, ex, null));
+                //BMolecule.Communication?.Invoke(new LogInfo(this.Name, this.GetType().Name, MethodBase.GetCurrentMethod()!.Name, Key.ExpectedInfo, ex.ReasonCode, ILogType.Error, ex, null));
+                BMolecule.Communication?.Invoke(new LogInfo(this.Name, this.GetType().Name, MethodBase.GetCurrentMethod()!.Name, Key.ExpectedInfo, ex.ReasonCode, ex.ILogType, ex, null));                
             }
             catch (Exception ex)
             {
@@ -397,7 +423,8 @@ namespace VisualCaptureApp.Base
                     //ffmpegRange = $@"-video_size {this.BaseSpecifiedRange!.Width}x{this.BaseSpecifiedRange!.Height} -offset_x {this.BaseSpecifiedRange!.Left} -offset_y {this.BaseSpecifiedRange!.Top} -i desktop";
                     //把範圍聚焦在虛線邊框內
                     //ffmpegRange = $@"-video_size {this.BaseSpecifiedRange!.Width - (this.BaseSpecifiedRange!.BorderThickness * 3)}x{this.BaseSpecifiedRange!.Height - (this.BaseSpecifiedRange!.BorderThickness * 4)} -offset_x {this.BaseSpecifiedRange!.Left + this.BaseSpecifiedRange!.BorderThickness} -offset_y {this.BaseSpecifiedRange!.Top + (this.BaseSpecifiedRange!.BorderThickness * 2)} -i desktop";
-                    ffmpegRange = $@"-video_size {this.BaseSpecifiedRange!.Width - (this.BaseSpecifiedRange!.BorderThickness * 3)}x{this.BaseSpecifiedRange!.Height - (this.BaseSpecifiedRange!.BorderThickness * 4)} -offset_x {this.BaseSpecifiedRange!.Left + this.BaseSpecifiedRange!.BorderThickness} -offset_y {this.BaseSpecifiedRange!.Top + (this.BaseSpecifiedRange!.BorderThickness * 2)} -i desktop";
+                    //ffmpegRange = $@"-video_size {this.BaseSpecifiedRange!.Width - (this.BaseSpecifiedRange!.BorderThickness * 3)}x{this.BaseSpecifiedRange!.Height - (this.BaseSpecifiedRange!.BorderThickness * 4)} -offset_x {this.BaseSpecifiedRange!.Left + this.BaseSpecifiedRange!.BorderThickness} -offset_y {this.BaseSpecifiedRange!.Top + (this.BaseSpecifiedRange!.BorderThickness * 2)} -i desktop";
+                    ffmpegRange = $@"-video_size {(int)Math.Round(this.BaseSpecifiedRange!.Width - (this.BaseSpecifiedRange!.BorderThickness * 3))}x{(int)Math.Round(this.BaseSpecifiedRange!.Height - (this.BaseSpecifiedRange!.BorderThickness * 4))} -offset_x {this.BaseSpecifiedRange!.Left + this.BaseSpecifiedRange!.BorderThickness} -offset_y {this.BaseSpecifiedRange!.Top + (this.BaseSpecifiedRange!.BorderThickness * 2)} -i desktop";
                 }
                 else
                 {

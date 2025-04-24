@@ -344,11 +344,7 @@ namespace VisualCaptureApp.View
 
                 this.Width = this.WindowWidth;
                 this.Height = this.WindowHeight;
-                this.GridContentHeight = DefaultGridContentHeight;               
-
-                //this.GridTitleHeight = 40;
-                //this.GridContentHeight = 200;
-                //this.GridButtonHeight = 60;
+                this.GridContentHeight = DefaultGridContentHeight;
             }
             catch (ExpectedInfo ex)
             {
@@ -507,15 +503,14 @@ namespace VisualCaptureApp.View
                         //break;
                 }
 
-                if (this.ScrollViewer_Content == null || this.TextBox_Content == null)
+                if (this.ScrollViewer_Content == null || this.TextBlock_Content == null)
                 {
                 }
                 else
                 {
                     // 強制測量 TextBlock 的所需大小, PositiveInfinity(在高度方向自由展開), ActualWidth(目前顯示的寬度)
-                    this.TextBox_Content.Measure(new Size(this.TextBox_Content.ActualWidth, double.PositiveInfinity));
-                    //this.TextBlock_Content.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity));
-                    double requiredTextHeight = this.TextBox_Content.DesiredSize.Height;
+                    this.TextBlock_Content.Measure(new Size(this.TextBlock_Content.ActualWidth, double.PositiveInfinity));                    
+                    double requiredTextHeight = this.TextBlock_Content.DesiredSize.Height;
                     
                     // 取得 ScrollViewer 的顯示高度
                     double scrollViewHeight = this.ScrollViewer_Content.ViewportHeight;

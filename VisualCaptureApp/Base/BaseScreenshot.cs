@@ -259,11 +259,22 @@ namespace VisualCaptureApp.Base
         {
             try
             {
+                //設定模組內的溝通方式
+                BMolecule.Communication = Communication;
+
+                //基本錄製物件
+                Dictionary<string, object> dic = new Dictionary<string, object>();
+                dic.Add(Key.SaveFolder, defaultSaveFolderPath);
+                this.BaseRecordFullScreen = new BaseRecordFullScreen(BaseCaptureFunction.RecordFullScreen, dic);
+
                 this.BaseCaptureFunctionL = new List<BaseCaptureFunction>();
                 this.BaseCaptureFunctionL.Add(new BaseCaptureFunction(BaseCaptureFunction.ScreenshotFullScreen, BaseCaptureFunction.ScreenshotFullScreenImagPath, true));
                 this.BaseCaptureFunctionL.Add(new BaseCaptureFunction(BaseCaptureFunction.ScreenshotSpecifyRange, BaseCaptureFunction.ScreenshotSpecifyRangeImagPath, true));
-                this.BaseCaptureFunctionL.Add(new BaseCaptureFunction(BaseCaptureFunction.RecordFullScreen, BaseCaptureFunction.RecordFullScreenImagPath, true));
-                this.BaseCaptureFunctionL.Add(new BaseCaptureFunction(BaseCaptureFunction.RecordSpecifiedRange, BaseCaptureFunction.RecordSpecifiedRangeImagPath, true));
+                if (this.BaseRecordFullScreen.isHaveffmpeg)
+                {
+                    this.BaseCaptureFunctionL.Add(new BaseCaptureFunction(BaseCaptureFunction.RecordFullScreen, BaseCaptureFunction.RecordFullScreenImagPath, true));
+                    this.BaseCaptureFunctionL.Add(new BaseCaptureFunction(BaseCaptureFunction.RecordSpecifiedRange, BaseCaptureFunction.RecordSpecifiedRangeImagPath, true));
+                }
 
                 this.BaseKeyboardShortcutL = new List<BaseKeyboardShortcut>();
                 this.BaseKeyboardShortcutL.Add(new BaseKeyboardShortcut() { Code = 112, Description = @"F1", IsModifiersHasFlag =false });
@@ -316,18 +327,10 @@ namespace VisualCaptureApp.Base
 
                 //閃光動畫效果
                 this.FSFS = new FScreenshotFullScreen();
-                this.FSFS.IsAnimationEffects = true;
-
-                Dictionary<string, object> dic = new Dictionary<string, object>();
-                dic.Add(Key.SaveFolder, defaultSaveFolderPath);
-                this.BaseRecordFullScreen = new BaseRecordFullScreen(BaseCaptureFunction.RecordFullScreen, dic);
+                this.FSFS.IsAnimationEffects = true;                
 
                 //指定範圍
-                this._baseSpecifiedRange = new BaseSpecifiedRange();
-
-                //設定模組內的溝通方式
-                BMolecule.Communication = Communication;
-
+                this._baseSpecifiedRange = new BaseSpecifiedRange();                
             }
             catch (ExpectedInfo ex)
             {

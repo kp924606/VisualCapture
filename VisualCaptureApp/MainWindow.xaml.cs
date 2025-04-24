@@ -790,12 +790,9 @@ namespace VisualCaptureApp
         private void CloseWindow(object sender, RoutedEventArgs e)
         {
             try
-            {
-                //var windowBW = new MessageBoxWindow("確認關閉", "確定要關閉程式嗎?", MessageBoxWindowShowType.Info, MessageBoxWindowButtonType.YesNo);
-
+            {                
                 var windowBW = new MessageBoxWindow("確認關閉", "確定要關閉程式嗎?", MessageBoxWindowShowType.Info, MessageBoxWindowButtonType.YesNo);
-                //var windowBW = new MessageBoxWindow("確認關閉", "確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? 確定要關閉程式嗎? ", MessageBoxWindowShowType.Info, MessageBoxWindowButtonType.YesNo);
-
+               
                 bool? result = windowBW.ShowDialog(); // 以對話框模式開啟
 
                 if (result == true && windowBW.Result == MessageBoxWindowResult.Yes) // 只有當 B 視窗 `DialogResult = true` 時才執行
@@ -1042,81 +1039,179 @@ namespace VisualCaptureApp
             }
         }
 
-        /// 溝通(可用來記錄 Log)
+        //123
         public async void Communication(ILogInfo li)
         {
-            //取得一個執行權限
             await semaphoreLogInfo.WaitAsync();
 
             try
             {
-                await Task.Run(() =>
+                switch (li.Type)
                 {
-                    try
-                    {
-                        switch (li.Type)
+                    case ILogType.ShowInfo:
+                    case ILogType.ShowAlarm:
+                    case ILogType.ShowError:
+                    case ILogType.ShowCatch:
+                    case ILogType.ShowFail:
+                        // UI 類型訊息：主執行緒處理
+                        var tpm = li.Type switch
                         {
-                            case ILogType.Info:
-                                //Console.ForegroundColor = ConsoleColor.White;
-                                //Console.BackgroundColor = ConsoleColor.Black;
-                                //Console.WriteLine($@"{DateTime.Now.ToString(@"yyyy/MM/dd HH:mm:ss")}<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}] {li.Info}");
-                                ologinfo!.Logger.Info($@"<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}] {li.Info}");
-                                break;
-                            case ILogType.Alarm:
-                                //Console.ForegroundColor = ConsoleColor.Magenta;
-                                //Console.BackgroundColor = ConsoleColor.Black;
-                                //Console.WriteLine($@"{DateTime.Now.ToString(@"yyyy/MM/dd HH:mm:ss")}<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}] {li.Info}");
-                                ologinfo!.Logger.Info($@"<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}] {li.Info}");
-                                break;
-                            case ILogType.Error:
-                                //Console.ForegroundColor = ConsoleColor.Red;
-                                //Console.BackgroundColor = ConsoleColor.Black;
-                                //Console.WriteLine($@"{DateTime.Now.ToString(@"yyyy/MM/dd HH:mm:ss")}<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}][{li.Info}] {li.Error}");
-                                ologinfo!.Logger.Info($@"<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}][{li.Info}] {li.Error}");
-                                break;
-                            case ILogType.Catch:
-                                //Console.ForegroundColor = ConsoleColor.DarkGray;
-                                //Console.BackgroundColor = ConsoleColor.Black;
-                                //Console.WriteLine($@"{DateTime.Now.ToString(@"yyyy/MM/dd HH:mm:ss")}<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}][{li.Info}] {li.Error}");
-                                ologinfo!.Logger.Info($@"<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}][{li.Info}] {li.Error}");
-                                break;
-                            case ILogType.Fail:
-                                //Console.ForegroundColor = ConsoleColor.White;
-                                //Console.BackgroundColor = ConsoleColor.Red;
-                                //Console.WriteLine($@"{DateTime.Now.ToString(@"yyyy/MM/dd HH:mm:ss")}<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}][{li.Info}] {li.Error}");
-                                ologinfo!.Logger.Info($@"<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}][{li.Info}] {li.Error}");
-                                break;
-                            case ILogType.Pass:
-                                //Console.ForegroundColor = ConsoleColor.White;
-                                //Console.BackgroundColor = ConsoleColor.Green;
-                                //Console.WriteLine($@"{DateTime.Now.ToString(@"yyyy/MM/dd HH:mm:ss")}<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}] {li.Info}");
-                                ologinfo!.Logger.Info($@"<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}] {li.Info}");
-                                break;
-                            default:
-                                //Console.ForegroundColor = ConsoleColor.White;
-                                //Console.BackgroundColor = ConsoleColor.DarkGray;
-                                //Console.WriteLine($@"{DateTime.Now.ToString(@"yyyy/MM/dd HH:mm:ss")}<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}][{li.Info}] {li.Error}");
-                                ologinfo!.Logger.Info($@"<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}][{li.Info}] {li.Error}");
-                                break;
-                        }
-                    }
-                    catch
-                    {
-                    }
-                    finally
-                    {
-                    }
-                });
+                            ILogType.ShowInfo or ILogType.ShowAlarm =>
+                                $@"<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}] {li.Info}",
+                            _ =>
+                                $@"<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}][{li.Info}] {li.Error}"
+                        };
+
+                        ologinfo!.Logger.Info(tpm);
+
+                        var windowBW = new MessageBoxWindow(
+                                li.Type.ToString(),
+                                tpm,
+                                MessageBoxWindowShowType.Error,
+                                MessageBoxWindowButtonType.Close
+                            );
+
+                        // 設定主視窗為 owner，讓對話框能停在主畫面上方
+                        windowBW.Owner = Application.Current.MainWindow;
+
+                        windowBW.ShowDialog();
+
+                        //await Application.Current.Dispatcher.InvokeAsync(() =>
+                        //{
+                        //    var windowBW = new MessageBoxWindow(
+                        //        li.Type.ToString(),
+                        //        tpm,
+                        //        MessageBoxWindowShowType.Error,
+                        //        MessageBoxWindowButtonType.Close
+                        //    );
+
+                        //    // 設定主視窗為 owner，讓對話框能停在主畫面上方
+                        //    windowBW.Owner = Application.Current.MainWindow;
+
+                        //    windowBW.ShowDialog();
+                        //});
+
+                        break;
+
+                    default:
+                        // 非 UI：背景執行緒處理
+                        await Task.Run(() =>
+                        {
+                            try
+                            {
+                                var message = li.Type switch
+                                {
+                                    ILogType.Info or ILogType.Alarm or ILogType.Pass =>
+                                        $@"<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}] {li.Info}",
+                                    _ =>
+                                        $@"<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}][{li.Info}] {li.Error}"
+                                };
+
+                                ologinfo!.Logger.Info(message);
+                            }
+                            catch
+                            {
+                            }
+                        });
+                        break;
+                }
             }
             catch
             {
             }
             finally
             {
-                //釋放執行權限資源
                 semaphoreLogInfo.Release();
             }
         }
+
+
+
+        /// 溝通(可用來記錄 Log)
+        //public async void Communication(ILogInfo li)
+        //{
+        //    //取得一個執行權限
+        //    await semaphoreLogInfo.WaitAsync();
+
+        //    try
+        //    {
+        //        await Task.Run(() =>
+        //        {
+        //            try
+        //            {
+        //                switch (li.Type)
+        //                {
+        //                    case ILogType.Info:
+        //                        ologinfo!.Logger.Info($@"<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}] {li.Info}");
+        //                        break;
+        //                    case ILogType.Alarm:
+        //                        ologinfo!.Logger.Info($@"<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}] {li.Info}");
+        //                        break;
+        //                    case ILogType.Error:
+        //                        ologinfo!.Logger.Info($@"<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}][{li.Info}] {li.Error}");
+        //                        break;
+        //                    case ILogType.Catch:
+        //                        ologinfo!.Logger.Info($@"<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}][{li.Info}] {li.Error}");
+        //                        break;
+        //                    case ILogType.Fail:
+        //                        ologinfo!.Logger.Info($@"<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}][{li.Info}] {li.Error}");
+        //                        break;
+        //                    case ILogType.Pass:
+        //                        ologinfo!.Logger.Info($@"<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}] {li.Info}");
+        //                        break;
+        //                    //123
+        //                    case ILogType.ShowInfo:                                
+        //                        var tpm = $@"<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}] {li.Info}";
+        //                        ologinfo!.Logger.Info(tpm);
+        //                        var windowBW = new MessageBoxWindow("Info", tpm, MessageBoxWindowShowType.Info, MessageBoxWindowButtonType.Close);
+        //                        windowBW.Show();
+        //                        break;
+        //                    case ILogType.ShowAlarm:
+        //                        tpm = $@"<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}] {li.Info}";
+        //                        ologinfo!.Logger.Info(tpm);
+        //                        windowBW = new MessageBoxWindow("Alarm", tpm, MessageBoxWindowShowType.Alarm, MessageBoxWindowButtonType.Close);
+        //                        windowBW.Show();
+        //                        break;
+        //                    case ILogType.ShowError:
+        //                        tpm = $@"<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}][{li.Info}] {li.Error}";
+        //                        ologinfo!.Logger.Info(tpm);
+        //                        windowBW = new MessageBoxWindow("Error", tpm, MessageBoxWindowShowType.Error, MessageBoxWindowButtonType.Close);
+        //                        windowBW.Show();
+        //                        break;
+        //                    case ILogType.ShowCatch:                                
+        //                        tpm = $@"<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}][{li.Info}] {li.Error}";
+        //                        ologinfo!.Logger.Info(tpm);
+        //                        windowBW = new MessageBoxWindow("Catch", tpm, MessageBoxWindowShowType.Error, MessageBoxWindowButtonType.Close);
+        //                        windowBW.Show();
+        //                        break;
+        //                    case ILogType.ShowFail:
+        //                        tpm = $@"<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}][{li.Info}] {li.Error}";
+        //                        ologinfo!.Logger.Info(tpm);
+        //                        windowBW = new MessageBoxWindow("Fail", tpm, MessageBoxWindowShowType.Error, MessageBoxWindowButtonType.Close);
+        //                        windowBW.Show();
+        //                        break;
+        //                    default:
+        //                        ologinfo!.Logger.Info($@"<{li.Name},{li.Class}>[{li.Method}][{li.ResultCode}][{li.Info}] {li.Error}");
+        //                        break;
+        //                }
+        //            }
+        //            catch
+        //            {
+        //            }
+        //            finally
+        //            {
+        //            }
+        //        });
+        //    }
+        //    catch
+        //    {
+        //    }
+        //    finally
+        //    {
+        //        //釋放執行權限資源
+        //        semaphoreLogInfo.Release();
+        //    }
+        //}
 
     }
 }

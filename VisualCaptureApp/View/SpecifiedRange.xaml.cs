@@ -117,11 +117,8 @@ namespace VisualCaptureApp.View
         }
 
         /// <summary>
-        /// 選擇範圍物件
+        /// 基本指定範圍
         /// </summary>
-        //private BaseRecordFullScreen? _baseRecordFullScreen { set; get; }
-
-        ///基本指定範圍
         private BaseSpecifiedRange _baseSpecifiedRange { set; get; }
 
         /// <summary>
@@ -140,7 +137,6 @@ namespace VisualCaptureApp.View
         /// <exception cref="ExpectedInfo"></exception>
         public SpecifiedRange(BaseSpecifiedRange bsr)
         {
-            //public SpecifiedRange(BaseRecordFullScreen brfs)
             InitializeComponent();
 
             if (bsr == null)
@@ -148,8 +144,33 @@ namespace VisualCaptureApp.View
                 throw new ExpectedInfo($@"Please check BaseSpecifiedRange, Object is Null", Code.ODI_005);
             }
 
-            this._baseSpecifiedRange = bsr!;
+            this._baseSpecifiedRange = bsr!;            
+
             this.DataContext = this; // 設定 DataContext，讓 XAML 可以綁定變數
+        }
+
+        public void WindowOnLoad(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                this._baseSpecifiedRange!.Top = Top;
+                this._baseSpecifiedRange!.Left = Left;
+                this._baseSpecifiedRange!.Height = Region.ActualHeight;
+                this._baseSpecifiedRange!.Width = Region.ActualWidth;
+                this._baseSpecifiedRange!.BorderThickness = this._specifiedRangeBorderThickness.Top;
+            }
+            catch (ExpectedInfo ex)
+            {
+                BMolecule.Communication?.Invoke(new LogInfo(this.Name, this.GetType().Name, MethodBase.GetCurrentMethod()!.Name, HolyGift.Key.ExpectedInfo, ex.ReasonCode, ILogType.Error, ex, null));
+            }
+            catch (Exception ex)
+            {
+                BMolecule.Communication?.Invoke(new LogInfo(this.Name, this.GetType().Name, MethodBase.GetCurrentMethod()!.Name, HolyGift.Key.Catch, Code.FCT_002, ILogType.Catch, ex, null));
+            }
+            finally
+            {
+
+            }
         }
 
         /// <summary>

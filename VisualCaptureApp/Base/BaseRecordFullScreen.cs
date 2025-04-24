@@ -124,6 +124,7 @@ namespace VisualCaptureApp.Base
                 OnPropertyChanged(nameof(this.RecordTimeDate));
             }
         }
+
         public string RecordTimeDate
         {
             get {
@@ -176,6 +177,23 @@ namespace VisualCaptureApp.Base
             }
         }
 
+        //123        
+        ///// <summary>
+        ///// 錄製時間
+        ///// </summary>
+        //public double SpecifiedRangeWidth
+        //{
+        //    get { return this.BaseSpecifiedRange!.Width; }
+        //    set
+        //    {
+        //        this.BaseSpecifiedRange!.Width = value;
+        //        OnPropertyChanged(nameof(this.SpecifiedRangeWidth));                
+        //    }
+        //}
+
+
+        //123456
+
         /// <summary>
         /// 音效清單
         /// </summary>
@@ -210,7 +228,21 @@ namespace VisualCaptureApp.Base
         /// <summary>
         /// 指定範圍
         /// </summary>
-        public BaseSpecifiedRange? BaseSpecifiedRange { set; get; }
+        //public BaseSpecifiedRange? BaseSpecifiedRange { set; get; }
+        private BaseSpecifiedRange? _baseSpecifiedRange;
+        public BaseSpecifiedRange? BaseSpecifiedRange
+        {
+            get => this._baseSpecifiedRange;
+            set
+            {
+                if (this._baseSpecifiedRange != value)
+                {
+                    this._baseSpecifiedRange = value;
+                    OnPropertyChanged(nameof(this.BaseSpecifiedRange));
+                }
+            }
+        }
+
 
         /// <summary>
         /// 使用者定範圍
@@ -232,8 +264,6 @@ namespace VisualCaptureApp.Base
             {
                 if (!this.CheckffmpegExists())
                 {
-                    //123
-                    //BMolecule.Communication?.Invoke(new LogInfo(this.Name, this.GetType().Name, MethodBase.GetCurrentMethod()!.Name, Key.ExpectedInfo, Code.CMD_001, ILogType.Error, new Exception($@"Please check ffmpeg, ffmpeg is not installed or not available."), null));
                     this._isHaveffmpeg = false;
                     throw new ExpectedInfo($@"Please check ffmpeg, ffmpeg is not installed or not available.", Code.CMD_001, ILogType.ShowError);
                 }
@@ -420,7 +450,6 @@ namespace VisualCaptureApp.Base
                 //指定螢幕範圍
                 if (this.IsSpecifiedRange)
                 {
-                    //ffmpegRange = $@"-video_size {this.BaseSpecifiedRange!.Width}x{this.BaseSpecifiedRange!.Height} -offset_x {this.BaseSpecifiedRange!.Left} -offset_y {this.BaseSpecifiedRange!.Top} -i desktop";
                     //把範圍聚焦在虛線邊框內
                     //ffmpegRange = $@"-video_size {this.BaseSpecifiedRange!.Width - (this.BaseSpecifiedRange!.BorderThickness * 3)}x{this.BaseSpecifiedRange!.Height - (this.BaseSpecifiedRange!.BorderThickness * 4)} -offset_x {this.BaseSpecifiedRange!.Left + this.BaseSpecifiedRange!.BorderThickness} -offset_y {this.BaseSpecifiedRange!.Top + (this.BaseSpecifiedRange!.BorderThickness * 2)} -i desktop";
                     //ffmpegRange = $@"-video_size {this.BaseSpecifiedRange!.Width - (this.BaseSpecifiedRange!.BorderThickness * 3)}x{this.BaseSpecifiedRange!.Height - (this.BaseSpecifiedRange!.BorderThickness * 4)} -offset_x {this.BaseSpecifiedRange!.Left + this.BaseSpecifiedRange!.BorderThickness} -offset_y {this.BaseSpecifiedRange!.Top + (this.BaseSpecifiedRange!.BorderThickness * 2)} -i desktop";
@@ -442,6 +471,7 @@ namespace VisualCaptureApp.Base
                     //ffmpegArgs = $@"-y -f gdigrab -framerate {this.fps} -i desktop -c:v mpeg4 -q:v {this._videoQuality} {this.saveFolder}\output_{DateTime.Now.ToString(@"yyyyMMddHHmmss")}.avi";
                 }
 
+                BMolecule.Communication?.Invoke(new LogInfo(this.Name, this.GetType().Name, MethodBase.GetCurrentMethod()!.Name, $@"FFmpeg Width:[{this.BaseSpecifiedRange!.Width}], Height:[{this.BaseSpecifiedRange!.Height}], Left:[{this.BaseSpecifiedRange!.Left}], Top:[{this.BaseSpecifiedRange!.Top}], BorderThickness:[{this.BaseSpecifiedRange!.BorderThickness}]", Code.IFO_000, ILogType.Info, null, null));
                 BMolecule.Communication?.Invoke(new LogInfo(this.Name, this.GetType().Name, MethodBase.GetCurrentMethod()!.Name, $@"FFmpeg Args:[{ffmpegArgs}]", Code.IFO_000, ILogType.Info, null, null));
 
                 //string ffmpegArgs = $@"-y -f gdigrab -framerate {this.fps} -i desktop -f dshow -i audio=""Line 1 (Virtual Audio Cable)"" -c:v mpeg4 -q:v {this._videoQuality} {this.saveFolder}\output_{DateTime.Now.ToString(@"yyyyMMddHHmmss")}.avi";

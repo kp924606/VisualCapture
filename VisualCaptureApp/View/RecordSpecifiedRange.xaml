@@ -116,7 +116,33 @@
                 <!-- 分隔線 -->
                 <Border Height="1" Background="#BBBBBB" Margin="1,3,1,0"/>
 
-
+                <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,0,0,0" Orientation="Vertical">
+                    <WrapPanel>
+                        <!-- Width-->
+                        <TextBlock Text="Width" FontSize="12" FontWeight="Bold" Margin="5,5,0,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="TextBlockWidth" Text="{Binding BaseSpecifiedRange.Width, Mode=TwoWay}" FontSize="12" FontWeight="Bold" Margin="10,0,0,0" VerticalAlignment="Center" Foreground="Blue"/>
+                    </WrapPanel>
+                    <WrapPanel>
+                        <!-- Height-->
+                        <TextBlock Text="Height" FontSize="12" FontWeight="Bold" Margin="5,5,0,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="TextBlockHeight" Text="{Binding BaseSpecifiedRange.Height, Mode=TwoWay}" FontSize="12" FontWeight="Bold" Margin="10,0,0,0" VerticalAlignment="Center" Foreground="Blue"/>
+                    </WrapPanel>
+                    <WrapPanel>
+                        <!-- Left-->
+                        <TextBlock Text="Left" FontSize="12" FontWeight="Bold" Margin="5,5,0,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="TextBlockLeft" Text="{Binding BaseSpecifiedRange.Left, Mode=TwoWay}" FontSize="12" FontWeight="Bold" Margin="10,0,0,0" VerticalAlignment="Center" Foreground="Blue"/>
+                    </WrapPanel>
+                    <WrapPanel>
+                        <!-- Top-->
+                        <TextBlock Text="Top" FontSize="12" FontWeight="Bold" Margin="5,5,0,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="TextBlockTop" Text="{Binding BaseSpecifiedRange.Top, Mode=TwoWay}" FontSize="12" FontWeight="Bold" Margin="10,0,0,0" VerticalAlignment="Center" Foreground="Blue"/>
+                    </WrapPanel>
+                    <WrapPanel>
+                        <!-- BorderThickness-->
+                        <TextBlock Text="BorderThickness" FontSize="12" FontWeight="Bold" Margin="5,5,0,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="TextBlockBorderThickness" Text="{Binding BaseSpecifiedRange.BorderThickness, Mode=TwoWay}" FontSize="12" FontWeight="Bold" Margin="10,0,0,0" VerticalAlignment="Center" Foreground="Blue"/>
+                    </WrapPanel>
+                </StackPanel>
             </StackPanel>
         </Border>
     </Grid>

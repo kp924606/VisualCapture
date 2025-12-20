@@ -464,6 +464,9 @@ namespace VisualCaptureApp.Base
                 {
                     ffmpegArgs = $@"-y -f gdigrab -framerate {this.fps} {ffmpegRange} -f dshow -i audio=""{this.AudioList![this.CurrentAudioIndex]}"" -c:v mpeg4 -q:v {this._videoQuality} {this.saveFolder}\output_{DateTime.Now.ToString(@"yyyyMMddHHmmss")}.avi";
                     //ffmpegArgs = $@"-y -f gdigrab -framerate {this.fps} -i desktop -f dshow -i audio=""{this.AudioList![this.CurrentAudioIndex]}"" -c:v mpeg4 -q:v {this._videoQuality} {this.saveFolder}\output_{DateTime.Now.ToString(@"yyyyMMddHHmmss")}.avi";
+                    //123
+                    ffmpegArgs = $@"-y -f gdigrab -framerate {this.fps} {ffmpegRange} -f dshow -i audio=""{this.AudioList![this.CurrentAudioIndex]}"" -filter:a ""volume=10,aresample=resampler=soxr,alimiter=limit=0.99"" -c:v mpeg4 -q:v {this._videoQuality} {this.saveFolder}\output_{DateTime.Now.ToString(@"yyyyMMddHHmmss")}.mp4";
+
                 }
                 else
                 {
